@@ -21,7 +21,7 @@ function check_unique_field() {
 
   if [ "$all_vals" != "$unique_vals" ]; then
     echo "There are non-unique values of \"$1\" in the users.json file:"
-    echo $(diff <(jq -r ".[].$1" users.json | sort) <(jq -r ".[].$1" users.json | sort | uniq))
+    diff <(jq -r ".[].$1" users.json | sort) <(jq -r ".[].$1" users.json | sort | uniq)
     exit -1
   fi
 }
@@ -39,7 +39,7 @@ function check_unique_array_field() {
 
   if [ "$all_vals" != "$unique_vals" ]; then
     echo "There are non-unique values of \"$1\" in the users.json file:"
-    echo $(diff <(jq -r "[.[].$1] | flatten | .[]" users.json | sort) <(jq -r "[.[].$1] | flatten | .[]" users.json | sort | uniq))
+    diff <(jq -r "[.[].$1] | flatten | .[]" users.json | sort) <(jq -r "[.[].$1] | flatten | .[]" users.json | sort | uniq)
     exit -1
   fi
 }
