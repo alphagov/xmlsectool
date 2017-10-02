@@ -1,0 +1,7 @@
+-   repo: local
+    hooks:
+    -   id: json_quality
+        name: json file check
+        entry: ./precommit.sh
+        language: script
+        types: [text]

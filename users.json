@@ -796,6 +796,15 @@
     ]
   },
   {
+    "slack_id": "U79HKHLRW",
+    "slack_name": "Rory Irvine",
+    "github_username": "roryirvine",
+    "names": ["Rory Irvine"],
+    "emails": [
+      "rory.irvine@digital.cabinet-office.gov.uk"
+    ]
+  },
+  {
     "slack_id": "U4E119R6U",
     "slack_name": "rmaclean",
     "names": ["rmaclean"],
@@ -909,14 +918,6 @@
     ]
   },
   {
-    "slack_id": "U2JHYNWBU",
-    "slack_name": "sfk",
-    "names": ["Suneet Kamath"],
-    "emails": [
-      "suneet.kamath@digital.cabinet-office.gov.uk"
-    ]
-  },
-  {
     "slack_id": "U0BLU4RDJ",
     "slack_name": "susandarcy",
     "names": ["Susan D'Arcy"],
@@ -991,6 +992,15 @@
     "names": ["Tom Farrar"],
     "emails": [
       "tom.farrar@digital.cabinet-office.gov.uk"
+    ]
+  },
+  {
+    "slack_id": "U7BSALX36",
+    "slack_name": "Tom Skelley",
+    "github_username": "b0redom",
+    "names": ["Tom Skelley"],
+    "emails": [
+      "tom.skelley@digital.cabinet-office.gov.uk"
     ]
   },
   {
