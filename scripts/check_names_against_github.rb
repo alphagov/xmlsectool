@@ -60,7 +60,7 @@ def team_members(team)
   end
 end
 
-verify_tech_team = JSON.parse(File.read('users.json'))
+verify_tech_team = JSON.parse(File.read('../users.json'))
 
 pushers = team_members("team-identity-assurance")
 branchers = team_members("team-identity-assurance-branchers")
