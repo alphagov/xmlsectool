@@ -19,6 +19,25 @@ over time.
 Note that matching is pretty fuzzy - if two people have the same "Names" entries,
 we'll have to tackle that problem when it happens!
 
+## Roles
+There are only two roles at the moment - to ensure someone is asked about release
+approvals, add a section like:
+```
+"roles": [
+  "infrastructure-release-approver"
+]
+```
+The roles are `infrastructure-release-approver` for people who can approve an
+infrastructure release, and `dev-release-approver` for people
+who can approve an app release. You can have both roles, or no `roles` section
+at all.
+
+## Testing
+
 You can test some basics of your JSON - that it parses, that you have
 no duplicates - by running `precommit.sh`.  Note you'll need to run
 `brew install jq` first if you don't have `jq` installed.
+
+This is set up to work with the http://pre-commit.com/ tool - if you install
+pre-commit (with `brew install pre-commit`) and install it for this repo,
+json checks will be run before committing.
