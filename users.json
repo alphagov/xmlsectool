@@ -1056,11 +1056,12 @@
     ]
   },
   {
-    "slack_id": "U1PVASCQK",
-    "slack_name": "tuomas.nylund",
-    "names": ["Tuomas Nylund"],
+    "slack_id": "U7877T822",
+    "slack_name": "Dave Povey",
+    "github_username": "DavePcoderepo",
+    "names": ["Dave Povey"],
     "emails": [
-      "tuomas.nylund@digital.cabinet-office.gov.uk"
+      "david.povey@digital.cabinet-office.gov.uk"
     ]
   },
   {
