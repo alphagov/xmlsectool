@@ -54,6 +54,7 @@
   {
     "slack_id": "U03F6HCMT",
     "slack_name": "amit",
+    "github_username": "gdsamit",
     "names": ["Amit Muthu"],
     "emails": [
       "amit.muthu@digital.cabinet-office.gov.uk"
@@ -288,6 +289,7 @@
   {
     "slack_id": "U6YAQ8PUM",
     "slack_name": "guruprasad",
+    "github_username": "guruchand",
     "names": ["Guruprasad Chandramouli"],
     "emails": [
       "guruprasad.chandramouli@digital.cabinet-office.gov.uk"
@@ -453,6 +455,15 @@
     ],
     "roles": [
       "infrastructure-release-approver"
+    ]
+  },
+  {
+    "slack_id": "U02AYM8TM",
+    "slack_name": "joelanman",
+    "github_username": "joelanman",
+    "names": ["Joe Lanman"],
+    "emails": [
+      "joe.lanman@digital.cabinet-office.gov.uk"
     ]
   },
   {
@@ -792,6 +803,15 @@
     ]
   },
   {
+    "slack_id": "U7C2228N9",
+    "slack_name": "Rachel Smith",
+    "github_username": "rachelthecodesmith",
+    "names": ["Rachel Smith"],
+    "emails": [
+      "rachel.smith@digital.cabinet-office.gov.uk"
+    ]
+  },
+  {
     "slack_id": "U2AJY2G5B",
     "slack_name": "richard_adams",
     "names": ["Richard Adams"],
@@ -1071,6 +1091,15 @@
     ],
     "roles": [
       "dev-release-approver"
+    ]
+  },
+  {
+    "slack_id": "U02ALHJU4",
+    "slack_name": "willp",
+    "github_username": "whpearson",
+    "names": ["Will Pearson"],
+    "emails": [
+      "will.pearson@digital.cabinet-office.gov.uk"
     ]
   },
   {
