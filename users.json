@@ -814,14 +814,6 @@
     ]
   },
   {
-    "slack_id": "U2AJY2G5B",
-    "slack_name": "richard_adams",
-    "names": ["Richard Adams"],
-    "emails": [
-      "richard.adams@digital.cabinet-office.gov.uk"
-    ]
-  },
-  {
     "slack_id": "U0HLATFB2",
     "slack_name": "richtowers",
     "github_username": "richardTowers",
