@@ -1115,5 +1115,9 @@
     "emails": [
       "yancoba.thompson@digital.cabinet-office.gov.uk"
     ]
+  },
+  {
+    "github_username": "ida-build-bot",
+    "names": ["ida-build-bot"]
   }
 ]
