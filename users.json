@@ -1118,6 +1118,8 @@
   },
   {
     "github_username": "ida-build-bot",
-    "names": ["ida-build-bot"]
+    "slack_id": "USLACKBOT",
+    "names": ["ida-build-bot"],
+    "emails": []
   }
 ]
