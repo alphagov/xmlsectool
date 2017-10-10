@@ -20,7 +20,6 @@ BASE_PATH = File.expand_path(File.join(File.dirname(__FILE__)))
 def get_deployer_instances
   deployers = []
   hiera_glob = File.expand_path(File.join(BASE_PATH, '..', "verify-puppet/hiera/vdc/*.yaml"))
-  $log.info("Getting deployers list from #{hiera_glob}")
   Dir.glob(hiera_glob) do |vdc|
     dns_hosts = YAML.load_file(vdc)['gds_dns::server::hosts']
     if dns_hosts
@@ -34,39 +33,51 @@ def get_deployer_instances
       end
     end
   end
+  $log.info("Retrieved deployers list from #{hiera_glob}")
   deployers.uniq
 end
 
 def get_deployer_uris(deployers)
   data = {}
   deployers.each do |deployer|
-    data.update(
+    data.update({
       deployer => {
         'uri' => URI.join(
           'https://' + deployer.gsub(/er-1\.mgmt\./, '-').gsub(/$/, '.ida.digital.cabinet-office.gov.uk')
         ).to_s
+      }
+    })
+  end
+  if $options[:instances].length > 0
+    $options[:instances].each do |deployer|
+      data.update({
+        deployer.gsub(/\..*/, '') => {
+          'uri' => 'https://' + deployer
+        }
       })
+    end
   end
   $log.debug("Mapped deployers: #{data.inspect}")
   data
 end
 
 def api_request(uris, path, call_type = 'json')
+  $log.debug("Recieved list of URIs: #{uris.inspect}")
   uris.each do |deployer, data|
-    $log.debug("Making API request to #{data['uri']}")
+    $log.info("Making API request to #{data['uri']}/#{path}")
     begin
       uri = URI.parse(data['uri'])
 
       http = Net::HTTP.new(uri.host, uri.port)
       http.use_ssl = true
       http.open_timeout = 5
-      http.read_timeout = 30
+      http.read_timeout = 600
 
       request = Net::HTTP::Get.new(path)
-      # FIXME - this is temporry for debugging
       request.basic_auth($options[:username], $options[:password])
 
       response = http.request(request)
+
 
       if response.code.to_i == 200
         if call_type == 'json'
@@ -80,11 +91,13 @@ def api_request(uris, path, call_type = 'json')
         $log.error("Received HTTP #{response.code}: #{response.body}")
       end
       uris[deployer]['code'] = response.code
+
     rescue Timeout::Error
-      $log.warn("Timeout waiting for #{data}")
+      $log.warn("Timeout waiting for #{data['uri']}")
       uris[deployer]['errors'] = ['Timeout::Error']
+
     rescue SocketError
-      $log.warn("SocketError connecting to #{data}")
+      $log.warn("SocketError connecting to #{data['uri']}")
       uris[deployer]['errors'] = ['SocketError']
     end
   end
@@ -125,7 +138,7 @@ def get_admins(administrators)
       if not data['/computer/(master)/config.xml'].nil?
         data['/computer/(master)/config.xml'].xpath('//authorizationStrategy').children.each do |perms|
           admin = perms.content.gsub(/hudson.model.Hudson.Administer:/, '')
-          if admin.strip.length > 0
+          if admin.strip.length > 0 and not admin.index(/^hudson\.model\./)
             admins[deployer].push(URI::decode(admin))
           end
         end
@@ -160,9 +173,10 @@ def intersect_admins_and_people(admins, people)
   users
 end
 
-$options = {}
-optparse = OptionParser.new do |opts|
-  opts.banner = <<EOM
+if __FILE__ == $0
+  $options = {}
+  optparse = OptionParser.new do |opts|
+    opts.banner = <<EOM
 Usage: #{__FILE__} [options]
 
 Output is a table where:
@@ -170,63 +184,74 @@ Output is a table where:
  U  indicates a user account (people) exists
  AU indicates the user exists and is an admin
 
+Note that it's not possible to query 'build.ida.digital.cabinet-office.gov.uk'
+nor 'smoketester.ida.digital.cabinet-office.gov.uk' as the /asynchPeople/
+endpoint returns all users that have ever been in a changelog, and the
+endpoint to get the config.xml doesn't work as expected.
+
 EOM
-  opts.on("-uUSERNAME", "--username=USERNAME", "Jenkins username.") do |v|
-    $options[:username] = v
+    opts.on("-uUSERNAME", "--username=USERNAME", "Jenkins username.") do |v|
+      $options[:username] = v
+    end
+    opts.on("-pPASSWORD", "--password=PASSWORD", "Jenkins password.") do |v|
+      $options[:password] = v
+    end
+
+    $options[:instances] = []
+    opts.on("-iJENKINS_INSTANCES", "--instances=JENKINS_INSTANCE", "Comma separated list of additional jenkins instances to check.  If not set, defaults to #{$options[:instances].inspect}") do |v|
+      $options[:instances] = v.split(',')
+    end
+    $options[:verbose] = 0
+    opts.on("-v", "--verbose", "Increase verbosity (default is ERROR level only). Use up to 3 times for WARN, INFO and DEBUG level output. ") do |v|
+      $options[:verbose] += 1
+    end
+    opts.on("-q", "--quiet", "Only display fatal errors.  Overrides verbosity levels.") do |v|
+      $options[:quiet] = true
+    end
   end
-  opts.on("-pPASSWORD", "--password=PASSWORD", "Jenkins password.") do |v|
-    $options[:password] = v
+
+  begin
+    optparse.parse!
+    mandatory = [:username, :password]                               # Enforce the presence of
+    missing = mandatory.select{ |param| $options[param].nil? }        # the -t and -f switches
+    unless missing.empty?                                            #
+      raise OptionParser::MissingArgument.new(missing.join(', '))    #
+    end                                                              #
+  rescue OptionParser::InvalidOption, OptionParser::MissingArgument  #
+    puts $!.to_s                                                     # Friendly output when parsing fails
+    puts optparse                                                    #
+    exit                                                             #
+  end                                                                #
+
+
+  if $options[:verbose] >= 3
+    $log.level = Logger::DEBUG
+  elsif $options[:verbose] == 2
+    $log.level = Logger::INFO
+  elsif $options[:verbose] == 1
+    $log.level = Logger::WARN
   end
-  $options[:verbose] = 0
-  opts.on("-v", "--verbose", "Increase verbosity (default is ERROR level only).") do |v|
-    $options[:verbose] += 1
+
+  if $options[:quiet]
+    $log.level = Logger::FATAL
   end
-  opts.on("-q", "--quiet", "Only display fatal errors.  Overrides verbosity levels.") do |v|
-    $options[:quiet] = true
+
+  deployers = get_deployer_uris( get_deployer_instances )
+
+  asynchPeople = api_request(deployers, '/asynchPeople/api/json')
+  people = map_asynchPeople_to_users(asynchPeople)
+
+  administrators = api_request(deployers, '/computer/(master)/config.xml', 'xml')
+  admins = get_admins(administrators)
+
+  users = intersect_admins_and_people(admins, people)
+
+  table = TTY::Table.new header: ['user'] + deployers.keys.sort.map { |d| d.gsub(/.*\./, '') }
+
+  users.sort.each do |username, data|
+    row = [username] + deployers.keys.sort.map { |d| data.include?(d) ? data[d] : '' }
+    table << row
   end
+
+  puts table.render(:basic, resize: true)
 end
-
-begin
-  optparse.parse!
-  mandatory = [:username, :password]                               # Enforce the presence of
-  missing = mandatory.select{ |param| $options[param].nil? }        # the -t and -f switches
-  unless missing.empty?                                            #
-    raise OptionParser::MissingArgument.new(missing.join(', '))    #
-  end                                                              #
-rescue OptionParser::InvalidOption, OptionParser::MissingArgument  #
-  puts $!.to_s                                                     # Friendly output when parsing fails
-  puts optparse                                                    #
-  exit                                                             #
-end                                                                #
-
-
-if $options[:verbose] >= 3
-  $log.level = Logger::DEBUG
-elsif $options[:verbose] == 2
-  $log.level = Logger::INFO
-elsif $options[:verbose] == 1
-  $log.level = Logger::WARN
-end
-
-if $options[:quiet]
-  $log.level = Logger::FATAL
-end
-
-deployers = get_deployer_uris( get_deployer_instances )
-
-asynchPeople = api_request(deployers, '/asynchPeople/api/json')
-people = map_asynchPeople_to_users(asynchPeople)
-
-administrators = api_request(deployers, '/computer/(master)/config.xml', 'xml')
-admins = get_admins(administrators)
-
-users = intersect_admins_and_people(admins, people)
-
-table = TTY::Table.new header: ['user'] + deployers.keys.sort.map { |d| d.gsub(/.*\./, '') }
-
-users.sort.each do |username, data|
-  row = [username] + deployers.keys.sort.map { |d| data.include?(d) ? data[d] : '' }
-  table << row
-end
-
-puts table.render(:basic, resize: true)
