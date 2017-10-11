@@ -560,6 +560,9 @@
     "emails": [
       "kornelis.sietsma@digital.cabinet-office.gov.uk",
       "korny@sietsma.com"
+    ],
+    "roles": [
+      "dev-release-approver"
     ]
   },
   {
