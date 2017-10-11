@@ -20,13 +20,16 @@ Note that matching is pretty fuzzy - if two people have the same "Names" entries
 we'll have to tackle that problem when it happens!
 
 ## Roles
+
 There are only two roles at the moment - to ensure someone is asked about release
 approvals, add a section like:
+
 ```
 "roles": [
   "infrastructure-release-approver"
 ]
 ```
+
 The roles are `infrastructure-release-approver` for people who can approve an
 infrastructure release, and `dev-release-approver` for people
 who can approve an app release. You can have both roles, or no `roles` section
@@ -41,3 +44,21 @@ no duplicates - by running `precommit.sh`.  Note you'll need to run
 This is set up to work with the http://pre-commit.com/ tool - if you install
 pre-commit (with `brew install pre-commit`) and install it for this repo,
 json checks will be run before committing.
+
+## Tools
+
+## get-jenkins-users.rb
+
+This tool gets a list of deployers from verify-puppet and queries them all for
+their configured users and admins.  It then presents the data as a table,
+makign it easy to see which users are configure on which deployers.
+
+Unfortunately the jenkins api is less than ideal making it impractical or
+impossible to get the data from the main build instance or the smoketester.
+
+See `./get-jenkins-users.rb -h` output for usage details.
+
+There are some ideas for further improvement and/or integration of this
+script, for example the script could correlate the users against users.json,
+which would then make it possible for the tool to alert on whether a user is
+expect to exist or not.
