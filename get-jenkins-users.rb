@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 # vi: set ft=ruby expandtab ts=2 sw=2 sts=2:
 
+require 'hiera'
 require 'json'
 require 'logger'
 require 'net/http'
@@ -15,14 +16,19 @@ require 'yaml'
 $log = Logger.new(STDERR)
 $log.level = Logger::ERROR
 $log.datetime_format = "%Y-%m-%d %H:%M:%S "
+# valid hiera loggers: console, noop, fallback, puppet
+$hiera_logger = 'noop'
 
 BASE_PATH = File.expand_path(File.join(File.dirname(__FILE__)))
 
 def get_deployer_instances
   deployers = []
+  hiera_config = YAML.load_file(File.expand_path(File.join(BASE_PATH, '..', "verify-puppet/spec/fixtures/hiera.yaml")))
+  hiera_config[:logger] = $hiera_logger
+  hiera = Hiera.new(:config => hiera_config)
   hiera_glob = File.expand_path(File.join(BASE_PATH, '..', "verify-puppet/hiera/vdc/*.yaml"))
   Dir.glob(hiera_glob) do |vdc|
-    dns_hosts = YAML.load_file(vdc)['gds_dns::server::hosts']
+    dns_hosts = hiera.lookup("gds_dns::server::hosts", "vdc/%{vdc}", {'::vdc' => vdc.gsub(/.*\//, '').gsub(/\.yaml/, '')})
     if dns_hosts
       dns_hosts.split("\n").each do |host|
         if host.match('deployer') and not host.match('vagrant') and not host.match('%{hiera')
@@ -34,7 +40,7 @@ def get_deployer_instances
       end
     end
   end
-  $log.info("Retrieved deployers list from #{hiera_glob}")
+  $log.info("Retrieved deployers list: #{deployers.uniq.inspect}")
   deployers.uniq
 end
 
@@ -257,6 +263,7 @@ EOM
 
   if $options[:verbose] >= 3
     $log.level = Logger::DEBUG
+    $hiera_logger = 'console'
   elsif $options[:verbose] == 2
     $log.level = Logger::INFO
   elsif $options[:verbose] == 1
