@@ -1112,6 +1112,16 @@
     ]
   },
   {
+    "slack_id": "U7C2228N9",
+    "slack_name": "Rachel Smith",
+    "github_username": "rachelthecodesmith",
+    "names": ["Rachel"],
+    "emails": [
+      "rachelcodesmith@outlook.com",
+      "rachel.smith@digital.cabinet-office.gov.uk"
+    ]
+  },
+  {
     "github_username": "ida-build-bot",
     "slack_id": "USLACKBOT",
     "names": ["ida-build-bot"],
