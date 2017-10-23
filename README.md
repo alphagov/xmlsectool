@@ -62,3 +62,12 @@ There are some ideas for further improvement and/or integration of this
 script, for example the script could correlate the users against users.json,
 which would then make it possible for the tool to alert on whether a user is
 expect to exist or not.
+
+## Adding a new user to the json
+
+"slack_id" - Note: at the time of writing this information is strangely not shown on the individual account page of a member.
+
+You can find this on the slack GUI under "member id".
+- Search for the person, select their profile
+- Click the chevron next to their name for "more actions"
+- Click copy id, it should be a string of 9 alphanumeric characters.  
