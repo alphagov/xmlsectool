@@ -284,7 +284,7 @@ EOM
 
   users = intersect_admins_and_people(admins, people)
 
-  table = TTY::Table.new header: ['user'] + deployers.keys.sort.map { |d| d.gsub(/.*\./, '') }
+  table = TTY::Table.new header: ['user'] + deployers.keys.sort.map { |d| d.index('signin.service.gov.uk') ? d.gsub(/\.signin\.service\.gov\.uk/, '').gsub(/deployer-.\.node\./, '') : d.gsub(/.*\./, '') }
 
   users.sort.each do |username, data|
     row = [username] + deployers.keys.sort.map { |d| data.include?(d) ? data[d] : '' }
