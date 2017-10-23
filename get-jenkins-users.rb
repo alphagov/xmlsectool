@@ -7,6 +7,7 @@ require 'net/http'
 require 'nokogiri'
 require 'optparse'
 require 'pastel'
+require 'thread'
 require 'tty-table'
 require 'uri'
 require 'yaml'
@@ -63,44 +64,74 @@ end
 
 def api_request(uris, path, call_type = 'json')
   $log.debug("Recieved list of URIs: #{uris.inspect}")
-  uris.each do |deployer, data|
-    $log.info("Making API request to #{data['uri']}/#{path}")
-    begin
-      uri = URI.parse(data['uri'])
 
-      http = Net::HTTP.new(uri.host, uri.port)
-      http.use_ssl = true
-      http.open_timeout = 5
-      http.read_timeout = 600
+  queue = Queue.new
 
-      request = Net::HTTP::Get.new(path)
-      request.basic_auth($options[:username], $options[:password])
+  threads = uris.map do |deployer, data|
+    Thread.new do
+      $log.info("Making API request to #{data['uri']}/#{path}")
+      result = { deployer: deployer, path: path }
 
-      response = http.request(request)
+      begin
+        uri = URI.parse(data['uri'])
 
+        http = Net::HTTP.new(uri.host, uri.port)
+        http.use_ssl = true
+        http.open_timeout = 5
+        http.read_timeout = 600
 
-      if response.code.to_i == 200
-        if call_type == 'json'
-          uris[deployer][path] = JSON.parse(response.body)
-        elsif call_type == 'xml'
-          uris[deployer][path] = Nokogiri::XML(response.body)
+        request = Net::HTTP::Get.new(path)
+        request.basic_auth($options[:username], $options[:password])
+
+        response = http.request(request)
+
+        if response.code.to_i == 200
+          if call_type == 'json'
+            result[:body] = JSON.parse(response.body)
+          elsif call_type == 'xml'
+            result[:body] = Nokogiri::XML(response.body)
+          else
+            result[:body] = response.body
+          end
+          result[:success] = true
         else
-          uris[deployer][path] = response.body
+          $log.error("Received HTTP #{response.code}: #{response.body}")
         end
-      else
-        $log.error("Received HTTP #{response.code}: #{response.body}")
+        result[:code] = response.code
+
+      rescue Timeout::Error
+        $log.warn("Timeout waiting for #{data['uri']}")
+        result[:errors] = ['Timeout::Error']
+
+      rescue SocketError
+        $log.warn("SocketError connecting to #{data['uri']}")
+        result[:errors] = ['SocketError']
       end
-      uris[deployer]['code'] = response.code
 
-    rescue Timeout::Error
-      $log.warn("Timeout waiting for #{data['uri']}")
-      uris[deployer]['errors'] = ['Timeout::Error']
-
-    rescue SocketError
-      $log.warn("SocketError connecting to #{data['uri']}")
-      uris[deployer]['errors'] = ['SocketError']
+      queue << result
     end
   end
+
+  threads.each { |t| t.join }
+
+  until queue.empty? do
+    result = queue.pop
+    deployer = result[:deployer]
+    path = result[:path]
+
+    if result.key? :errors
+      uris[deployer]['errors'] = result[:errors]
+    end
+
+    if result.key? :success
+      uris[deployer][path] = result[:body]
+    end
+
+    if result.key? :code
+      uris[deployer]['code'] = result[:code]
+    end
+  end
+
   uris
 end
 
