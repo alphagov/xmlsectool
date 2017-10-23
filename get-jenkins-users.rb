@@ -50,7 +50,7 @@ def get_deployer_uris(deployers)
     data.update({
       deployer => {
         'uri' => URI.join(
-          'https://' + deployer.gsub(/er-1\.mgmt\./, '-').gsub(/$/, '.ida.digital.cabinet-office.gov.uk')
+          'https://' + deployer.gsub(/er-1\.mgmt\./, '-').gsub(/\.signin\.service\.gov\.uk/, '').gsub(/er-1\.node\./, '-').gsub(/\./, '-').gsub(/$/, '.ida.digital.cabinet-office.gov.uk')
         ).to_s
       }
     })
