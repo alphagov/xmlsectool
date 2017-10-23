@@ -291,5 +291,9 @@ EOM
     table << row
   end
 
-  puts table.render(:basic, resize: true)
+  begin
+    puts table.render(:basic, resize: true)
+  rescue NoMethodError => e
+    $log.error("Failed to display the table.  Is your terminal wide enough? (#{e})")
+  end
 end
