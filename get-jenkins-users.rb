@@ -101,7 +101,7 @@ def api_request(uris, path, call_type = 'json')
           end
           result[:success] = true
         else
-          $log.error("Received HTTP #{response.code}: #{response.body}")
+          $log.error("Received HTTP #{response.code} from #{uri.host.to_s}: #{response.body}")
         end
         result[:code] = response.code
 
