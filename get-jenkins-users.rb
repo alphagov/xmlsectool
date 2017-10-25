@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 # vi: set ft=ruby expandtab ts=2 sw=2 sts=2:
 
+require 'hiera'
 require 'json'
 require 'logger'
 require 'net/http'
@@ -15,14 +16,19 @@ require 'yaml'
 $log = Logger.new(STDERR)
 $log.level = Logger::ERROR
 $log.datetime_format = "%Y-%m-%d %H:%M:%S "
+# valid hiera loggers: console, noop, fallback, puppet
+$hiera_logger = 'noop'
 
 BASE_PATH = File.expand_path(File.join(File.dirname(__FILE__)))
 
 def get_deployer_instances
   deployers = []
+  hiera_config = YAML.load_file(File.expand_path(File.join(BASE_PATH, '..', "verify-puppet/spec/fixtures/hiera.yaml")))
+  hiera_config[:logger] = $hiera_logger
+  hiera = Hiera.new(:config => hiera_config)
   hiera_glob = File.expand_path(File.join(BASE_PATH, '..', "verify-puppet/hiera/vdc/*.yaml"))
   Dir.glob(hiera_glob) do |vdc|
-    dns_hosts = YAML.load_file(vdc)['gds_dns::server::hosts']
+    dns_hosts = hiera.lookup("gds_dns::server::hosts", "vdc/%{vdc}", {'::vdc' => vdc.gsub(/.*\//, '').gsub(/\.yaml/, '')})
     if dns_hosts
       dns_hosts.split("\n").each do |host|
         if host.match('deployer') and not host.match('vagrant') and not host.match('%{hiera')
@@ -34,7 +40,7 @@ def get_deployer_instances
       end
     end
   end
-  $log.info("Retrieved deployers list from #{hiera_glob}")
+  $log.info("Retrieved deployers list: #{deployers.uniq.inspect}")
   deployers.uniq
 end
 
@@ -44,7 +50,7 @@ def get_deployer_uris(deployers)
     data.update({
       deployer => {
         'uri' => URI.join(
-          'https://' + deployer.gsub(/er-1\.mgmt\./, '-').gsub(/$/, '.ida.digital.cabinet-office.gov.uk')
+          'https://' + deployer.gsub(/er-1\.mgmt\./, '-').gsub(/\.signin\.service\.gov\.uk/, '').gsub(/er-1\.node\./, '-').gsub(/\./, '-').gsub(/$/, '.ida.digital.cabinet-office.gov.uk')
         ).to_s
       }
     })
@@ -95,7 +101,8 @@ def api_request(uris, path, call_type = 'json')
           end
           result[:success] = true
         else
-          $log.error("Received HTTP #{response.code}: #{response.body}")
+          $log.error("Received HTTP #{response.code} from #{uri.host.to_s} (set -v for more information)")
+          $log.warn(response.body)
         end
         result[:code] = response.code
 
@@ -257,6 +264,7 @@ EOM
 
   if $options[:verbose] >= 3
     $log.level = Logger::DEBUG
+    $hiera_logger = 'console'
   elsif $options[:verbose] == 2
     $log.level = Logger::INFO
   elsif $options[:verbose] == 1
@@ -277,12 +285,16 @@ EOM
 
   users = intersect_admins_and_people(admins, people)
 
-  table = TTY::Table.new header: ['user'] + deployers.keys.sort.map { |d| d.gsub(/.*\./, '') }
+  table = TTY::Table.new header: ['user'] + deployers.keys.sort.map { |d| d.index('signin.service.gov.uk') ? d.gsub(/\.signin\.service\.gov\.uk/, '').gsub(/deployer-.\.node\./, '') : d.gsub(/.*\./, '') }
 
   users.sort.each do |username, data|
     row = [username] + deployers.keys.sort.map { |d| data.include?(d) ? data[d] : '' }
     table << row
   end
 
-  puts table.render(:basic, resize: true)
+  begin
+    puts table.render(:basic, resize: true)
+  rescue NoMethodError => e
+    $log.error("Failed to display the table.  Is your terminal wide enough? (#{e})")
+  end
 end
