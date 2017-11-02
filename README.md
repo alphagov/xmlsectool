@@ -63,6 +63,8 @@ script, for example the script could correlate the users against users.json,
 which would then make it possible for the tool to alert on whether a user is
 expect to exist or not.
 
+Make sure you have the right ruby version (use `rbenv version`). Once you have the right version, `gem bundle install` and then `bundle install` to get everything setup.
+
 ## Adding a new user to the json
 
 "slack_id" - Note: at the time of writing this information is strangely not shown on the individual account page of a member.
