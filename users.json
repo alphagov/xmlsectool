@@ -1111,5 +1111,14 @@
     "slack_id": "USLACKBOT",
     "names": ["ida-build-bot"],
     "emails": []
+  },
+  {
+    "slack_id": "U48685U2D",
+    "slack_name": "nas",
+    "github_username": "NasAshrafThoughtworks",
+    "names": ["Nas"],
+    "emails": [
+      "naseer.ashraf@digital.cabinet-office.gov.uk"
+    ]
   }
 ]
