@@ -439,19 +439,6 @@
     ]
   },
   {
-    "slack_id": "U02A7FK7W",
-    "slack_name": "jinnko",
-    "github_username": "jinnko",
-    "names": ["Jinn Koriech"],
-    "emails": [
-      "jinn.koriech@digital.cabinet-office.gov.uk",
-      "jinn@ixydo.com"
-    ],
-    "roles": [
-      "infrastructure-release-approver"
-    ]
-  },
-  {
     "slack_id": "U02AYM8TM",
     "slack_name": "joelanman",
     "github_username": "joelanman",
