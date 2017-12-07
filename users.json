@@ -805,7 +805,8 @@
     "github_username": "richardTowers",
     "names": ["Richard Towers"],
     "emails": [
-      "richard.towers@digital.cabinet-office.gov.uk"
+      "richard.towers@digital.cabinet-office.gov.uk",
+      "richard@richard-towers.com"
     ],
     "roles": [
       "dev-release-approver"
