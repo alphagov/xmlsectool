@@ -193,6 +193,9 @@
     "emails": [
       "conor.glynn@digital.cabinet-office.gov.uk",
       "conorglynn@gmail.com"
+    ],
+    "roles": [
+      "infrastructure-release-approver"
     ]
   },
   {
