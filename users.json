@@ -405,6 +405,15 @@
     ]
   },
   {
+    "slack_id": "U8LUBPKH6",
+    "slack_name": "james.howes",
+    "github_username": "JHjava",
+    "names": ["James Howes"],
+    "emails": [
+      "james.howes@digital.cabinet-office.gov.uk"
+    ]
+  },
+  {
     "slack_id": "U2W9L8LS3",
     "slack_name": "james_mcdowall_gds",
     "names": ["James McDowall"],
