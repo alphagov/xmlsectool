@@ -343,6 +343,9 @@
     "names": ["irene.lau"],
     "emails": [
       "irene.lau@digital.cabinet-office.gov.uk"
+    ],
+    "roles": [
+      "dev-release-approver"
     ]
   },
   {
@@ -881,6 +884,9 @@
     "names": ["Simon Greensmith"],
     "emails": [
       "simon.greensmith@digital.cabinet-office.gov.uk"
+    ],
+    "roles": [
+      "dev-release-approver"
     ]
   },
   {
