@@ -253,6 +253,15 @@
     ]
   },
   {
+    "slack_id": "U9LQB4ND8",
+    "slack_name": "felix",
+    "names": ["Felix Millne"],
+    "github_username": "FelixMarcusMillne",
+    "emails": [
+       "felix.millne@digital.cabinet-office.gov.uk"
+    ]
+  },
+  {
     "slack_id": "U1MAKRQ1F",
     "slack_name": "gabor.mikes",
     "names": ["Gabor Mikes"],
