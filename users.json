@@ -748,15 +748,6 @@
     ]
   },
   {
-    "slack_id": "U28AYMBEK",
-    "slack_name": "nickhaddock",
-    "github_username": "codfather",
-    "names": ["Nick Haddock"],
-    "emails": [
-      "nick.haddock@digital.cabinet-office.gov.uk"
-    ]
-  },
-  {
     "slack_id": "U1Y635DAL",
     "slack_name": "nicolahughes",
     "github_username": "DataMinerUK",
@@ -779,15 +770,6 @@
     "names": ["orvokki"],
     "emails": [
       "orvokki.lohikoski@digital.cabinet-office.gov.uk"
-    ]
-  },
-  {
-    "slack_id": "U79S6NVTP",
-    "slack_name": "paulverity_gds",
-    "github_username": "verityit",
-    "names": ["Paul Verity"],
-    "emails": [
-      "paul.verity@digital.cabinet-office.gov.uk"
     ]
   },
   {
