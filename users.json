@@ -799,6 +799,14 @@
     ]
   },
   {
+    "slack_id": "U77E5JMB8",
+    "slack_name": "paulavalenca",
+    "names": ["Paula Valenca"],
+    "emails": [
+      "paula.valenca@digital.cabinet-office.gov.uk"
+    ]
+  },
+  {
     "slack_id": "U2JK15KQV",
     "slack_name": "pgchamberlin",
     "github_username": "pgchamberlin",
