@@ -162,6 +162,14 @@
     ]
   },
   {
+    "slack_id": "U7FBFB9C3",
+    "slack_name": "Chris Grimble",
+    "names": ["Chris Grimble"],
+    "emails": [
+      "chris.grimble@digital.cabinet-office.gov.uk"
+    ]
+  },
+  {
     "slack_id": "U0W40JZ2P",
     "slack_name": "ciara.green",
     "names": ["Ciara Green"],
