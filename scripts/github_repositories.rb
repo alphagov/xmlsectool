@@ -45,13 +45,13 @@ query($cursor: String) {
             isArchived
             isFork
             isPrivate
-						languages(first: 100) {
-						  edges {
-						    node {
+            languages(first: 100) {
+              edges {
+                node {
                   name
-						    }
-						  }
-						}
+                }
+              }
+            }
             primaryLanguage {
               name
             }
