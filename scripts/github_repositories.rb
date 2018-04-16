@@ -174,7 +174,7 @@ query($team: String!, $cursor: String) {
                 flags: {
                 },
             }
-          }.sort_by {|repo| repo["name"]}
+          }.sort_by {|repo| repo[:name]}
     end
 
     def checking_query(query, variables, *properties)
