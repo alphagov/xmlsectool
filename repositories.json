@@ -253,6 +253,7 @@
       ]
     },
     "flags": {
+      "isVerifyCoreRepo": true
     }
   },
   {
@@ -268,6 +269,7 @@
       ]
     },
     "flags": {
+      "isVerifyCoreRepo": true
     }
   },
   {
@@ -283,6 +285,7 @@
       ]
     },
     "flags": {
+      "isVerifyCoreRepo": true
     }
   },
   {
@@ -1126,6 +1129,7 @@
       ]
     },
     "flags": {
+      "isVerifyCoreRepo": true
     }
   },
   {
@@ -1282,6 +1286,7 @@
       ]
     },
     "flags": {
+      "isVerifyCoreRepo": true
     }
   },
   {
@@ -1342,6 +1347,7 @@
       ]
     },
     "flags": {
+      "isVerifyCoreRepo": true
     }
   },
   {
@@ -1417,6 +1423,7 @@
       ]
     },
     "flags": {
+      "isVerifyCoreRepo": true
     }
   },
   {
@@ -1447,6 +1454,7 @@
       ]
     },
     "flags": {
+      "isVerifyCoreRepo": true
     }
   },
   {
@@ -1676,6 +1684,7 @@
       ]
     },
     "flags": {
+      "isVerifyCoreRepo": true
     }
   },
   {
@@ -1691,6 +1700,7 @@
       ]
     },
     "flags": {
+      "isVerifyCoreRepo": true
     }
   },
   {
@@ -1706,6 +1716,7 @@
       ]
     },
     "flags": {
+      "isVerifyCoreRepo": true
     }
   },
   {
@@ -1856,6 +1867,7 @@
       ]
     },
     "flags": {
+      "isVerifyCoreRepo": true
     }
   },
   {
@@ -2097,6 +2109,7 @@
       ]
     },
     "flags": {
+      "isVerifyCoreRepo": true
     }
   },
   {
@@ -2237,6 +2250,7 @@
       ]
     },
     "flags": {
+      "isVerifyCoreRepo": true
     }
   },
   {
@@ -2252,6 +2266,7 @@
       ]
     },
     "flags": {
+      "isVerifyCoreRepo": true
     }
   },
   {
@@ -2375,6 +2390,7 @@
       ]
     },
     "flags": {
+      "isVerifyCoreRepo": true
     }
   },
   {
@@ -2450,6 +2466,7 @@
       ]
     },
     "flags": {
+      "isVerifyCoreRepo": true
     }
   },
   {
