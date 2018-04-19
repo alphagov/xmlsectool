@@ -3,7 +3,18 @@
 This repo exists to store user data for members of the Verify tech team and
 our various git repos
 
-## Team data
+## Rationale
+
+We don't have a single source of truth for information about our team members, nor
+our github repositories.  We want a lot of information for scripts and bots, but
+we can't store unlimited metadata against either github users, GDS google users,
+Jenkins users, etc - and we need to know that a person is the same person across
+all of these!
+
+Github repositories have very basic 'topic' flags, but no other simple way to
+say "when you clone the Verify repos you should get these ones".
+
+## Team user data
 
 This is in the `users.json` file.
 
