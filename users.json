@@ -1122,6 +1122,15 @@
       "yancoba.thompson@digital.cabinet-office.gov.uk"
     ]
   },
+    {
+    "slack_id": "U4WTXEEUB",
+    "slack_name": "rylan",
+    "github_username": "rylangooch",
+    "names": ["Rylan Gooch"],
+    "emails": [
+      "rylan.gooch@digital.cabinet-office.gov.uk"
+    ]
+  },
   {
     "github_username": "ida-build-bot",
     "slack_id": "USLACKBOT",
