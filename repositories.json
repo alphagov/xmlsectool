@@ -1,15 +1,302 @@
 [
   {
-    "name": "verify-test-rp",
+    "name": "connect-to-verify-prototypes",
     "githubData": {
-      "description": "Verify Test Relying Party",
+      "description": null,
       "isFork": false,
       "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-test-rp",
-      "sshUrl": "git@github.com:alphagov/verify-test-rp.git",
+      "url": "https://github.com/alphagov/connect-to-verify-prototypes",
+      "sshUrl": "git@github.com:alphagov/connect-to-verify-prototypes.git",
       "topics": [
-        "relying-party",
-        "test",
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "connect-to-verify-value-stream",
+    "githubData": {
+      "description": "A tool for visualising the Connecting to Verfify process",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/connect-to-verify-value-stream",
+      "sshUrl": "git@github.com:alphagov/connect-to-verify-value-stream.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "dcs-client",
+    "githubData": {
+      "description": "A client for the Document Checking Service",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/dcs-client",
+      "sshUrl": "git@github.com:alphagov/dcs-client.git",
+      "topics": [
+        "dcs",
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "dcs-client-acceptance-tests",
+    "githubData": {
+      "description": "Acceptance tests for the DCS client - https://github.com/alphagov/dcs-client",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/dcs-client-acceptance-tests",
+      "sshUrl": "git@github.com:alphagov/dcs-client-acceptance-tests.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "dcs-performance-tests",
+    "githubData": {
+      "description": "Verify DCS Performance Tests",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/dcs-performance-tests",
+      "sshUrl": "git@github.com:alphagov/dcs-performance-tests.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "doc-checking",
+    "githubData": {
+      "description": "Verify Document Checking Service",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/doc-checking",
+      "sshUrl": "git@github.com:alphagov/doc-checking.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "dropwizard-example",
+    "githubData": {
+      "description": "sample dropwizard app to demonstrate paas deployment",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/dropwizard-example",
+      "sshUrl": "git@github.com:alphagov/dropwizard-example.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "dropwizard-infinispan",
+    "githubData": {
+      "description": "Dropwizard bundle and configuration for Infinispan",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/dropwizard-infinispan",
+      "sshUrl": "git@github.com:alphagov/dropwizard-infinispan.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "dropwizard-jade",
+    "githubData": {
+      "description": "Use the Jade templating engine with Dropwizard",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/dropwizard-jade",
+      "sshUrl": "git@github.com:alphagov/dropwizard-jade.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "dropwizard-junit-runner",
+    "githubData": {
+      "description": null,
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/dropwizard-junit-runner",
+      "sshUrl": "git@github.com:alphagov/dropwizard-junit-runner.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "dropwizard-logstash",
+    "githubData": {
+      "description": "Dropwizard extension that supports logstash format",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/dropwizard-logstash",
+      "sshUrl": "git@github.com:alphagov/dropwizard-logstash.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "eidas-beta-plan",
+    "githubData": {
+      "description": null,
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/eidas-beta-plan",
+      "sshUrl": "git@github.com:alphagov/eidas-beta-plan.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "gatling",
+    "githubData": {
+      "description": "Async Scala-Akka-Netty based Stress Tool",
+      "isFork": true,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/gatling",
+      "sshUrl": "git@github.com:alphagov/gatling.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "gds-tech-learning-pathway",
+    "githubData": {
+      "description": "Guidance on learning and development for GDS Technologists",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/gds-tech-learning-pathway",
+      "sshUrl": "git@github.com:alphagov/gds-tech-learning-pathway.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "gds-tech-recruitment",
+    "githubData": {
+      "description": "How we do recruitment for technical jobs at GDS, includes interview notes",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/gds-tech-recruitment",
+      "sshUrl": "git@github.com:alphagov/gds-tech-recruitment.git",
+      "topics": [
+        "interview"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "gradle-gatling-plugin",
+    "githubData": {
+      "description": "gradle plugin for running gatling scenarios",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/gradle-gatling-plugin",
+      "sshUrl": "git@github.com:alphagov/gradle-gatling-plugin.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "ida-compliance-tool",
+    "githubData": {
+      "description": "Verify Compliance Tool (temporary)",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/ida-compliance-tool",
+      "sshUrl": "git@github.com:alphagov/ida-compliance-tool.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+      "isVerifyCoreRepo": true
+    }
+  },
+  {
+    "name": "ida-hub-acceptance-tests",
+    "githubData": {
+      "description": "Verify Hub acceptance tests (temporary)",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/ida-hub-acceptance-tests",
+      "sshUrl": "git@github.com:alphagov/ida-hub-acceptance-tests.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+      "isVerifyCoreRepo": true
+    }
+  },
+  {
+    "name": "ida-hub-support",
+    "githubData": {
+      "description": "Verify Hub Support services (temporary)",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/ida-hub-support",
+      "sshUrl": "git@github.com:alphagov/ida-hub-support.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+      "isVerifyCoreRepo": true
+    }
+  },
+  {
+    "name": "ida-performance-tests",
+    "githubData": {
+      "description": "Verify Performance Testing (temporary)",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/ida-performance-tests",
+      "sshUrl": "git@github.com:alphagov/ida-performance-tests.git",
+      "topics": [
         "verify"
       ]
     },
@@ -32,36 +319,6 @@
     }
   },
   {
-    "name": "gatling",
-    "githubData": {
-      "description": "Async Scala-Akka-Netty based Stress Tool",
-      "isFork": true,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/gatling",
-      "sshUrl": "git@github.com:alphagov/gatling.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "gradle-gatling-plugin",
-    "githubData": {
-      "description": "gradle plugin for running gatling scenarios",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/gradle-gatling-plugin",
-      "sshUrl": "git@github.com:alphagov/gradle-gatling-plugin.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
     "name": "interaction-diagrams",
     "githubData": {
       "description": "Tooling to generate microservice interaction diagrams using wireshark and PCAP processing.",
@@ -69,6 +326,141 @@
       "isPrivate": false,
       "url": "https://github.com/alphagov/interaction-diagrams",
       "sshUrl": "git@github.com:alphagov/interaction-diagrams.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "korny-test-repo",
+    "githubData": {
+      "description": "Test repo for exploring Jenkins polling issues. Should not live long.",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/korny-test-repo",
+      "sshUrl": "git@github.com:alphagov/korny-test-repo.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "luigi-get-rp-data",
+    "githubData": {
+      "description": null,
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/luigi-get-rp-data",
+      "sshUrl": "git@github.com:alphagov/luigi-get-rp-data.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "metadata-checker",
+    "githubData": {
+      "description": null,
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/metadata-checker",
+      "sshUrl": "git@github.com:alphagov/metadata-checker.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "passport-verify",
+    "githubData": {
+      "description": ":passport_control: :crown: :ballot_box_with_check: A passport.js strategy for GOV.UK Verify",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/passport-verify",
+      "sshUrl": "git@github.com:alphagov/passport-verify.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "passport-verify-stub-relying-party",
+    "githubData": {
+      "description": "Stub Relying party that integrates with Verify using the passport-verify library",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/passport-verify-stub-relying-party",
+      "sshUrl": "git@github.com:alphagov/passport-verify-stub-relying-party.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "puppet-collectd",
+    "githubData": {
+      "description": "Puppet module for collectd",
+      "isFork": true,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/puppet-collectd",
+      "sshUrl": "git@github.com:alphagov/puppet-collectd.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "re-infra-release-automation",
+    "githubData": {
+      "description": null,
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/re-infra-release-automation",
+      "sshUrl": "git@github.com:alphagov/re-infra-release-automation.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "re-infra-release-logs",
+    "githubData": {
+      "description": "Logging location for the terraform release automation",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/re-infra-release-logs",
+      "sshUrl": "git@github.com:alphagov/re-infra-release-logs.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "rmq-lib",
+    "githubData": {
+      "description": null,
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/rmq-lib",
+      "sshUrl": "git@github.com:alphagov/rmq-lib.git",
       "topics": [
         "verify"
       ]
@@ -107,176 +499,6 @@
     }
   },
   {
-    "name": "verify-frontend",
-    "githubData": {
-      "description": "The frontend service for GOV.UK Verify",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-frontend",
-      "sshUrl": "git@github.com:alphagov/verify-frontend.git",
-      "topics": [
-        "frontend",
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "gds-tech-learning-pathway",
-    "githubData": {
-      "description": "Guidance on learning and development for GDS Technologists",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/gds-tech-learning-pathway",
-      "sshUrl": "git@github.com:alphagov/gds-tech-learning-pathway.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-eidas-reference",
-    "githubData": {
-      "description": "Code copied from each release of EIDAS source zips",
-      "isFork": true,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-eidas-reference",
-      "sshUrl": "git@github.com:alphagov/verify-eidas-reference.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-eidas-reference-acceptance-tests",
-    "githubData": {
-      "description": "Automated user-level tests for the eIDAS reference code",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-eidas-reference-acceptance-tests",
-      "sshUrl": "git@github.com:alphagov/verify-eidas-reference-acceptance-tests.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-eidas-bridge",
-    "githubData": {
-      "description": "Verify Eidas Bridge",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-eidas-bridge",
-      "sshUrl": "git@github.com:alphagov/verify-eidas-bridge.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-local-patterns",
-    "githubData": {
-      "description": "Project board - https://github.com/alphagov/verify-local-patterns/projects/1    |||||     This is a prototype of some content that will be included in the GOV.UK Service Toolkit about the best practice for councils to deliver two services - parking permits and concessionary travel. The repo also includes a working prototype of both services which follows the guidance, as delivered by the fictional council of Argleton.",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-local-patterns",
-      "sshUrl": "git@github.com:alphagov/verify-local-patterns.git",
-      "topics": [
-        "council",
-        "gov",
-        "prototype-kit",
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-tech-docs",
-    "githubData": {
-      "description": "Technical documentation for GOV.UK Verify",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-tech-docs",
-      "sshUrl": "git@github.com:alphagov/verify-tech-docs.git",
-      "topics": [
-        "tech-docs-template",
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-product-page",
-    "githubData": {
-      "description": "Product landing page for GOV.UK Verify",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-product-page",
-      "sshUrl": "git@github.com:alphagov/verify-product-page.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-compliance-tool-gui",
-    "githubData": {
-      "description": ":sparkles: A Graphical User Interface for the Verify Compliance Tool :wrench: :sparkles:",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-compliance-tool-gui",
-      "sshUrl": "git@github.com:alphagov/verify-compliance-tool-gui.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-stub-matching-service",
-    "githubData": {
-      "description": "This is a stub implementation of the local matching service required by RP's to integrate into GOV.UK Verify",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-stub-matching-service",
-      "sshUrl": "git@github.com:alphagov/verify-stub-matching-service.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "dropwizard-logstash",
-    "githubData": {
-      "description": "Dropwizard extension that supports logstash format",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/dropwizard-logstash",
-      "sshUrl": "git@github.com:alphagov/dropwizard-logstash.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
     "name": "stscreds",
     "githubData": {
       "description": "Easily use temporary API keys with AWS",
@@ -292,378 +514,15 @@
     }
   },
   {
-    "name": "gds-tech-recruitment",
-    "githubData": {
-      "description": "How we do recruitment for technical jobs at GDS, includes interview notes",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/gds-tech-recruitment",
-      "sshUrl": "git@github.com:alphagov/gds-tech-recruitment.git",
-      "topics": [
-        "interview"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-sample-local-matching-services",
-    "githubData": {
-      "description": "A variety of sample local matching services in various languages",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-sample-local-matching-services",
-      "sshUrl": "git@github.com:alphagov/verify-sample-local-matching-services.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-shibboleth-sp-example",
-    "githubData": {
-      "description": "An example configuration for shibboleth instance that works with Verify.",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-shibboleth-sp-example",
-      "sshUrl": "git@github.com:alphagov/verify-shibboleth-sp-example.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "dcs-client",
-    "githubData": {
-      "description": "A client for the Document Checking Service",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/dcs-client",
-      "sshUrl": "git@github.com:alphagov/dcs-client.git",
-      "topics": [
-        "dcs",
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-local-dashboard",
-    "githubData": {
-      "description": "A mock up of a performance monitoring dashboard for a local authority service",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-local-dashboard",
-      "sshUrl": "git@github.com:alphagov/verify-local-dashboard.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-rp-environment-config-form",
-    "githubData": {
-      "description": " :page_with_curl: The form for relying parties to provide Verify with environment configuration",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-rp-environment-config-form",
-      "sshUrl": "git@github.com:alphagov/verify-rp-environment-config-form.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "dcs-client-acceptance-tests",
-    "githubData": {
-      "description": "Acceptance tests for the DCS client - https://github.com/alphagov/dcs-client",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/dcs-client-acceptance-tests",
-      "sshUrl": "git@github.com:alphagov/dcs-client-acceptance-tests.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-onboarding-prototypes",
-    "githubData": {
-      "description": "A standard implementation of a SAML service provider that works with GOV.UK Verify :crown: :ballot_box_with_check:",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-onboarding-prototypes",
-      "sshUrl": "git@github.com:alphagov/verify-onboarding-prototypes.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-local-pattern-docs",
-    "githubData": {
-      "description": "Documentation for Local Government Service Patterns",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-local-pattern-docs",
-      "sshUrl": "git@github.com:alphagov/verify-local-pattern-docs.git",
-      "topics": [
-        "tech-docs-template",
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-config-app-config",
-    "githubData": {
-      "description": "Repo for Verify Config services application config",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-config-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-config-app-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-policy-app-config",
-    "githubData": {
-      "description": "Application config for Policy app",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-policy-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-policy-app-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-saml-engine-app-config",
-    "githubData": {
-      "description": "Saml Engine's application config",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-saml-engine-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-saml-engine-app-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-event-sink-app-config",
-    "githubData": {
-      "description": "App config for Event-Sink app",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-event-sink-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-event-sink-app-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-audit-app-config",
-    "githubData": {
-      "description": "Application config for Audit app",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-audit-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-audit-app-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-billing-app-config",
-    "githubData": {
-      "description": "Billing application config",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-billing-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-billing-app-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-token-service-app-config",
-    "githubData": {
-      "description": "Token Service app config",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-token-service-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-token-service-app-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-team-manual",
+    "name": "verify-analytics-dashboard",
     "githubData": {
       "description": null,
       "isFork": false,
       "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-team-manual",
-      "sshUrl": "git@github.com:alphagov/verify-team-manual.git",
+      "url": "https://github.com/alphagov/verify-analytics-dashboard",
+      "sshUrl": "git@github.com:alphagov/verify-analytics-dashboard.git",
       "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "passport-verify",
-    "githubData": {
-      "description": ":passport_control: :crown: :ballot_box_with_check: A passport.js strategy for GOV.UK Verify",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/passport-verify",
-      "sshUrl": "git@github.com:alphagov/passport-verify.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-dev-pki",
-    "githubData": {
-      "description": "Contains PKI for use in Verify Hub integration tests",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-dev-pki",
-      "sshUrl": "git@github.com:alphagov/verify-dev-pki.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-hub-saml",
-    "githubData": {
-      "description": "Verify Hub-specific SAML behaviours",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-hub-saml",
-      "sshUrl": "git@github.com:alphagov/verify-hub-saml.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-release-visualisation",
-    "githubData": {
-      "description": "Visualisations of Verify releases over time",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-release-visualisation",
-      "sshUrl": "git@github.com:alphagov/verify-release-visualisation.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-service-provider-user-research",
-    "githubData": {
-      "description": "Code used for user research regarding verify service provider",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-service-provider-user-research",
-      "sshUrl": "git@github.com:alphagov/verify-service-provider-user-research.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "passport-verify-stub-relying-party",
-    "githubData": {
-      "description": "Stub Relying party that integrates with Verify using the passport-verify library",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/passport-verify-stub-relying-party",
-      "sshUrl": "git@github.com:alphagov/passport-verify-stub-relying-party.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-service-provider",
-    "githubData": {
-      "description": ":crown: :ballot_box_with_check: The easiest way to connect to GOV.UK Verify",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-service-provider",
-      "sshUrl": "git@github.com:alphagov/verify-service-provider.git",
-      "topics": [
-        "dropwizard",
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-github-migrator",
-    "githubData": {
-      "description": "Migration tooling for moving Verify Github Enterprise repositories to Github.com",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-github-migrator",
-      "sshUrl": "git@github.com:alphagov/verify-github-migrator.git",
-      "topics": [
-        "verify"
+
       ]
     },
     "flags": {
@@ -685,13 +544,13 @@
     }
   },
   {
-    "name": "dropwizard-example",
+    "name": "verify-analytics-visualizer",
     "githubData": {
-      "description": "sample dropwizard app to demonstrate paas deployment",
+      "description": "WIP - a quick and simple way to visualize data from Piwik.",
       "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/dropwizard-example",
-      "sshUrl": "git@github.com:alphagov/dropwizard-example.git",
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-analytics-visualizer",
+      "sshUrl": "git@github.com:alphagov/verify-analytics-visualizer.git",
       "topics": [
 
       ]
@@ -700,58 +559,13 @@
     }
   },
   {
-    "name": "verify-dropwizard-saml",
+    "name": "verify-ansible",
     "githubData": {
-      "description": "Dropwizard bundle and configuration for SAML applications",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-dropwizard-saml",
-      "sshUrl": "git@github.com:alphagov/verify-dropwizard-saml.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-test-utils",
-    "githubData": {
-      "description": "Libraries to help with writing Java Unit/Integration Tests",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-test-utils",
-      "sshUrl": "git@github.com:alphagov/verify-test-utils.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-utils-libs",
-    "githubData": {
-      "description": "Libraries used across multiple Verify projects",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-utils-libs",
-      "sshUrl": "git@github.com:alphagov/verify-utils-libs.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-hub-analytics",
-    "githubData": {
-      "description": " Containerised Analytics infrastructure for Verify Hub. Currently uses Convox, ECS and ",
+      "description": " Ansible for Verify ops ",
       "isFork": false,
       "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-hub-analytics",
-      "sshUrl": "git@github.com:alphagov/verify-hub-analytics.git",
+      "url": "https://github.com/alphagov/verify-ansible",
+      "sshUrl": "git@github.com:alphagov/verify-ansible.git",
       "topics": [
         "verify"
       ]
@@ -760,28 +574,13 @@
     }
   },
   {
-    "name": "dropwizard-infinispan",
-    "githubData": {
-      "description": "Dropwizard bundle and configuration for Infinispan",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/dropwizard-infinispan",
-      "sshUrl": "git@github.com:alphagov/dropwizard-infinispan.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-box-templates",
+    "name": "verify-architecture",
     "githubData": {
       "description": null,
       "isFork": false,
       "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-box-templates",
-      "sshUrl": "git@github.com:alphagov/verify-box-templates.git",
+      "url": "https://github.com/alphagov/verify-architecture",
+      "sshUrl": "git@github.com:alphagov/verify-architecture.git",
       "topics": [
         "verify"
       ]
@@ -790,73 +589,28 @@
     }
   },
   {
-    "name": "verify-aviation-house-dr",
+    "name": "verify-artifactory-whitelist",
     "githubData": {
       "description": null,
       "isFork": false,
       "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-aviation-house-dr",
-      "sshUrl": "git@github.com:alphagov/verify-aviation-house-dr.git",
+      "url": "https://github.com/alphagov/verify-artifactory-whitelist",
+      "sshUrl": "git@github.com:alphagov/verify-artifactory-whitelist.git",
       "topics": [
-        "verify"
+
       ]
     },
     "flags": {
     }
   },
   {
-    "name": "dropwizard-jade",
+    "name": "verify-audit-app-config",
     "githubData": {
-      "description": "Use the Jade templating engine with Dropwizard",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/dropwizard-jade",
-      "sshUrl": "git@github.com:alphagov/dropwizard-jade.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-stub-idp-saml",
-    "githubData": {
-      "description": "SAML library for Stub IDP",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-stub-idp-saml",
-      "sshUrl": "git@github.com:alphagov/verify-stub-idp-saml.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-keystore",
-    "githubData": {
-      "description": " Safe storage of IDA keys ",
+      "description": "Application config for Audit app",
       "isFork": false,
       "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-keystore",
-      "sshUrl": "git@github.com:alphagov/verify-keystore.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-yakking-tools",
-    "githubData": {
-      "description": "Utilities for Verify yaks",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-yakking-tools",
-      "sshUrl": "git@github.com:alphagov/verify-yakking-tools.git",
+      "url": "https://github.com/alphagov/verify-audit-app-config",
+      "sshUrl": "git@github.com:alphagov/verify-audit-app-config.git",
       "topics": [
         "verify"
       ]
@@ -880,13 +634,13 @@
     }
   },
   {
-    "name": "verify-packages",
+    "name": "verify-aviation-house-dr",
     "githubData": {
-      "description": " Builds custom ubuntu packages used for IDA systems ",
+      "description": null,
       "isFork": false,
       "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-packages",
-      "sshUrl": "git@github.com:alphagov/verify-packages.git",
+      "url": "https://github.com/alphagov/verify-aviation-house-dr",
+      "sshUrl": "git@github.com:alphagov/verify-aviation-house-dr.git",
       "topics": [
         "verify"
       ]
@@ -895,28 +649,13 @@
     }
   },
   {
-    "name": "verify-rp-simplesamlphp",
+    "name": "verify-billing-app-config",
     "githubData": {
-      "description": "Test relying party using simplesamlphp",
+      "description": "Billing application config",
       "isFork": false,
       "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-rp-simplesamlphp",
-      "sshUrl": "git@github.com:alphagov/verify-rp-simplesamlphp.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-rp-shibboleth",
-    "githubData": {
-      "description": "Vagrantfile and configuration to spin up a new RP Shibboleth",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-rp-shibboleth",
-      "sshUrl": "git@github.com:alphagov/verify-rp-shibboleth.git",
+      "url": "https://github.com/alphagov/verify-billing-app-config",
+      "sshUrl": "git@github.com:alphagov/verify-billing-app-config.git",
       "topics": [
         "verify"
       ]
@@ -940,66 +679,6 @@
     }
   },
   {
-    "name": "verify-build-scripts",
-    "githubData": {
-      "description": "Utilities for Verify development",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-build-scripts",
-      "sshUrl": "git@github.com:alphagov/verify-build-scripts.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-frontend-api",
-    "githubData": {
-      "description": "Backend for verify-frontend (deprecating)",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-frontend-api",
-      "sshUrl": "git@github.com:alphagov/verify-frontend-api.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-release-encourager",
-    "githubData": {
-      "description": "Encourage people to release their code",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-release-encourager",
-      "sshUrl": "git@github.com:alphagov/verify-release-encourager.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-release-logs",
-    "githubData": {
-      "description": "Logs of releases generated from the verify-release-automation tool",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-release-logs",
-      "sshUrl": "git@github.com:alphagov/verify-release-logs.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
     "name": "verify-blackbox-passwords",
     "githubData": {
       "description": "Securely stored credentials for Verify",
@@ -1015,73 +694,13 @@
     }
   },
   {
-    "name": "verify-release-automation",
+    "name": "verify-blog",
     "githubData": {
-      "description": "🚂 The Verify Release Train",
+      "description": "Verify blog - currently unpublished.  Use the `gh-pages` branch to see _posts.",
       "isFork": false,
       "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-release-automation",
-      "sshUrl": "git@github.com:alphagov/verify-release-automation.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-relying-party-monitoring",
-    "githubData": {
-      "description": "Automated monitoring of RP start pages",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-relying-party-monitoring",
-      "sshUrl": "git@github.com:alphagov/verify-relying-party-monitoring.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-gh-migration",
-    "githubData": {
-      "description": "Github migration stuff",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-gh-migration",
-      "sshUrl": "git@github.com:alphagov/verify-gh-migration.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-jenkins-job-builder",
-    "githubData": {
-      "description": "Verify Jenkins Job Builder configuration",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-jenkins-job-builder",
-      "sshUrl": "git@github.com:alphagov/verify-jenkins-job-builder.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-onboarding-metadata",
-    "githubData": {
-      "description": "Private configuration for verify onboarding projects",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-onboarding-metadata",
-      "sshUrl": "git@github.com:alphagov/verify-onboarding-metadata.git",
+      "url": "https://github.com/alphagov/verify-blog",
+      "sshUrl": "git@github.com:alphagov/verify-blog.git",
       "topics": [
 
       ]
@@ -1090,47 +709,285 @@
     }
   },
   {
-    "name": "verify-ssh-shell-completions",
+    "name": "verify-box-templates",
     "githubData": {
-      "description": ":shell: SSH shell completions, powered by Ansible :shell:",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-ssh-shell-completions",
-      "sshUrl": "git@github.com:alphagov/verify-ssh-shell-completions.git",
-      "topics": [
-        "shell-completion",
-        "ssh",
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-metadata-generator",
-    "githubData": {
-      "description": "Gem to generate Verify SAML metadata",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-metadata-generator",
-      "sshUrl": "git@github.com:alphagov/verify-metadata-generator.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-pki-certs",
-    "githubData": {
-      "description": "Verify PKI certificates",
+      "description": null,
       "isFork": false,
       "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-pki-certs",
-      "sshUrl": "git@github.com:alphagov/verify-pki-certs.git",
+      "url": "https://github.com/alphagov/verify-box-templates",
+      "sshUrl": "git@github.com:alphagov/verify-box-templates.git",
       "topics": [
         "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-boxes",
+    "githubData": {
+      "description": "Verify specific configuration for vcloud-launch ",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-boxes",
+      "sshUrl": "git@github.com:alphagov/verify-boxes.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-build-docker",
+    "githubData": {
+      "description": "Dockerfiles used when building Verify",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-build-docker",
+      "sshUrl": "git@github.com:alphagov/verify-build-docker.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-build-scripts",
+    "githubData": {
+      "description": "Utilities for Verify development",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-build-scripts",
+      "sshUrl": "git@github.com:alphagov/verify-build-scripts.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-cert-dashboard",
+    "githubData": {
+      "description": "This is in ongoing development and not ready for production.",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-cert-dashboard",
+      "sshUrl": "git@github.com:alphagov/verify-cert-dashboard.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-ci-reminder",
+    "githubData": {
+      "description": "Tools for watching our CI builds, especially Joint, and harassing people when they break",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-ci-reminder",
+      "sshUrl": "git@github.com:alphagov/verify-ci-reminder.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-ci-spike",
+    "githubData": {
+      "description": "spiking out CI alternatives",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-ci-spike",
+      "sshUrl": "git@github.com:alphagov/verify-ci-spike.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-commit-to-release-calculator",
+    "githubData": {
+      "description": null,
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-commit-to-release-calculator",
+      "sshUrl": "git@github.com:alphagov/verify-commit-to-release-calculator.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-compliance-tool-gui",
+    "githubData": {
+      "description": ":sparkles: A Graphical User Interface for the Verify Compliance Tool :wrench: :sparkles:",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-compliance-tool-gui",
+      "sshUrl": "git@github.com:alphagov/verify-compliance-tool-gui.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-config-app-config",
+    "githubData": {
+      "description": "Repo for Verify Config services application config",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-config-app-config",
+      "sshUrl": "git@github.com:alphagov/verify-config-app-config.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-dashing",
+    "githubData": {
+      "description": null,
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-dashing",
+      "sshUrl": "git@github.com:alphagov/verify-dashing.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-data-pipeline",
+    "githubData": {
+      "description": "Manages Analytics code that generates statistics that inform journey improvements.",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-data-pipeline",
+      "sshUrl": "git@github.com:alphagov/verify-data-pipeline.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-data-pipeline-config",
+    "githubData": {
+      "description": "Holds configuration data to help verify data pipeline run in production",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-data-pipeline-config",
+      "sshUrl": "git@github.com:alphagov/verify-data-pipeline-config.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-data-schemas",
+    "githubData": {
+      "description": "YAML specifications for Verify data",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-data-schemas",
+      "sshUrl": "git@github.com:alphagov/verify-data-schemas.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-dev-pki",
+    "githubData": {
+      "description": "Contains PKI for use in Verify Hub integration tests",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-dev-pki",
+      "sshUrl": "git@github.com:alphagov/verify-dev-pki.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-dns-backup",
+    "githubData": {
+      "description": "Verify DNS Backups",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-dns-backup",
+      "sshUrl": "git@github.com:alphagov/verify-dns-backup.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-dropwizard-saml",
+    "githubData": {
+      "description": "Dropwizard bundle and configuration for SAML applications",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-dropwizard-saml",
+      "sshUrl": "git@github.com:alphagov/verify-dropwizard-saml.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-eidas-bridge",
+    "githubData": {
+      "description": "Verify Eidas Bridge",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-eidas-bridge",
+      "sshUrl": "git@github.com:alphagov/verify-eidas-bridge.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-eidas-governikus-middleware",
+    "githubData": {
+      "description": null,
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-eidas-governikus-middleware",
+      "sshUrl": "git@github.com:alphagov/verify-eidas-governikus-middleware.git",
+      "topics": [
+
       ]
     },
     "flags": {
@@ -1168,44 +1025,45 @@
     }
   },
   {
-    "name": "verify-saml-proxy-app-config",
-    "githubData": {
-      "description": "Configuration for Verify saml-proxy service",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-saml-proxy-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-saml-proxy-app-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-saml-soap-proxy-app-config",
-    "githubData": {
-      "description": "Configuration for Verify saml-soap-proxy service",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-saml-soap-proxy-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-saml-soap-proxy-app-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-dashing",
+    "name": "verify-eidas-manifests-1.4",
     "githubData": {
       "description": null,
       "isFork": false,
       "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-dashing",
-      "sshUrl": "git@github.com:alphagov/verify-dashing.git",
+      "url": "https://github.com/alphagov/verify-eidas-manifests-1.4",
+      "sshUrl": "git@github.com:alphagov/verify-eidas-manifests-1.4.git",
       "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-eidas-metadata-aggregator",
+    "githubData": {
+      "description": "Script to aggregate metadata from EU countries",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-eidas-metadata-aggregator",
+      "sshUrl": "git@github.com:alphagov/verify-eidas-metadata-aggregator.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-eidas-notification",
+    "githubData": {
+      "description": "eIDAS Notification",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-eidas-notification",
+      "sshUrl": "git@github.com:alphagov/verify-eidas-notification.git",
+      "topics": [
+        "eidas",
         "verify"
       ]
     },
@@ -1229,268 +1087,13 @@
     }
   },
   {
-    "name": "verify-frontend-api-config",
+    "name": "verify-eidas-proxy-node-infrastructure",
     "githubData": {
-      "description": "Configuration for Verify Frontend API (to be deprecated)",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-frontend-api-config",
-      "sshUrl": "git@github.com:alphagov/verify-frontend-api-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-ci-reminder",
-    "githubData": {
-      "description": "Tools for watching our CI builds, especially Joint, and harassing people when they break",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-ci-reminder",
-      "sshUrl": "git@github.com:alphagov/verify-ci-reminder.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-frontend-app-config",
-    "githubData": {
-      "description": "App config for the Verify Rails frontend",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-frontend-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-frontend-app-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-ansible",
-    "githubData": {
-      "description": " Ansible for Verify ops ",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-ansible",
-      "sshUrl": "git@github.com:alphagov/verify-ansible.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "ida-hub-acceptance-tests",
-    "githubData": {
-      "description": "Verify Hub acceptance tests (temporary)",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/ida-hub-acceptance-tests",
-      "sshUrl": "git@github.com:alphagov/ida-hub-acceptance-tests.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-hub-federation-config",
-    "githubData": {
-      "description": "Verify Hub federation configuration",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-hub-federation-config",
-      "sshUrl": "git@github.com:alphagov/verify-hub-federation-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "ida-hub-support",
-    "githubData": {
-      "description": "Verify Hub Support services (temporary)",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/ida-hub-support",
-      "sshUrl": "git@github.com:alphagov/ida-hub-support.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "ida-compliance-tool",
-    "githubData": {
-      "description": "Verify Compliance Tool (temporary)",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/ida-compliance-tool",
-      "sshUrl": "git@github.com:alphagov/ida-compliance-tool.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-metadata",
-    "githubData": {
-      "description": "Verify SAML metadata sources",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-metadata",
-      "sshUrl": "git@github.com:alphagov/verify-metadata.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-tech-team",
-    "githubData": {
-      "description": "Data about Verify team members",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-tech-team",
-      "sshUrl": "git@github.com:alphagov/verify-tech-team.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-frontend-federation-config",
-    "githubData": {
-      "description": "Federation configuration for the Verify frontend",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-frontend-federation-config",
-      "sshUrl": "git@github.com:alphagov/verify-frontend-federation-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-frontend-meta-package",
-    "githubData": {
-      "description": "Meta package for Verify frontend",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-frontend-meta-package",
-      "sshUrl": "git@github.com:alphagov/verify-frontend-meta-package.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-puppet",
-    "githubData": {
-      "description": "Puppet code for GOV.UK Verify",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-puppet",
-      "sshUrl": "git@github.com:alphagov/verify-puppet.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-terraform",
-    "githubData": {
-      "description": "Terraform code for GOV.UK Verify infrastructure",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-terraform",
-      "sshUrl": "git@github.com:alphagov/verify-terraform.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-release-notes",
-    "githubData": {
-      "description": "Verify Release Notes",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-release-notes",
-      "sshUrl": "git@github.com:alphagov/verify-release-notes.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-dns-backup",
-    "githubData": {
-      "description": "Verify DNS Backups",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-dns-backup",
-      "sshUrl": "git@github.com:alphagov/verify-dns-backup.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-cert-dashboard",
-    "githubData": {
-      "description": "This is in ongoing development and not ready for production.",
+      "description": "Architectural Design Records and Configuration for the  Verify eIDAS Proxy Node Infrastructure",
       "isFork": false,
       "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-cert-dashboard",
-      "sshUrl": "git@github.com:alphagov/verify-cert-dashboard.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-il3-laptop-bootstrap",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-il3-laptop-bootstrap",
-      "sshUrl": "git@github.com:alphagov/verify-il3-laptop-bootstrap.git",
+      "url": "https://github.com/alphagov/verify-eidas-proxy-node-infrastructure",
+      "sshUrl": "git@github.com:alphagov/verify-eidas-proxy-node-infrastructure.git",
       "topics": [
         "verify"
       ]
@@ -1499,133 +1102,13 @@
     }
   },
   {
-    "name": "verify-jenkins-config-ci-development",
+    "name": "verify-eidas-reference",
     "githubData": {
-      "description": "Jenkins SCM configuration sync.",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-jenkins-config-ci-development",
-      "sshUrl": "git@github.com:alphagov/verify-jenkins-config-ci-development.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-fabric",
-    "githubData": {
-      "description": " Fabric for Verify ",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-fabric",
-      "sshUrl": "git@github.com:alphagov/verify-fabric.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-boxes",
-    "githubData": {
-      "description": "Verify specific configuration for vcloud-launch ",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-boxes",
-      "sshUrl": "git@github.com:alphagov/verify-boxes.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "ida-performance-tests",
-    "githubData": {
-      "description": "Verify Performance Testing (temporary)",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/ida-performance-tests",
-      "sshUrl": "git@github.com:alphagov/ida-performance-tests.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-release-notes-generator",
-    "githubData": {
-      "description": "Verify Release Notes Generator",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-release-notes-generator",
-      "sshUrl": "git@github.com:alphagov/verify-release-notes-generator.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-restore-backups",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-restore-backups",
-      "sshUrl": "git@github.com:alphagov/verify-restore-backups.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-jenkins-config-smoketester-development",
-    "githubData": {
-      "description": " Jenkins config for Verify smoke tests ",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-jenkins-config-smoketester-development",
-      "sshUrl": "git@github.com:alphagov/verify-jenkins-config-smoketester-development.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-token-service",
-    "githubData": {
-      "description": "Verify Token Service",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-token-service",
-      "sshUrl": "git@github.com:alphagov/verify-token-service.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-joint-versions",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-joint-versions",
-      "sshUrl": "git@github.com:alphagov/verify-joint-versions.git",
+      "description": "Code copied from each release of EIDAS source zips",
+      "isFork": true,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-eidas-reference",
+      "sshUrl": "git@github.com:alphagov/verify-eidas-reference.git",
       "topics": [
         "verify"
       ]
@@ -1646,226 +1129,17 @@
       ]
     },
     "flags": {
+      "isVerifyCoreRepo": true
     }
   },
   {
-    "name": "doc-checking",
+    "name": "verify-eidas-reference-acceptance-tests",
     "githubData": {
-      "description": "Verify Document Checking Service",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/doc-checking",
-      "sshUrl": "git@github.com:alphagov/doc-checking.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "dcs-performance-tests",
-    "githubData": {
-      "description": "Verify DCS Performance Tests",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/dcs-performance-tests",
-      "sshUrl": "git@github.com:alphagov/dcs-performance-tests.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "metadata-checker",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/metadata-checker",
-      "sshUrl": "git@github.com:alphagov/metadata-checker.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-onboarding-guide-shared",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-onboarding-guide-shared",
-      "sshUrl": "git@github.com:alphagov/verify-onboarding-guide-shared.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "rmq-lib",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/rmq-lib",
-      "sshUrl": "git@github.com:alphagov/rmq-lib.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-onboarding-reference-data",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-onboarding-reference-data",
-      "sshUrl": "git@github.com:alphagov/verify-onboarding-reference-data.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-rd-test-rp",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-rd-test-rp",
-      "sshUrl": "git@github.com:alphagov/verify-rd-test-rp.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-fake-idps",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-fake-idps",
-      "sshUrl": "git@github.com:alphagov/verify-fake-idps.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "korny-test-repo",
-    "githubData": {
-      "description": "Test repo for exploring Jenkins polling issues. Should not live long.",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/korny-test-repo",
-      "sshUrl": "git@github.com:alphagov/korny-test-repo.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-stub-idp-federation-config",
-    "githubData": {
-      "description": "Federation config for ida-stub-idp",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-stub-idp-federation-config",
-      "sshUrl": "git@github.com:alphagov/verify-stub-idp-federation-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-ci-spike",
-    "githubData": {
-      "description": "spiking out CI alternatives",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-ci-spike",
-      "sshUrl": "git@github.com:alphagov/verify-ci-spike.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-architecture",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-architecture",
-      "sshUrl": "git@github.com:alphagov/verify-architecture.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "luigi-get-rp-data",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/luigi-get-rp-data",
-      "sshUrl": "git@github.com:alphagov/luigi-get-rp-data.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-spike-travis-ci",
-    "githubData": {
-      "description": "Spike and prototype code for evaluating Travis CI",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-spike-travis-ci",
-      "sshUrl": "git@github.com:alphagov/verify-spike-travis-ci.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-local-startup",
-    "githubData": {
-      "description": "Utilities to run the Verify Hub and stubs locally",
+      "description": "Automated user-level tests for the eIDAS reference code",
       "isFork": false,
       "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-local-startup",
-      "sshUrl": "git@github.com:alphagov/verify-local-startup.git",
+      "url": "https://github.com/alphagov/verify-eidas-reference-acceptance-tests",
+      "sshUrl": "git@github.com:alphagov/verify-eidas-reference-acceptance-tests.git",
       "topics": [
         "verify"
       ]
@@ -1874,376 +1148,15 @@
     }
   },
   {
-    "name": "eidas-beta-plan",
+    "name": "verify-eidas-trust-anchor",
     "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/eidas-beta-plan",
-      "sshUrl": "git@github.com:alphagov/eidas-beta-plan.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-interaction-diagrams-config",
-    "githubData": {
-      "description": "Configuration for use with interaction-diagrams",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-interaction-diagrams-config",
-      "sshUrl": "git@github.com:alphagov/verify-interaction-diagrams-config.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-eidas-governikus-middleware",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-eidas-governikus-middleware",
-      "sshUrl": "git@github.com:alphagov/verify-eidas-governikus-middleware.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-data-pipeline",
-    "githubData": {
-      "description": "Manages Analytics code that generates statistics that inform journey improvements.",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-data-pipeline",
-      "sshUrl": "git@github.com:alphagov/verify-data-pipeline.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-matching-service-adapter",
-    "githubData": {
-      "description": "Verify Matching Service Adapter",
+      "description": "Generates trust anchors as JSON Web Keys that allow MSAs and Hubs to validate European metadata.",
       "isFork": false,
       "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-matching-service-adapter",
-      "sshUrl": "git@github.com:alphagov/verify-matching-service-adapter.git",
+      "url": "https://github.com/alphagov/verify-eidas-trust-anchor",
+      "sshUrl": "git@github.com:alphagov/verify-eidas-trust-anchor.git",
       "topics": [
         "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-eidas-notification",
-    "githubData": {
-      "description": "eIDAS Notification",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-eidas-notification",
-      "sshUrl": "git@github.com:alphagov/verify-eidas-notification.git",
-      "topics": [
-        "eidas",
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-analytics-dashboard",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-analytics-dashboard",
-      "sshUrl": "git@github.com:alphagov/verify-analytics-dashboard.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-travis-pre-commit-hook",
-    "githubData": {
-      "description": "A pre-commit hook which lints .travis.yml files",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-travis-pre-commit-hook",
-      "sshUrl": "git@github.com:alphagov/verify-travis-pre-commit-hook.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-blog",
-    "githubData": {
-      "description": "Verify blog - currently unpublished.  Use the `gh-pages` branch to see _posts.",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-blog",
-      "sshUrl": "git@github.com:alphagov/verify-blog.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-yak-dashboard",
-    "githubData": {
-      "description": "🐃",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-yak-dashboard",
-      "sshUrl": "git@github.com:alphagov/verify-yak-dashboard.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-local-matching-service-example",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-local-matching-service-example",
-      "sshUrl": "git@github.com:alphagov/verify-local-matching-service-example.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-commit-to-release-calculator",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-commit-to-release-calculator",
-      "sshUrl": "git@github.com:alphagov/verify-commit-to-release-calculator.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-eidas-manifests-1.4",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-eidas-manifests-1.4",
-      "sshUrl": "git@github.com:alphagov/verify-eidas-manifests-1.4.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "connect-to-verify-prototypes",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/connect-to-verify-prototypes",
-      "sshUrl": "git@github.com:alphagov/connect-to-verify-prototypes.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-validation",
-    "githubData": {
-      "description": "A library containing validation framework for Verify",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-validation",
-      "sshUrl": "git@github.com:alphagov/verify-validation.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "dropwizard-junit-runner",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/dropwizard-junit-runner",
-      "sshUrl": "git@github.com:alphagov/dropwizard-junit-runner.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-rails-config-spike",
-    "githubData": {
-      "description": "Rewrite config in Rails, learning session",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-rails-config-spike",
-      "sshUrl": "git@github.com:alphagov/verify-rails-config-spike.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-hub",
-    "githubData": {
-      "description": "Verify Hub Microservices",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-hub",
-      "sshUrl": "git@github.com:alphagov/verify-hub.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-hub-wiki",
-    "githubData": {
-      "description": "Verify Hub Wiki",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-hub-wiki",
-      "sshUrl": "git@github.com:alphagov/verify-hub-wiki.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-global-prototype",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-global-prototype",
-      "sshUrl": "git@github.com:alphagov/verify-global-prototype.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-lms-poc",
-    "githubData": {
-      "description": "An example proof of concept of the local matching service for verify. Not for production.",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-lms-poc",
-      "sshUrl": "git@github.com:alphagov/verify-lms-poc.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "connect-to-verify-value-stream",
-    "githubData": {
-      "description": "A tool for visualising the Connecting to Verfify process",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/connect-to-verify-value-stream",
-      "sshUrl": "git@github.com:alphagov/connect-to-verify-value-stream.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-build-docker",
-    "githubData": {
-      "description": "Dockerfiles used when building Verify",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-build-docker",
-      "sshUrl": "git@github.com:alphagov/verify-build-docker.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "visual-perform-data",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/visual-perform-data",
-      "sshUrl": "git@github.com:alphagov/visual-perform-data.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-analytics-visualizer",
-    "githubData": {
-      "description": "WIP - a quick and simple way to visualize data from Piwik.",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-analytics-visualizer",
-      "sshUrl": "git@github.com:alphagov/verify-analytics-visualizer.git",
-      "topics": [
-
       ]
     },
     "flags": {
@@ -2300,13 +1213,13 @@
     }
   },
   {
-    "name": "verify-eidas-proxy-node-infrastructure",
+    "name": "verify-event-sink-app-config",
     "githubData": {
-      "description": "Architectural Design Records and Configuration for the  Verify eIDAS Proxy Node Infrastructure",
+      "description": "App config for Event-Sink app",
       "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-eidas-proxy-node-infrastructure",
-      "sshUrl": "git@github.com:alphagov/verify-eidas-proxy-node-infrastructure.git",
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-event-sink-app-config",
+      "sshUrl": "git@github.com:alphagov/verify-event-sink-app-config.git",
       "topics": [
         "verify"
       ]
@@ -2315,13 +1228,761 @@
     }
   },
   {
-    "name": "verify-eidas-trust-anchor",
+    "name": "verify-event-store-schema",
     "githubData": {
-      "description": "Generates trust anchors as JSON Web Keys that allow MSAs and Hubs to validate European metadata.",
+      "description": null,
       "isFork": false,
       "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-eidas-trust-anchor",
-      "sshUrl": "git@github.com:alphagov/verify-eidas-trust-anchor.git",
+      "url": "https://github.com/alphagov/verify-event-store-schema",
+      "sshUrl": "git@github.com:alphagov/verify-event-store-schema.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-fabric",
+    "githubData": {
+      "description": " Fabric for Verify ",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-fabric",
+      "sshUrl": "git@github.com:alphagov/verify-fabric.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-fake-idps",
+    "githubData": {
+      "description": null,
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-fake-idps",
+      "sshUrl": "git@github.com:alphagov/verify-fake-idps.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-frontend",
+    "githubData": {
+      "description": "The frontend service for GOV.UK Verify",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-frontend",
+      "sshUrl": "git@github.com:alphagov/verify-frontend.git",
+      "topics": [
+        "frontend",
+        "verify"
+      ]
+    },
+    "flags": {
+      "isVerifyCoreRepo": true
+    }
+  },
+  {
+    "name": "verify-frontend-api",
+    "githubData": {
+      "description": "Backend for verify-frontend (deprecating)",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-frontend-api",
+      "sshUrl": "git@github.com:alphagov/verify-frontend-api.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-frontend-api-config",
+    "githubData": {
+      "description": "Configuration for Verify Frontend API (to be deprecated)",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-frontend-api-config",
+      "sshUrl": "git@github.com:alphagov/verify-frontend-api-config.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-frontend-app-config",
+    "githubData": {
+      "description": "App config for the Verify Rails frontend",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-frontend-app-config",
+      "sshUrl": "git@github.com:alphagov/verify-frontend-app-config.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-frontend-federation-config",
+    "githubData": {
+      "description": "Federation configuration for the Verify frontend",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-frontend-federation-config",
+      "sshUrl": "git@github.com:alphagov/verify-frontend-federation-config.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+      "isVerifyCoreRepo": true
+    }
+  },
+  {
+    "name": "verify-frontend-meta-package",
+    "githubData": {
+      "description": "Meta package for Verify frontend",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-frontend-meta-package",
+      "sshUrl": "git@github.com:alphagov/verify-frontend-meta-package.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-gh-migration",
+    "githubData": {
+      "description": "Github migration stuff",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-gh-migration",
+      "sshUrl": "git@github.com:alphagov/verify-gh-migration.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-github-migrator",
+    "githubData": {
+      "description": "Migration tooling for moving Verify Github Enterprise repositories to Github.com",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-github-migrator",
+      "sshUrl": "git@github.com:alphagov/verify-github-migrator.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-global-prototype",
+    "githubData": {
+      "description": null,
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-global-prototype",
+      "sshUrl": "git@github.com:alphagov/verify-global-prototype.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-hub",
+    "githubData": {
+      "description": "Verify Hub Microservices",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-hub",
+      "sshUrl": "git@github.com:alphagov/verify-hub.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+      "isVerifyCoreRepo": true
+    }
+  },
+  {
+    "name": "verify-hub-analytics",
+    "githubData": {
+      "description": " Containerised Analytics infrastructure for Verify Hub. Currently uses Convox, ECS and ",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-hub-analytics",
+      "sshUrl": "git@github.com:alphagov/verify-hub-analytics.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-hub-federation-config",
+    "githubData": {
+      "description": "Verify Hub federation configuration",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-hub-federation-config",
+      "sshUrl": "git@github.com:alphagov/verify-hub-federation-config.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+      "isVerifyCoreRepo": true
+    }
+  },
+  {
+    "name": "verify-hub-saml",
+    "githubData": {
+      "description": "Verify Hub-specific SAML behaviours",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-hub-saml",
+      "sshUrl": "git@github.com:alphagov/verify-hub-saml.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-hub-wiki",
+    "githubData": {
+      "description": "Verify Hub Wiki",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-hub-wiki",
+      "sshUrl": "git@github.com:alphagov/verify-hub-wiki.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-il3-laptop-bootstrap",
+    "githubData": {
+      "description": null,
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-il3-laptop-bootstrap",
+      "sshUrl": "git@github.com:alphagov/verify-il3-laptop-bootstrap.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-interaction-diagrams-config",
+    "githubData": {
+      "description": "Configuration for use with interaction-diagrams",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-interaction-diagrams-config",
+      "sshUrl": "git@github.com:alphagov/verify-interaction-diagrams-config.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-jenkins-config-ci-development",
+    "githubData": {
+      "description": "Jenkins SCM configuration sync.",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-jenkins-config-ci-development",
+      "sshUrl": "git@github.com:alphagov/verify-jenkins-config-ci-development.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-jenkins-config-smoketester-development",
+    "githubData": {
+      "description": " Jenkins config for Verify smoke tests ",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-jenkins-config-smoketester-development",
+      "sshUrl": "git@github.com:alphagov/verify-jenkins-config-smoketester-development.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-jenkins-job-builder",
+    "githubData": {
+      "description": "Verify Jenkins Job Builder configuration",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-jenkins-job-builder",
+      "sshUrl": "git@github.com:alphagov/verify-jenkins-job-builder.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-joint-versions",
+    "githubData": {
+      "description": null,
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-joint-versions",
+      "sshUrl": "git@github.com:alphagov/verify-joint-versions.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-keystore",
+    "githubData": {
+      "description": " Safe storage of IDA keys ",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-keystore",
+      "sshUrl": "git@github.com:alphagov/verify-keystore.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-lms-poc",
+    "githubData": {
+      "description": "An example proof of concept of the local matching service for verify. Not for production.",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-lms-poc",
+      "sshUrl": "git@github.com:alphagov/verify-lms-poc.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-local-dashboard",
+    "githubData": {
+      "description": "A mock up of a performance monitoring dashboard for a local authority service",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-local-dashboard",
+      "sshUrl": "git@github.com:alphagov/verify-local-dashboard.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-local-matching-service-example",
+    "githubData": {
+      "description": null,
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-local-matching-service-example",
+      "sshUrl": "git@github.com:alphagov/verify-local-matching-service-example.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-local-pattern-docs",
+    "githubData": {
+      "description": "Documentation for Local Government Service Patterns",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-local-pattern-docs",
+      "sshUrl": "git@github.com:alphagov/verify-local-pattern-docs.git",
+      "topics": [
+        "tech-docs-template",
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-local-patterns",
+    "githubData": {
+      "description": "Project board - https://github.com/alphagov/verify-local-patterns/projects/1    |||||     This is a prototype of some content that will be included in the GOV.UK Service Toolkit about the best practice for councils to deliver two services - parking permits and concessionary travel. The repo also includes a working prototype of both services which follows the guidance, as delivered by the fictional council of Argleton.",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-local-patterns",
+      "sshUrl": "git@github.com:alphagov/verify-local-patterns.git",
+      "topics": [
+        "council",
+        "gov",
+        "prototype-kit",
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-local-startup",
+    "githubData": {
+      "description": "Utilities to run the Verify Hub and stubs locally",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-local-startup",
+      "sshUrl": "git@github.com:alphagov/verify-local-startup.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+      "isVerifyCoreRepo": true
+    }
+  },
+  {
+    "name": "verify-matching-service-adapter",
+    "githubData": {
+      "description": "Verify Matching Service Adapter",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-matching-service-adapter",
+      "sshUrl": "git@github.com:alphagov/verify-matching-service-adapter.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+      "isVerifyCoreRepo": true
+    }
+  },
+  {
+    "name": "verify-metadata",
+    "githubData": {
+      "description": "Verify SAML metadata sources",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-metadata",
+      "sshUrl": "git@github.com:alphagov/verify-metadata.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+      "isVerifyCoreRepo": true
+    }
+  },
+  {
+    "name": "verify-metadata-generator",
+    "githubData": {
+      "description": "Gem to generate Verify SAML metadata",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-metadata-generator",
+      "sshUrl": "git@github.com:alphagov/verify-metadata-generator.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-onboarding-guide-shared",
+    "githubData": {
+      "description": null,
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-onboarding-guide-shared",
+      "sshUrl": "git@github.com:alphagov/verify-onboarding-guide-shared.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-onboarding-metadata",
+    "githubData": {
+      "description": "Private configuration for verify onboarding projects",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-onboarding-metadata",
+      "sshUrl": "git@github.com:alphagov/verify-onboarding-metadata.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-onboarding-prototypes",
+    "githubData": {
+      "description": "A standard implementation of a SAML service provider that works with GOV.UK Verify :crown: :ballot_box_with_check:",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-onboarding-prototypes",
+      "sshUrl": "git@github.com:alphagov/verify-onboarding-prototypes.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-onboarding-reference-data",
+    "githubData": {
+      "description": null,
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-onboarding-reference-data",
+      "sshUrl": "git@github.com:alphagov/verify-onboarding-reference-data.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-packages",
+    "githubData": {
+      "description": " Builds custom ubuntu packages used for IDA systems ",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-packages",
+      "sshUrl": "git@github.com:alphagov/verify-packages.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-pki-certs",
+    "githubData": {
+      "description": "Verify PKI certificates",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-pki-certs",
+      "sshUrl": "git@github.com:alphagov/verify-pki-certs.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-policy-app-config",
+    "githubData": {
+      "description": "Application config for Policy app",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-policy-app-config",
+      "sshUrl": "git@github.com:alphagov/verify-policy-app-config.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-product-page",
+    "githubData": {
+      "description": "Product landing page for GOV.UK Verify",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-product-page",
+      "sshUrl": "git@github.com:alphagov/verify-product-page.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-puppet",
+    "githubData": {
+      "description": "Puppet code for GOV.UK Verify",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-puppet",
+      "sshUrl": "git@github.com:alphagov/verify-puppet.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+      "isVerifyCoreRepo": true
+    }
+  },
+  {
+    "name": "verify-rails-config-spike",
+    "githubData": {
+      "description": "Rewrite config in Rails, learning session",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-rails-config-spike",
+      "sshUrl": "git@github.com:alphagov/verify-rails-config-spike.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-rd-test-rp",
+    "githubData": {
+      "description": null,
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-rd-test-rp",
+      "sshUrl": "git@github.com:alphagov/verify-rd-test-rp.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-release-automation",
+    "githubData": {
+      "description": "🚂 The Verify Release Train",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-release-automation",
+      "sshUrl": "git@github.com:alphagov/verify-release-automation.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-release-encourager",
+    "githubData": {
+      "description": "Encourage people to release their code",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-release-encourager",
+      "sshUrl": "git@github.com:alphagov/verify-release-encourager.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-release-logs",
+    "githubData": {
+      "description": "Logs of releases generated from the verify-release-automation tool",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-release-logs",
+      "sshUrl": "git@github.com:alphagov/verify-release-logs.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-release-notes",
+    "githubData": {
+      "description": "Verify Release Notes",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-release-notes",
+      "sshUrl": "git@github.com:alphagov/verify-release-notes.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-release-notes-generator",
+    "githubData": {
+      "description": "Verify Release Notes Generator",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-release-notes-generator",
+      "sshUrl": "git@github.com:alphagov/verify-release-notes-generator.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-release-visualisation",
+    "githubData": {
+      "description": "Visualisations of Verify releases over time",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-release-visualisation",
+      "sshUrl": "git@github.com:alphagov/verify-release-visualisation.git",
       "topics": [
         "verify"
       ]
@@ -2345,58 +2006,211 @@
     }
   },
   {
-    "name": "verify-artifactory-whitelist",
+    "name": "verify-relying-party-monitoring",
+    "githubData": {
+      "description": "Automated monitoring of RP start pages",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-relying-party-monitoring",
+      "sshUrl": "git@github.com:alphagov/verify-relying-party-monitoring.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-restore-backups",
     "githubData": {
       "description": null,
       "isFork": false,
       "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-artifactory-whitelist",
-      "sshUrl": "git@github.com:alphagov/verify-artifactory-whitelist.git",
+      "url": "https://github.com/alphagov/verify-restore-backups",
+      "sshUrl": "git@github.com:alphagov/verify-restore-backups.git",
       "topics": [
-
+        "verify"
       ]
     },
     "flags": {
     }
   },
   {
-    "name": "verify-eidas-metadata-aggregator",
+    "name": "verify-rp-environment-config-form",
     "githubData": {
-      "description": "Script to aggregate metadata from EU countries",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-eidas-metadata-aggregator",
-      "sshUrl": "git@github.com:alphagov/verify-eidas-metadata-aggregator.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-data-pipeline-config",
-    "githubData": {
-      "description": "Holds configuration data to help verify data pipeline run in production",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-data-pipeline-config",
-      "sshUrl": "git@github.com:alphagov/verify-data-pipeline-config.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-event-store-schema",
-    "githubData": {
-      "description": null,
+      "description": " :page_with_curl: The form for relying parties to provide Verify with environment configuration",
       "isFork": false,
       "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-event-store-schema",
-      "sshUrl": "git@github.com:alphagov/verify-event-store-schema.git",
+      "url": "https://github.com/alphagov/verify-rp-environment-config-form",
+      "sshUrl": "git@github.com:alphagov/verify-rp-environment-config-form.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-rp-shibboleth",
+    "githubData": {
+      "description": "Vagrantfile and configuration to spin up a new RP Shibboleth",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-rp-shibboleth",
+      "sshUrl": "git@github.com:alphagov/verify-rp-shibboleth.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-rp-simplesamlphp",
+    "githubData": {
+      "description": "Test relying party using simplesamlphp",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-rp-simplesamlphp",
+      "sshUrl": "git@github.com:alphagov/verify-rp-simplesamlphp.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-saml-engine-app-config",
+    "githubData": {
+      "description": "Saml Engine's application config",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-saml-engine-app-config",
+      "sshUrl": "git@github.com:alphagov/verify-saml-engine-app-config.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-saml-libs",
+    "githubData": {
+      "description": "Verify SAML Libraries 📚",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-saml-libs",
+      "sshUrl": "git@github.com:alphagov/verify-saml-libs.git",
+      "topics": [
+        "saml",
+        "verify"
+      ]
+    },
+    "flags": {
+      "isVerifyCoreRepo": true
+    }
+  },
+  {
+    "name": "verify-saml-proxy-app-config",
+    "githubData": {
+      "description": "Configuration for Verify saml-proxy service",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-saml-proxy-app-config",
+      "sshUrl": "git@github.com:alphagov/verify-saml-proxy-app-config.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-saml-soap-proxy-app-config",
+    "githubData": {
+      "description": "Configuration for Verify saml-soap-proxy service",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-saml-soap-proxy-app-config",
+      "sshUrl": "git@github.com:alphagov/verify-saml-soap-proxy-app-config.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-sample-local-matching-services",
+    "githubData": {
+      "description": "A variety of sample local matching services in various languages",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-sample-local-matching-services",
+      "sshUrl": "git@github.com:alphagov/verify-sample-local-matching-services.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-service-provider",
+    "githubData": {
+      "description": ":crown: :ballot_box_with_check: The easiest way to connect to GOV.UK Verify",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-service-provider",
+      "sshUrl": "git@github.com:alphagov/verify-service-provider.git",
+      "topics": [
+        "dropwizard",
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-service-provider-user-research",
+    "githubData": {
+      "description": "Code used for user research regarding verify service provider",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-service-provider-user-research",
+      "sshUrl": "git@github.com:alphagov/verify-service-provider-user-research.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-shibboleth-sp-example",
+    "githubData": {
+      "description": "An example configuration for shibboleth instance that works with Verify.",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-shibboleth-sp-example",
+      "sshUrl": "git@github.com:alphagov/verify-shibboleth-sp-example.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-spike-travis-ci",
+    "githubData": {
+      "description": "Spike and prototype code for evaluating Travis CI",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-spike-travis-ci",
+      "sshUrl": "git@github.com:alphagov/verify-spike-travis-ci.git",
       "topics": [
 
       ]
@@ -2405,13 +2219,140 @@
     }
   },
   {
-    "name": "verify-data-schemas",
+    "name": "verify-ssh-shell-completions",
     "githubData": {
-      "description": "YAML specifications for Verify data",
+      "description": ":shell: SSH shell completions, powered by Ansible :shell:",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-ssh-shell-completions",
+      "sshUrl": "git@github.com:alphagov/verify-ssh-shell-completions.git",
+      "topics": [
+        "shell-completion",
+        "ssh",
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-stub-idp",
+    "githubData": {
+      "description": "Stub Identity Provider and stub country used for testing GOV.UK Verify",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-stub-idp",
+      "sshUrl": "git@github.com:alphagov/verify-stub-idp.git",
+      "topics": [
+        "idp",
+        "stub",
+        "verify"
+      ]
+    },
+    "flags": {
+      "isVerifyCoreRepo": true
+    }
+  },
+  {
+    "name": "verify-stub-idp-federation-config",
+    "githubData": {
+      "description": "Federation config for ida-stub-idp",
       "isFork": false,
       "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-data-schemas",
-      "sshUrl": "git@github.com:alphagov/verify-data-schemas.git",
+      "url": "https://github.com/alphagov/verify-stub-idp-federation-config",
+      "sshUrl": "git@github.com:alphagov/verify-stub-idp-federation-config.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+      "isVerifyCoreRepo": true
+    }
+  },
+  {
+    "name": "verify-stub-idp-saml",
+    "githubData": {
+      "description": "SAML library for Stub IDP",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-stub-idp-saml",
+      "sshUrl": "git@github.com:alphagov/verify-stub-idp-saml.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-stub-matching-service",
+    "githubData": {
+      "description": "This is a stub implementation of the local matching service required by RP's to integrate into GOV.UK Verify",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-stub-matching-service",
+      "sshUrl": "git@github.com:alphagov/verify-stub-matching-service.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-team-manual",
+    "githubData": {
+      "description": null,
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-team-manual",
+      "sshUrl": "git@github.com:alphagov/verify-team-manual.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-tech-docs",
+    "githubData": {
+      "description": "Technical documentation for GOV.UK Verify",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-tech-docs",
+      "sshUrl": "git@github.com:alphagov/verify-tech-docs.git",
+      "topics": [
+        "tech-docs-template",
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-tech-team",
+    "githubData": {
+      "description": "Data about Verify team members",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-tech-team",
+      "sshUrl": "git@github.com:alphagov/verify-tech-team.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-terraform",
+    "githubData": {
+      "description": "Terraform code for GOV.UK Verify infrastructure",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-terraform",
+      "sshUrl": "git@github.com:alphagov/verify-terraform.git",
       "topics": [
         "verify"
       ]
@@ -2435,15 +2376,32 @@
     }
   },
   {
-    "name": "verify-saml-libs",
+    "name": "verify-test-rp",
     "githubData": {
-      "description": "Verify SAML Libraries 📚",
+      "description": "Verify Test Relying Party",
       "isFork": false,
       "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-saml-libs",
-      "sshUrl": "git@github.com:alphagov/verify-saml-libs.git",
+      "url": "https://github.com/alphagov/verify-test-rp",
+      "sshUrl": "git@github.com:alphagov/verify-test-rp.git",
       "topics": [
-        "saml",
+        "relying-party",
+        "test",
+        "verify"
+      ]
+    },
+    "flags": {
+      "isVerifyCoreRepo": true
+    }
+  },
+  {
+    "name": "verify-test-utils",
+    "githubData": {
+      "description": "Libraries to help with writing Java Unit/Integration Tests",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-test-utils",
+      "sshUrl": "git@github.com:alphagov/verify-test-utils.git",
+      "topics": [
         "verify"
       ]
     },
@@ -2451,62 +2409,121 @@
     }
   },
   {
-    "name": "re-infra-release-automation",
+    "name": "verify-token-service",
+    "githubData": {
+      "description": "Verify Token Service",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-token-service",
+      "sshUrl": "git@github.com:alphagov/verify-token-service.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-token-service-app-config",
+    "githubData": {
+      "description": "Token Service app config",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-token-service-app-config",
+      "sshUrl": "git@github.com:alphagov/verify-token-service-app-config.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-travis-pre-commit-hook",
+    "githubData": {
+      "description": "A pre-commit hook which lints .travis.yml files",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-travis-pre-commit-hook",
+      "sshUrl": "git@github.com:alphagov/verify-travis-pre-commit-hook.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-utils-libs",
+    "githubData": {
+      "description": "Libraries used across multiple Verify projects",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-utils-libs",
+      "sshUrl": "git@github.com:alphagov/verify-utils-libs.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+      "isVerifyCoreRepo": true
+    }
+  },
+  {
+    "name": "verify-validation",
+    "githubData": {
+      "description": "A library containing validation framework for Verify",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-validation",
+      "sshUrl": "git@github.com:alphagov/verify-validation.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-yak-dashboard",
+    "githubData": {
+      "description": "🐃",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-yak-dashboard",
+      "sshUrl": "git@github.com:alphagov/verify-yak-dashboard.git",
+      "topics": [
+
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "verify-yakking-tools",
+    "githubData": {
+      "description": "Utilities for Verify yaks",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-yakking-tools",
+      "sshUrl": "git@github.com:alphagov/verify-yakking-tools.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
+    "name": "visual-perform-data",
     "githubData": {
       "description": null,
       "isFork": false,
       "isPrivate": true,
-      "url": "https://github.com/alphagov/re-infra-release-automation",
-      "sshUrl": "git@github.com:alphagov/re-infra-release-automation.git",
+      "url": "https://github.com/alphagov/visual-perform-data",
+      "sshUrl": "git@github.com:alphagov/visual-perform-data.git",
       "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-stub-idp",
-    "githubData": {
-      "description": "Stub Identity Provider and stub country used for testing GOV.UK Verify",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-stub-idp",
-      "sshUrl": "git@github.com:alphagov/verify-stub-idp.git",
-      "topics": [
-        "idp",
-        "stub",
         "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "re-infra-release-logs",
-    "githubData": {
-      "description": "Logging location for the terraform release automation",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/re-infra-release-logs",
-      "sshUrl": "git@github.com:alphagov/re-infra-release-logs.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "puppet-collectd",
-    "githubData": {
-      "description": "Puppet module for collectd",
-      "isFork": true,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/puppet-collectd",
-      "sshUrl": "git@github.com:alphagov/puppet-collectd.git",
-      "topics": [
-
       ]
     },
     "flags": {
