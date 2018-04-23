@@ -74,7 +74,7 @@
     "github_username": "andy-paine",
     "names": ["Andy Paine"],
     "emails": [
-      "andrew.paine@digital.cabinet-office.gov.uk",
+      "andy.paine@digital.cabinet-office.gov.uk",
       "andy.paine@outlook.com"
     ]
   },
@@ -229,6 +229,15 @@
     "names": ["David Illsley"],
     "emails": [
       "david.illsley@digital.cabinet-office.gov.uk"
+    ]
+  },
+  {
+    "slack_id": "U02FL5XUS",
+    "slack_name": "davidking",
+    "github_username": "davbo",
+    "names": ["David King"],
+    "emails": [
+      "david.king@digital.cabinet-office.gov.uk"
     ]
   },
   {
@@ -950,9 +959,11 @@
   {
     "slack_id": "U1ECGM5LH",
     "slack_name": "stephengrier",
+    "github_username": "stephengrier",
     "names": ["Stephen Grier"],
     "emails": [
-      "stephen.grier@digital.cabinet-office.gov.uk"
+      "stephen.grier@digital.cabinet-office.gov.uk",
+      "git@grier.org.uk"
     ],
     "roles": [
       "infrastructure-release-approver"
@@ -1122,8 +1133,8 @@
       "yancoba.thompson@digital.cabinet-office.gov.uk"
     ]
   },
-    {
-    "slack_id": "U4WTXEEUB",
+  {
+    "slack_id": "UA56EDEP7",
     "slack_name": "rylan",
     "github_username": "rylangooch",
     "names": ["Rylan Gooch"],
