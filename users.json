@@ -1128,11 +1128,5 @@
     "emails": [
       "rylan.gooch@digital.cabinet-office.gov.uk"
     ]
-  },
-  {
-    "github_username": "ida-build-bot",
-    "slack_id": "USLACKBOT",
-    "names": ["ida-build-bot"],
-    "emails": []
   }
 ]
