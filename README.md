@@ -32,8 +32,26 @@ Team was initially populated from Slack users of the "verify*" channels, so
 probably has a number of non-verify users - this should be trimmed down
 over time.
 
-Note that matching is pretty fuzzy - if two people have the same "Names" entries,
-we'll have to tackle that problem when it happens!
+### Slack identifiers
+
+On the old slack, people could choose pretty well any name,
+and we had to work out handles to message people.
+
+Also, according to https://api.slack.com/changelog/2017-09-the-one-about-usernames we needed to move away from `@username` references - so we built a big lookup of `slack_id` values.
+
+However, on the new slack we know every user has their GDS email as their `display_name` in Slack, and it appears that `<@display_name>` works just fine.  And we no longer have easy access to slack API tokens, so for now we are going to
+go back to using the `<@display_name>` to message people.
+
+`slack_id` and `slack_name` still exist for backward compatibility, but once all scripts are updated to use `gds_name` these will be removed!
+
+### Name fields
+
+The following names are in the `users.json` file:
+
+- `gds_name` - this is the user's gds email address up to the `@` symbol.  It is also their Slack `display_name` and should be used to message people in Slack
+- `preferred_name` - this is (hopefully) the user's normal full name, and should be used to address them in scripts.
+- `names` - this is a list of names the user might have been called in Jenkins or Github or other sources.  It should be searched by scripts that want to fuzzy match users based on those names.  Currently we do exact matches - it might be a worthwhile future improvement to de-dupe these a bit by making them case insensitive and removing `_`, `.` and `-` characters before we check.
+- `slack_name` - this is deprecated, and will go away once no scripts need it.
 
 ### Roles
 
