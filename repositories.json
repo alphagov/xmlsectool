@@ -12,6 +12,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "enabled": false
+      }
     }
   },
   {
@@ -27,6 +30,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "enabled": false
+      }
     }
   },
   {
@@ -103,6 +109,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "enabled": false
+      }
     }
   },
   {
@@ -193,6 +202,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "enabled": false
+      }
     }
   },
   {
@@ -208,6 +220,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "enabled": false
+      }
     }
   },
   {
@@ -223,6 +238,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "enabled": false
+      }
     }
   },
   {
@@ -238,6 +256,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "enabled": false
+      }
     }
   },
   {
@@ -334,21 +355,6 @@
     }
   },
   {
-    "name": "korny-test-repo",
-    "githubData": {
-      "description": "Test repo for exploring Jenkins polling issues. Should not live long.",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/korny-test-repo",
-      "sshUrl": "git@github.com:alphagov/korny-test-repo.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
     "name": "luigi-get-rp-data",
     "githubData": {
       "description": null,
@@ -391,6 +397,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["connect-to-verify"]
+      }
     }
   },
   {
@@ -406,6 +415,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["connect-to-verify"]
+      }
     }
   },
   {
@@ -481,6 +493,10 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "minimumDays": 7,
+        "slackRecipients": ["verify-connecting"]
+      }
     }
   },
   {
@@ -571,6 +587,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-infrastructure"]
+      }
     }
   },
   {
@@ -586,6 +605,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "minimumDays": 7
+      }
     }
   },
   {
@@ -736,6 +758,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-infrastructure"]
+      }
     }
   },
   {
@@ -976,6 +1001,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-eidas"]
+      }
     }
   },
   {
@@ -991,6 +1019,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-eidas"]
+      }
     }
   },
   {
@@ -1006,6 +1037,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-eidas"]
+      }
     }
   },
   {
@@ -1022,6 +1056,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-eidas"]
+      }
     }
   },
   {
@@ -1037,6 +1074,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-eidas"]
+      }
     }
   },
   {
@@ -1052,6 +1092,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-eidas"]
+      }
     }
   },
   {
@@ -1068,6 +1111,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-eidas"]
+      }
     }
   },
   {
@@ -1084,6 +1130,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-eidas"]
+      }
     }
   },
   {
@@ -1099,6 +1148,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-eidas"]
+      }
     }
   },
   {
@@ -1114,6 +1166,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-eidas"]
+      }
     }
   },
   {
@@ -1129,7 +1184,10 @@
       ]
     },
     "flags": {
-      "isVerifyCoreRepo": true
+      "isVerifyCoreRepo": true,
+      "PREncourager": {
+        "slackRecipients": ["verify-eidas"]
+      }
     }
   },
   {
@@ -1145,6 +1203,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-eidas"]
+      }
     }
   },
   {
@@ -1160,6 +1221,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-eidas"]
+      }
     }
   },
   {
@@ -1175,6 +1239,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-eidas"]
+      }
     }
   },
   {
@@ -1236,7 +1303,7 @@
       "url": "https://github.com/alphagov/verify-event-store-schema",
       "sshUrl": "git@github.com:alphagov/verify-event-store-schema.git",
       "topics": [
-
+        "verify"
       ]
     },
     "flags": {
@@ -1485,6 +1552,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "minimumDays": 7
+      }
     }
   },
   {
@@ -1651,6 +1721,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "enabled": false
+      }
     }
   },
   {
@@ -1669,6 +1742,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "enabled": false
+      }
     }
   },
   {
@@ -1747,6 +1823,10 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "minimumDays": 7,
+        "slackRecipients": ["verify-connecting"]
+      }
     }
   },
   {
@@ -1762,6 +1842,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-connecting"]
+      }
     }
   },
   {
@@ -1777,6 +1860,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-connecting"]
+      }
     }
   },
   {
@@ -1792,6 +1878,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-connecting"]
+      }
     }
   },
   {
@@ -1867,7 +1956,11 @@
       ]
     },
     "flags": {
-      "isVerifyCoreRepo": true
+      "isVerifyCoreRepo": true,
+      "PREncourager": {
+        "minimumDays": 7,
+        "slackRecipients": ["verify-infrastructure"]
+      }
     }
   },
   {
@@ -2171,6 +2264,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["connect-to-verify"]
+      }
     }
   },
   {
@@ -2339,7 +2435,7 @@
       "url": "https://github.com/alphagov/verify-tech-team",
       "sshUrl": "git@github.com:alphagov/verify-tech-team.git",
       "topics": [
-
+        "verify"
       ]
     },
     "flags": {
