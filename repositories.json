@@ -398,7 +398,7 @@
     },
     "flags": {
       "PREncourager": {
-        "slackRecipients": ["connect-to-verify"]
+        "slackRecipients": ["verify-connecting"]
       }
     }
   },
@@ -416,7 +416,7 @@
     },
     "flags": {
       "PREncourager": {
-        "slackRecipients": ["connect-to-verify"]
+        "slackRecipients": ["verify-connecting"]
       }
     }
   },
@@ -2267,7 +2267,7 @@
     },
     "flags": {
       "PREncourager": {
-        "slackRecipients": ["connect-to-verify"]
+        "slackRecipients": ["verify-connecting"]
       }
     }
   },
