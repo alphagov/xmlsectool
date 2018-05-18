@@ -25,20 +25,6 @@
     "preferred_name": "Aditya Pahuja"
   },
   {
-    "slack_id": "U68U4TW2Y",
-    "slack_name": "adrian-wong",
-    "github_username": "adrianw1832",
-    "names": [
-      "Adrian Wong"
-    ],
-    "emails": [
-      "adrian.wong@digital.cabinet-office.gov.uk",
-      "awong@thoughtworks.com"
-    ],
-    "gds_name": "adrian.wong",
-    "preferred_name": "Adrian Wong"
-  },
-  {
     "slack_id": "U4JJC8SR0",
     "slack_name": "alan.carter",
     "github_username": "alan-gds",
@@ -174,20 +160,6 @@
     "preferred_name": "Anshul Sirur"
   },
   {
-    "slack_id": "U02AN2862",
-    "slack_name": "ant",
-    "github_username": "anthonylord",
-    "names": [
-      "Ant Lord",
-      "ant"
-    ],
-    "emails": [
-      "anthony.lord@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "anthony.lord",
-    "preferred_name": "Ant Lord"
-  },
-  {
     "slack_id": "U1B8W5B71",
     "slack_name": "ayodejiawoyele",
     "names": [
@@ -264,18 +236,6 @@
     ],
     "gds_name": "ciara.green",
     "preferred_name": "Ciara Green"
-  },
-  {
-    "slack_id": "U046E2XMZ",
-    "slack_name": "clairebowman",
-    "names": [
-      "clairebowman"
-    ],
-    "emails": [
-      "claire.bowman@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "claire.bowman",
-    "preferred_name": "Clairebowman"
   },
   {
     "slack_id": "U6R8F9JFM",
@@ -506,35 +466,6 @@
     ],
     "gds_name": "howard.staple",
     "preferred_name": "Howie"
-  },
-  {
-    "slack_id": "U4E0WU21E",
-    "slack_name": "hristo.georgiev_gds",
-    "github_username": "georgievh",
-    "names": [
-      "Hristo Georgiev",
-      "hristo georgiev gds"
-    ],
-    "emails": [
-      "hristo.georgiev@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "hristo.georgiev",
-    "preferred_name": "Hristo Georgiev"
-  },
-  {
-    "slack_id": "U69JQC458",
-    "slack_name": "hughe",
-    "github_username": "hugh-emerson",
-    "names": [
-      "Hugh Emerson",
-      "hughe"
-    ],
-    "emails": [
-      "hugh.emerson@digital.cabinet-office.gov.uk",
-      "hugh.emerson@softwire.com"
-    ],
-    "gds_name": "hugh.emerson",
-    "preferred_name": "Hugh Emerson"
   },
   {
     "slack_id": "U48RVBAHG",
@@ -841,20 +772,6 @@
     "preferred_name": "Kay Dale"
   },
   {
-    "slack_id": "U710HKUCE",
-    "slack_name": "keerthana",
-    "github_username": "SKeerthana",
-    "names": [
-      "Keerthana Subramanian",
-      "keerthana"
-    ],
-    "emails": [
-      "keerthana.subramanian@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "keerthana.subramanian",
-    "preferred_name": "Keerthana Subramanian"
-  },
-  {
     "slack_id": "U4VCJSF70",
     "slack_name": "kevin.garwood",
     "github_username": "kgarwood",
@@ -1085,21 +1002,6 @@
     "preferred_name": "Michael Thomas"
   },
   {
-    "slack_id": "U6C7DUM5X",
-    "slack_name": "mikewalker",
-    "github_username": "MichaelWalker",
-    "names": [
-      "michael walker",
-      "mikewalker"
-    ],
-    "emails": [
-      "michael.walker@digital.cabinet-office.gov.uk",
-      "michael.walker@softwire.com"
-    ],
-    "gds_name": "michael.walker",
-    "preferred_name": "Michael walker"
-  },
-  {
     "slack_id": "U53HLH3SM",
     "slack_name": "minno.dang",
     "github_username": "minhngocd",
@@ -1166,19 +1068,6 @@
     "preferred_name": "Nick Forrester"
   },
   {
-    "slack_id": "U1Y635DAL",
-    "slack_name": "nicolahughes",
-    "github_username": "DataMinerUK",
-    "names": [
-      "nicolahughes"
-    ],
-    "emails": [
-      "nicola.hughes@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "nicola.hughes",
-    "preferred_name": "Nicolahughes"
-  },
-  {
     "slack_id": "U046CL259",
     "slack_name": "ollyharper",
     "names": [
@@ -1242,20 +1131,6 @@
     ],
     "gds_name": "peter.chamberlin",
     "preferred_name": "Peter Chamberlin"
-  },
-  {
-    "slack_id": "U68V728CQ",
-    "slack_name": "rachael_booth",
-    "github_username": "RachaelBooth",
-    "names": [
-      "rachael booth",
-      "rachael_booth"
-    ],
-    "emails": [
-      "rachael.booth@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "rachael.booth",
-    "preferred_name": "Rachael Booth"
   },
   {
     "slack_id": "U7C2228N9",
@@ -1404,21 +1279,6 @@
     ],
     "gds_name": "simon.hudson",
     "preferred_name": "Simon Hudson"
-  },
-  {
-    "slack_id": "U69PUKQRK",
-    "slack_name": "simonwilson",
-    "github_username": "swilson96",
-    "names": [
-      "Simon Wilson",
-      "simonwilson"
-    ],
-    "emails": [
-      "simon.wilson@digital.cabinet-office.gov.uk",
-      "simon.wilson@softwire.com"
-    ],
-    "gds_name": "simon.wilson",
-    "preferred_name": "Simon Wilson"
   },
   {
     "slack_id": "UAD4T9S64",
