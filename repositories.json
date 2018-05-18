@@ -606,9 +606,9 @@
     },
     "flags": {
       "PREncourager": {
-        "minimumDays": 21,
-        "warnAfterDays": 60,
-        "closeAfterDays": 70
+        "minimumDays": 90,
+        "warnAfterDays": 180,
+        "closeAfterDays": 190
       }
     }
   },
