@@ -140,11 +140,13 @@ Note the default for the PREncourager is *true* - if you want to disable the enc
 change any of the following settings, you need to add a `"PREncourager"` section with
 `"enabled": false` or any other changes from the default.
 
-Defaults are:
+Defaults (at time of writing) are:
 ```
 "PREncourager": {
   "enabled": true,
   "minimumDays": 1,
+  "warnAfterDays": 30,
+  "closeAfterDays": 45
   "slackRecipients": ["verify-tech"]
 }
 ```
