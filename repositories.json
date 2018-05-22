@@ -1324,6 +1324,9 @@
       ]
     },
     "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-infrastructure"]
+      }
     }
   },
   {
