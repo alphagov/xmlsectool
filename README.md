@@ -124,6 +124,35 @@ be automatically updating this once someone writes the code to do so.
 
 Everything under `flags` or any other top-level data is manually added.
 
+### Specific flags
+
+#### isVerifyCoreRepo
+
+This flag is used by the [Verify build scripts](https://github.com/alphagov/verify-build-scripts) to
+work out which repos to clone for a standard developer.
+
+#### PREncourager
+
+This is used by [the release encourager bot](https://github.com/alphagov/verify-release-encourager)
+to know which repositories to warn users about.
+
+Note the default for the PREncourager is *true* - if you want to disable the encourager or
+change any of the following settings, you need to add a `"PREncourager"` section with
+`"enabled": false` or any other changes from the default.
+
+Defaults (at time of writing) are:
+```
+"PREncourager": {
+  "enabled": true,
+  "minimumDays": 1,
+  "warnAfterDays": 30,
+  "closeAfterDays": 45
+  "slackRecipients": ["verify-tech"]
+}
+```
+
+See [the readme of the release encourager](https://github.com/alphagov/verify-release-encourager#readme) for more up-to-date information.
+
 ## Tools
 
 These should be in the 'scripts' directory to keep the top level directory clean
