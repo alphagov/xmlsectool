@@ -42,7 +42,8 @@ Also, according to https://api.slack.com/changelog/2017-09-the-one-about-usernam
 However, on the new slack we know every user has their GDS email as their `display_name` in Slack, and it appears that `<@display_name>` works just fine.  And we no longer have easy access to slack API tokens, so for now we are going to
 go back to using the `<@display_name>` to message people.
 
-`slack_id` and `slack_name` still exist for backward compatibility, but once all scripts are updated to use `gds_name` these will be removed!
+`slack_id` and `slack_name` have now been removed - if slack stops working with `<@gds_id>` someone will have to work
+out how to re-create them from the slack API.
 
 ### Name fields
 
@@ -51,7 +52,6 @@ The following names are in the `users.json` file:
 - `gds_name` - this is the user's gds email address up to the `@` symbol.  It is also their Slack `display_name` and should be used to message people in Slack
 - `preferred_name` - this is (hopefully) the user's normal full name, and should be used to address them in scripts.
 - `names` - this is a list of names the user might have been called in Jenkins or Github or other sources.  It should be searched by scripts that want to fuzzy match users based on those names.  Currently we do exact matches - it might be a worthwhile future improvement to de-dupe these a bit by making them case insensitive and removing `_`, `.` and `-` characters before we check.
-- `slack_name` - this is deprecated, and will go away once no scripts need it.
 
 ### Roles
 
