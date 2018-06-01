@@ -2571,21 +2571,6 @@
     }
   },
   {
-    "name": "verify-validation",
-    "githubData": {
-      "description": "A library containing validation framework for Verify",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-validation",
-      "sshUrl": "git@github.com:alphagov/verify-validation.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
     "name": "verify-yak-dashboard",
     "githubData": {
       "description": "🐃",
