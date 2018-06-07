@@ -76,6 +76,17 @@
     "preferred_name": "Amrit Sidhu"
   },
   {
+    "github_username": "bravegrape",
+    "names": [
+      "Andrea Szollossi"
+    ],
+    "emails": [
+      "andrea.szollossi@digital.cabinet-office.gov.uk"
+    ],
+    "gds_name": "andrea.szollossi",
+    "preferred_name": "Andrea Szollossi"
+  },
+  {
     "github_username": "andy-paine",
     "names": [
       "Andy Paine"
@@ -1009,16 +1020,6 @@
     ],
     "gds_name": "rory.irvine",
     "preferred_name": "Rory Irvine"
-  },
-  {
-    "names": [
-      "rmaclean"
-    ],
-    "emails": [
-      "ruth.maclean@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "ruth.maclean",
-    "preferred_name": "Rmaclean"
   },
   {
     "names": [
