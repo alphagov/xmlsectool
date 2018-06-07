@@ -42,7 +42,8 @@ Also, according to https://api.slack.com/changelog/2017-09-the-one-about-usernam
 However, on the new slack we know every user has their GDS email as their `display_name` in Slack, and it appears that `<@display_name>` works just fine.  And we no longer have easy access to slack API tokens, so for now we are going to
 go back to using the `<@display_name>` to message people.
 
-`slack_id` and `slack_name` still exist for backward compatibility, but once all scripts are updated to use `gds_name` these will be removed!
+`slack_id` and `slack_name` have now been removed - if slack stops working with `<@gds_id>` someone will have to work
+out how to re-create them from the slack API.
 
 ### Name fields
 
@@ -51,7 +52,6 @@ The following names are in the `users.json` file:
 - `gds_name` - this is the user's gds email address up to the `@` symbol.  It is also their Slack `display_name` and should be used to message people in Slack
 - `preferred_name` - this is (hopefully) the user's normal full name, and should be used to address them in scripts.
 - `names` - this is a list of names the user might have been called in Jenkins or Github or other sources.  It should be searched by scripts that want to fuzzy match users based on those names.  Currently we do exact matches - it might be a worthwhile future improvement to de-dupe these a bit by making them case insensitive and removing `_`, `.` and `-` characters before we check.
-- `slack_name` - this is deprecated, and will go away once no scripts need it.
 
 ### Roles
 
@@ -123,6 +123,35 @@ Everything under `githubData` is extracted from github - in future we should
 be automatically updating this once someone writes the code to do so.
 
 Everything under `flags` or any other top-level data is manually added.
+
+### Specific flags
+
+#### isVerifyCoreRepo
+
+This flag is used by the [Verify build scripts](https://github.com/alphagov/verify-build-scripts) to
+work out which repos to clone for a standard developer.
+
+#### PREncourager
+
+This is used by [the release encourager bot](https://github.com/alphagov/verify-release-encourager)
+to know which repositories to warn users about.
+
+Note the default for the PREncourager is *true* - if you want to disable the encourager or
+change any of the following settings, you need to add a `"PREncourager"` section with
+`"enabled": false` or any other changes from the default.
+
+Defaults (at time of writing) are:
+```
+"PREncourager": {
+  "enabled": true,
+  "minimumDays": 1,
+  "warnAfterDays": 30,
+  "closeAfterDays": 45
+  "slackRecipients": ["verify-tech"]
+}
+```
+
+See [the readme of the release encourager](https://github.com/alphagov/verify-release-encourager#readme) for more up-to-date information.
 
 ## Tools
 

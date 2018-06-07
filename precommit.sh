@@ -50,8 +50,8 @@ function check_unique_array_field() {
   fi
 }
 
-check_unique_field 'users.json' 'slack_id'
-check_unique_field 'users.json' 'slack_name'
+check_unique_field 'users.json' 'gds_name'
+check_unique_field 'users.json' 'preferred_name'
 check_unique_array_field 'users.json' 'emails'
 check_unique_array_field 'users.json' 'names'
 

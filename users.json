@@ -1,7 +1,5 @@
 [
   {
-    "slack_id": "U0JMUJVC4",
-    "slack_name": "aaron.hine",
     "names": [
       "Aaron Hine"
     ],
@@ -12,8 +10,6 @@
     "preferred_name": "Aaron Hine"
   },
   {
-    "slack_id": "U1EMUR5A6",
-    "slack_name": "aditya.pahuja",
     "github_username": "adityapahuja",
     "names": [
       "Aditya Pahuja"
@@ -25,22 +21,6 @@
     "preferred_name": "Aditya Pahuja"
   },
   {
-    "slack_id": "U68U4TW2Y",
-    "slack_name": "adrian-wong",
-    "github_username": "adrianw1832",
-    "names": [
-      "Adrian Wong"
-    ],
-    "emails": [
-      "adrian.wong@digital.cabinet-office.gov.uk",
-      "awong@thoughtworks.com"
-    ],
-    "gds_name": "adrian.wong",
-    "preferred_name": "Adrian Wong"
-  },
-  {
-    "slack_id": "U4JJC8SR0",
-    "slack_name": "alan.carter",
     "github_username": "alan-gds",
     "names": [
       "Alan Carter"
@@ -52,8 +32,6 @@
     "preferred_name": "Alan Carter"
   },
   {
-    "slack_id": "U3E2D38D8",
-    "slack_name": "alastairtreharne",
     "names": [
       "alastairtreharne"
     ],
@@ -64,8 +42,6 @@
     "preferred_name": "Alastairtreharne"
   },
   {
-    "slack_id": "U4MD7B747",
-    "slack_name": "ali_moppett",
     "names": [
       "ali moppett",
       "ali_moppett"
@@ -77,8 +53,6 @@
     "preferred_name": "Ali Moppett"
   },
   {
-    "slack_id": "U03F6HCMT",
-    "slack_name": "amit",
     "github_username": "gdsamit",
     "names": [
       "Amit Muthu",
@@ -91,8 +65,6 @@
     "preferred_name": "Amit Muthu"
   },
   {
-    "slack_id": "U35PZSDTN",
-    "slack_name": "amritsidhu",
     "names": [
       "Amrit Sidhu",
       "amritsidhu"
@@ -104,8 +76,6 @@
     "preferred_name": "Amrit Sidhu"
   },
   {
-    "slack_id": "",
-    "slack_name": "andrea.szollossi",
     "github_username": "bravegrape",
     "names": [
       "Andrea Szollossi"
@@ -117,8 +87,6 @@
     "preferred_name": "Andrea Szollossi"
   },
   {
-    "slack_id": "U693AQB41",
-    "slack_name": "andy-paine",
     "github_username": "andy-paine",
     "names": [
       "Andy Paine"
@@ -131,8 +99,6 @@
     "preferred_name": "Andy Paine"
   },
   {
-    "slack_id": "U486B88L9",
-    "slack_name": "anna_sherrington",
     "names": [
       "anna sherrington",
       "anna_sherrington"
@@ -144,8 +110,6 @@
     "preferred_name": "Anna Sherrington"
   },
   {
-    "slack_id": "U02R9KH82",
-    "slack_name": "anne.carr",
     "names": [
       "anne carr",
       "anne.carr"
@@ -157,8 +121,6 @@
     "preferred_name": "Anne Carr"
   },
   {
-    "slack_id": "U5S84SL3W",
-    "slack_name": "annekuforiji",
     "names": [
       "Anne Kuforiji",
       "annekuforiji"
@@ -170,8 +132,6 @@
     "preferred_name": "Anne Kuforiji"
   },
   {
-    "slack_id": "UAC33FN74",
-    "slack_name": "anshul.sirur",
     "github_username": "vixus0",
     "names": [
       "Anshul Sirur"
@@ -187,8 +147,6 @@
     "preferred_name": "Anshul Sirur"
   },
   {
-    "slack_id": "U1B8W5B71",
-    "slack_name": "ayodejiawoyele",
     "names": [
       "ayodejiawoyele"
     ],
@@ -199,8 +157,6 @@
     "preferred_name": "Ayodejiawoyele"
   },
   {
-    "slack_id": "U6EL0N2VC",
-    "slack_name": "bethanmitchell",
     "names": [
       "Bethan Mitchell",
       "bethanmitchell"
@@ -212,8 +168,6 @@
     "preferred_name": "Bethan Mitchell"
   },
   {
-    "slack_id": "U351WDHND",
-    "slack_name": "callum_knights",
     "names": [
       "Callum Knights"
     ],
@@ -225,8 +179,6 @@
     "preferred_name": "Callum Knights"
   },
   {
-    "slack_id": "UAD5WMR08",
-    "slack_name": "christopher.holmes",
     "github_username": "chrisholmes",
     "names": [
       "Christopher Holmes"
@@ -241,8 +193,6 @@
     "preferred_name": "Christopher Holmes"
   },
   {
-    "slack_id": "U7FBFB9C3",
-    "slack_name": "Chris Grimble",
     "names": [
       "Chris Grimble"
     ],
@@ -253,8 +203,6 @@
     "preferred_name": "Chris Grimble"
   },
   {
-    "slack_id": "U0W40JZ2P",
-    "slack_name": "ciara.green",
     "names": [
       "Ciara Green"
     ],
@@ -265,8 +213,6 @@
     "preferred_name": "Ciara Green"
   },
   {
-    "slack_id": "U6R8F9JFM",
-    "slack_name": "clairehansford",
     "names": [
       "Claire Hansford",
       "clairehansford"
@@ -278,8 +224,6 @@
     "preferred_name": "Claire Hansford"
   },
   {
-    "slack_id": "UAFDVDGUX",
-    "slack_name": "conor.glynn",
     "github_username": "ronocg",
     "names": [
       "Conor Glynn",
@@ -296,8 +240,6 @@
     "preferred_name": "Conor Glynn"
   },
   {
-    "slack_id": "U59DZMCTZ",
-    "slack_name": "craig_barrington",
     "names": [
       "Craig Barrington"
     ],
@@ -308,8 +250,6 @@
     "preferred_name": "Craig Barrington"
   },
   {
-    "slack_id": "U1LV05S67",
-    "slack_name": "danharper",
     "names": [
       "Dan Harper",
       "danharper"
@@ -321,8 +261,6 @@
     "preferred_name": "Dan Harper"
   },
   {
-    "slack_id": "U029WK0A3",
-    "slack_name": "davidillsley",
     "github_username": "davidillsley",
     "names": [
       "David Illsley",
@@ -335,8 +273,6 @@
     "preferred_name": "David Illsley"
   },
   {
-    "slack_id": "U02FL5XUS",
-    "slack_name": "davidking",
     "github_username": "davbo",
     "names": [
       "David King",
@@ -349,8 +285,6 @@
     "preferred_name": "David King"
   },
   {
-    "slack_id": "UADHJSDFV",
-    "slack_name": "ed.rowley",
     "github_username": "ejrowley",
     "names": [
       "Ed Rowley"
@@ -366,8 +300,6 @@
     "preferred_name": "Ed Rowley"
   },
   {
-    "slack_id": "U1LUZKMD2",
-    "slack_name": "egle",
     "names": [
       "Egle Uzkuraityte",
       "egle"
@@ -379,8 +311,6 @@
     "preferred_name": "Egle Uzkuraityte"
   },
   {
-    "slack_id": "U3S5WEG2Y",
-    "slack_name": "emilyrk",
     "names": [
       "emily robertson-knowlton",
       "emilyrk"
@@ -392,8 +322,6 @@
     "preferred_name": "Emily robertson Knowlton"
   },
   {
-    "slack_id": "U9LQB4ND8",
-    "slack_name": "felix",
     "names": [
       "Felix Millne",
       "felix"
@@ -406,8 +334,6 @@
     "preferred_name": "Felix Millne"
   },
   {
-    "slack_id": "U1MAKRQ1F",
-    "slack_name": "gabor.mikes",
     "names": [
       "Gabor Mikes"
     ],
@@ -418,8 +344,6 @@
     "preferred_name": "Gabor Mikes"
   },
   {
-    "slack_id": "U2Z7K15R8",
-    "slack_name": "georgelund",
     "names": [
       "George Lund",
       "georgelund"
@@ -431,8 +355,6 @@
     "preferred_name": "George Lund"
   },
   {
-    "slack_id": "U2XEK2F8A",
-    "slack_name": "gillan.ward",
     "names": [
       "gillan ward",
       "gillan.ward"
@@ -444,8 +366,6 @@
     "preferred_name": "Gillan Ward"
   },
   {
-    "slack_id": "U6YAQ8PUM",
-    "slack_name": "guruprasad",
     "github_username": "guruchand",
     "names": [
       "Guruprasad Chandramouli",
@@ -458,8 +378,6 @@
     "preferred_name": "Guruprasad Chandramouli"
   },
   {
-    "slack_id": "U287S8AG3",
-    "slack_name": "priya",
     "names": [
       "priya"
     ],
@@ -470,8 +388,6 @@
     "preferred_name": "Priya"
   },
   {
-    "slack_id": "U4X2XCW0M",
-    "slack_name": "helen.dalessio_gds",
     "names": [
       "helen dalessio gds",
       "helen.dalessio_gds"
@@ -483,8 +399,6 @@
     "preferred_name": "Helen Dalessio Gds"
   },
   {
-    "slack_id": "U0E78LG6B",
-    "slack_name": "howie",
     "names": [
       "howie"
     ],
@@ -495,23 +409,6 @@
     "preferred_name": "Howie"
   },
   {
-    "slack_id": "U69JQC458",
-    "slack_name": "hughe",
-    "github_username": "hugh-emerson",
-    "names": [
-      "Hugh Emerson",
-      "hughe"
-    ],
-    "emails": [
-      "hugh.emerson@digital.cabinet-office.gov.uk",
-      "hugh.emerson@softwire.com"
-    ],
-    "gds_name": "hugh.emerson",
-    "preferred_name": "Hugh Emerson"
-  },
-  {
-    "slack_id": "U48RVBAHG",
-    "slack_name": "ingasile",
     "names": [
       "Inga Sileryte",
       "ingasile"
@@ -523,8 +420,6 @@
     "preferred_name": "Inga Sileryte"
   },
   {
-    "slack_id": "UAD3YJWKS",
-    "slack_name": "irene.lau",
     "github_username": "IreneLau-GDS",
     "names": [
       "Irene Lau",
@@ -540,8 +435,6 @@
     "preferred_name": "Irene Lau"
   },
   {
-    "slack_id": "U2QP1K3SQ",
-    "slack_name": "ira",
     "names": [
       "Irina Bolychevsky",
       "ira"
@@ -553,8 +446,6 @@
     "preferred_name": "Irina Bolychevsky"
   },
   {
-    "slack_id": "U1EDN1K4Z",
-    "slack_name": "irina_p",
     "names": [
       "Irina Pencheva",
       "irina p"
@@ -566,8 +457,6 @@
     "preferred_name": "Irina Pencheva"
   },
   {
-    "slack_id": "U1YLE5R41",
-    "slack_name": "ishberk",
     "names": [
       "Ish Berk",
       "ishberk"
@@ -579,8 +468,6 @@
     "preferred_name": "Ish Berk"
   },
   {
-    "slack_id": "U1RQJCWE5",
-    "slack_name": "jakemccann",
     "names": [
       "Jake McCann",
       "jakemccann"
@@ -592,8 +479,6 @@
     "preferred_name": "Jake McCann"
   },
   {
-    "slack_id": "U6GH6SCPP",
-    "slack_name": "jakub.miarka",
     "github_username": "jakubmiarka",
     "names": [
       "Jakub Miarka"
@@ -606,8 +491,6 @@
     "preferred_name": "Jakub Miarka"
   },
   {
-    "slack_id": "U6XSFFE6P",
-    "slack_name": "jamesa",
     "names": [
       "James Alderman",
       "jamesa"
@@ -620,8 +503,6 @@
     "preferred_name": "James Alderman"
   },
   {
-    "slack_id": "U035FE4CF",
-    "slack_name": "jamesashton",
     "names": [
       "James Ashton",
       "jamesashton"
@@ -633,8 +514,6 @@
     "preferred_name": "James Ashton"
   },
   {
-    "slack_id": "U8LUBPKH6",
-    "slack_name": "james.howes",
     "github_username": "JHjava",
     "names": [
       "James Howes"
@@ -646,8 +525,6 @@
     "preferred_name": "James Howes"
   },
   {
-    "slack_id": "U2W9L8LS3",
-    "slack_name": "james_mcdowall_gds",
     "names": [
       "James McDowall",
       "james mcdowall gds"
@@ -659,8 +536,6 @@
     "preferred_name": "James McDowall"
   },
   {
-    "slack_id": "U02KMMX9F",
-    "slack_name": "jebastarkie",
     "names": [
       "Jeba Starkie",
       "jebastarkie"
@@ -672,8 +547,6 @@
     "preferred_name": "Jeba Starkie"
   },
   {
-    "slack_id": "U0F6C6G0H",
-    "slack_name": "jessica.feldman",
     "names": [
       "Jessica Feldman"
     ],
@@ -684,8 +557,6 @@
     "preferred_name": "Jessica Feldman"
   },
   {
-    "slack_id": "U09V9S13J",
-    "slack_name": "jessmcevoy",
     "names": [
       "Jess McEvoy",
       "jessmcevoy"
@@ -697,8 +568,6 @@
     "preferred_name": "Jess McEvoy"
   },
   {
-    "slack_id": "U02AYM8TM",
-    "slack_name": "joelanman",
     "github_username": "joelanman",
     "names": [
       "Joe Lanman",
@@ -711,8 +580,6 @@
     "preferred_name": "Joe Lanman"
   },
   {
-    "slack_id": "U027NKDBA",
-    "slack_name": "zilnhoj",
     "names": [
       "John Byrne",
       "zilnhoj"
@@ -724,8 +591,6 @@
     "preferred_name": "John Byrne"
   },
   {
-    "slack_id": "U1B7F6BK5",
-    "slack_name": "jonmichaelpitt",
     "names": [
       "jonmichaelpitt"
     ],
@@ -736,8 +601,6 @@
     "preferred_name": "Jonmichaelpitt"
   },
   {
-    "slack_id": "U1QJHPT9U",
-    "slack_name": "julian",
     "github_username": "jstandring-gds",
     "names": [
       "Julian Standring",
@@ -750,8 +613,6 @@
     "preferred_name": "Julian Standring"
   },
   {
-    "slack_id": "U2CBLAUDN",
-    "slack_name": "julianwhite",
     "names": [
       "Julian White",
       "julianwhite"
@@ -763,8 +624,6 @@
     "preferred_name": "Julian White"
   },
   {
-    "slack_id": "U29UTPP2T",
-    "slack_name": "jyoti.basuita",
     "names": [
       "Jyoti Basuita"
     ],
@@ -775,8 +634,6 @@
     "preferred_name": "Jyoti Basuita"
   },
   {
-    "slack_id": "U2FTT3C7P",
-    "slack_name": "karl.baker",
     "names": [
       "Karl Baker"
     ],
@@ -787,8 +644,6 @@
     "preferred_name": "Karl Baker"
   },
   {
-    "slack_id": "U852S0VHC",
-    "slack_name": "karol.gancarz",
     "github_username": "CharlesIC",
     "names": [
       "Karol Gancarz"
@@ -801,8 +656,6 @@
     "preferred_name": "Karol Gancarz"
   },
   {
-    "slack_id": "U1T4MQLCS",
-    "slack_name": "kay.dale",
     "names": [
       "kay dale",
       "kay.dale"
@@ -814,8 +667,6 @@
     "preferred_name": "Kay Dale"
   },
   {
-    "slack_id": "U4VCJSF70",
-    "slack_name": "kevin.garwood",
     "github_username": "kgarwood",
     "names": [
       "Kevin Garwood"
@@ -828,8 +679,6 @@
     "preferred_name": "Kevin Garwood"
   },
   {
-    "slack_id": "U1RABE7LY",
-    "slack_name": "kirsty.armstrong",
     "names": [
       "kirsty armstrong",
       "kirsty.armstrong"
@@ -841,8 +690,6 @@
     "preferred_name": "Kirsty Armstrong"
   },
   {
-    "slack_id": "UAEFVGQFP",
-    "slack_name": "kornelis.sietsma",
     "github_username": "kornysietsma",
     "names": [
       "Kornelis Sietsma",
@@ -859,8 +706,6 @@
     "preferred_name": "Korny Sietsma"
   },
   {
-    "slack_id": "U3W9S52M7",
-    "slack_name": "lindaoh",
     "names": [
       "Linda O",
       "lindaoh"
@@ -872,8 +717,6 @@
     "preferred_name": "Linda O"
   },
   {
-    "slack_id": "U02U7PB81",
-    "slack_name": "liviaralph",
     "names": [
       "Livia Ralph",
       "liviaralph"
@@ -885,8 +728,6 @@
     "preferred_name": "Livia Ralph"
   },
   {
-    "slack_id": "U02ALB11A",
-    "slack_name": "liz",
     "github_username": "lizsarginson",
     "names": [
       "Liz Sarginson",
@@ -899,8 +740,6 @@
     "preferred_name": "Liz Sarginson"
   },
   {
-    "slack_id": "U55JR9QKW",
-    "slack_name": "lizziebruce",
     "names": [
       "lizziebruce"
     ],
@@ -911,8 +750,6 @@
     "preferred_name": "Lizziebruce"
   },
   {
-    "slack_id": "U0ZJ21Q2J",
-    "slack_name": "mahmud",
     "github_username": "MahmudH",
     "names": [
       "Mahmud Hussain",
@@ -925,8 +762,6 @@
     "preferred_name": "Mahmud Hussain"
   },
   {
-    "slack_id": "U5LURJ4JX",
-    "slack_name": "maisiefernandes",
     "github_username": "maisiefernandes",
     "names": [
       "Maisie Fernandes",
@@ -939,8 +774,6 @@
     "preferred_name": "Maisie Fernandes"
   },
   {
-    "slack_id": "U4PDXB8TS",
-    "slack_name": "mandeepwalia",
     "names": [
       "mandeepwalia"
     ],
@@ -951,8 +784,6 @@
     "preferred_name": "Mandeepwalia"
   },
   {
-    "slack_id": "U5C3710KC",
-    "slack_name": "markbuckley",
     "names": [
       "Mark Buckley",
       "markbuckley"
@@ -964,8 +795,6 @@
     "preferred_name": "Mark Buckley"
   },
   {
-    "slack_id": "UAJLCL7GX",
-    "slack_name": "mark.hynes",
     "github_username": "mmhmm",
     "names": [
       "Mark Hynes"
@@ -981,8 +810,6 @@
     "preferred_name": "Mark Hynes"
   },
   {
-    "slack_id": "U3RSAHMJ4",
-    "slack_name": "martha.edwards",
     "names": [
       "Martha Edwards"
     ],
@@ -993,8 +820,6 @@
     "preferred_name": "Martha Edwards"
   },
   {
-    "slack_id": "U3LEH68FJ",
-    "slack_name": "max.fitzhugh",
     "names": [
       "max fitzhugh",
       "max.fitzhugh"
@@ -1006,8 +831,6 @@
     "preferred_name": "Max Fitzhugh"
   },
   {
-    "slack_id": "U6SLY29BP",
-    "slack_name": "meg",
     "names": [
       "Meg Douglas Howie",
       "meg"
@@ -1019,8 +842,6 @@
     "preferred_name": "Meg Douglas Howie"
   },
   {
-    "slack_id": "U6XSJFSMQ",
-    "slack_name": "mike.begg",
     "names": [
       "Mike Begg"
     ],
@@ -1031,8 +852,6 @@
     "preferred_name": "Mike Begg"
   },
   {
-    "slack_id": "U02HV387T",
-    "slack_name": "mike_t",
     "names": [
       "Michael Thomas",
       "mike t"
@@ -1044,23 +863,6 @@
     "preferred_name": "Michael Thomas"
   },
   {
-    "slack_id": "U6C7DUM5X",
-    "slack_name": "mikewalker",
-    "github_username": "MichaelWalker",
-    "names": [
-      "michael walker",
-      "mikewalker"
-    ],
-    "emails": [
-      "michael.walker@digital.cabinet-office.gov.uk",
-      "michael.walker@softwire.com"
-    ],
-    "gds_name": "michael.walker",
-    "preferred_name": "Michael walker"
-  },
-  {
-    "slack_id": "U53HLH3SM",
-    "slack_name": "minno.dang",
     "github_username": "minhngocd",
     "names": [
       "Minno Dang"
@@ -1073,8 +875,6 @@
     "preferred_name": "Minno Dang"
   },
   {
-    "slack_id": "U4QN6641F",
-    "slack_name": "mohamedhussein",
     "names": [
       "Mohamed Hussein",
       "mohamedhussein"
@@ -1086,8 +886,6 @@
     "preferred_name": "Mohamed Hussein"
   },
   {
-    "slack_id": "U48685U2D",
-    "slack_name": "nas",
     "github_username": "NasAshrafThoughtworks",
     "names": [
       "Nas"
@@ -1100,8 +898,6 @@
     "preferred_name": "Nas"
   },
   {
-    "slack_id": "U69669PCH",
-    "slack_name": "neilb",
     "names": [
       "neilb"
     ],
@@ -1112,8 +908,6 @@
     "preferred_name": "Neilb"
   },
   {
-    "slack_id": "U5UEQF1QX",
-    "slack_name": "nickforrester",
     "names": [
       "Nick Forrester",
       "nickforrester"
@@ -1125,21 +919,6 @@
     "preferred_name": "Nick Forrester"
   },
   {
-    "slack_id": "U1Y635DAL",
-    "slack_name": "nicolahughes",
-    "github_username": "DataMinerUK",
-    "names": [
-      "nicolahughes"
-    ],
-    "emails": [
-      "nicola.hughes@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "nicola.hughes",
-    "preferred_name": "Nicolahughes"
-  },
-  {
-    "slack_id": "U046CL259",
-    "slack_name": "ollyharper",
     "names": [
       "Olly Harper",
       "ollyharper"
@@ -1151,8 +930,6 @@
     "preferred_name": "Olly Harper"
   },
   {
-    "slack_id": "U0SHTLA87",
-    "slack_name": "orvokki",
     "names": [
       "orvokki"
     ],
@@ -1163,8 +940,6 @@
     "preferred_name": "Orvokki"
   },
   {
-    "slack_id": "U6044HCQ2",
-    "slack_name": "paulbarnes",
     "names": [
       "Paul Barnes",
       "paulbarnes"
@@ -1176,8 +951,6 @@
     "preferred_name": "Paul Barnes"
   },
   {
-    "slack_id": "U77E5JMB8",
-    "slack_name": "paulavalenca",
     "names": [
       "Paula Valenca",
       "paulavalenca"
@@ -1189,8 +962,6 @@
     "preferred_name": "Paula Valenca"
   },
   {
-    "slack_id": "U2JK15KQV",
-    "slack_name": "pgchamberlin",
     "github_username": "pgchamberlin",
     "names": [
       "Peter Chamberlin",
@@ -1203,22 +974,6 @@
     "preferred_name": "Peter Chamberlin"
   },
   {
-    "slack_id": "U68V728CQ",
-    "slack_name": "rachael_booth",
-    "github_username": "RachaelBooth",
-    "names": [
-      "rachael booth",
-      "rachael_booth"
-    ],
-    "emails": [
-      "rachael.booth@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "rachael.booth",
-    "preferred_name": "Rachael Booth"
-  },
-  {
-    "slack_id": "U7C2228N9",
-    "slack_name": "Rachel Smith",
     "github_username": "rachelthecodesmith",
     "names": [
       "Rachel Smith"
@@ -1231,8 +986,6 @@
     "preferred_name": "Rachel Smith"
   },
   {
-    "slack_id": "U0HLATFB2",
-    "slack_name": "richtowers",
     "github_username": "richardTowers",
     "names": [
       "Richard Towers",
@@ -1246,8 +999,6 @@
     "preferred_name": "Richard Towers"
   },
   {
-    "slack_id": "U2YJZLJC8",
-    "slack_name": "rhowe",
     "github_username": "rhowe-gds",
     "names": [
       "Russell Howe",
@@ -1260,8 +1011,6 @@
     "preferred_name": "Russell Howe"
   },
   {
-    "slack_id": "U79HKHLRW",
-    "slack_name": "Rory Irvine",
     "github_username": "roryirvine",
     "names": [
       "Rory Irvine"
@@ -1273,8 +1022,6 @@
     "preferred_name": "Rory Irvine"
   },
   {
-    "slack_id": "U3DJTCAR3",
-    "slack_name": "sam_cook",
     "names": [
       "Sam Cook"
     ],
@@ -1285,8 +1032,6 @@
     "preferred_name": "Sam Cook"
   },
   {
-    "slack_id": "U23LEV57C",
-    "slack_name": "samuelculley_gds",
     "names": [
       "Samuel Culley",
       "samuelculley gds"
@@ -1298,8 +1043,6 @@
     "preferred_name": "Samuel Culley"
   },
   {
-    "slack_id": "U0QS1MU0M",
-    "slack_name": "sanjaypoyzer",
     "names": [
       "Sanjay Poyzer",
       "sanjaypoyzer"
@@ -1311,8 +1054,6 @@
     "preferred_name": "Sanjay Poyzer"
   },
   {
-    "slack_id": "U1QUC3EBD",
-    "slack_name": "sarahherman",
     "names": [
       "Sarah Herman",
       "sarahherman"
@@ -1324,8 +1065,6 @@
     "preferred_name": "Sarah Herman"
   },
   {
-    "slack_id": "UAE54P58U",
-    "slack_name": "simon.greensmith",
     "github_username": "sgreensmith",
     "names": [
       "Simon Greensmith"
@@ -1340,8 +1079,6 @@
     "preferred_name": "Simon Greensmith"
   },
   {
-    "slack_id": "U37SNK8MA",
-    "slack_name": "simonhudson",
     "names": [
       "Simon Hudson",
       "simonhudson"
@@ -1353,23 +1090,6 @@
     "preferred_name": "Simon Hudson"
   },
   {
-    "slack_id": "U69PUKQRK",
-    "slack_name": "simonwilson",
-    "github_username": "swilson96",
-    "names": [
-      "Simon Wilson",
-      "simonwilson"
-    ],
-    "emails": [
-      "simon.wilson@digital.cabinet-office.gov.uk",
-      "simon.wilson@softwire.com"
-    ],
-    "gds_name": "simon.wilson",
-    "preferred_name": "Simon Wilson"
-  },
-  {
-    "slack_id": "UAD4T9S64",
-    "slack_name": "stephen.ford",
     "github_username": "smford",
     "names": [
       "stephen ford",
@@ -1385,8 +1105,6 @@
     "preferred_name": "Steve f"
   },
   {
-    "slack_id": "UAFMMPCP9",
-    "slack_name": "stephen.grier",
     "github_username": "stephengrier",
     "names": [
       "Stephen Grier"
@@ -1402,8 +1120,6 @@
     "preferred_name": "Stephen Grier"
   },
   {
-    "slack_id": "U4E5M5HAN",
-    "slack_name": "stevebutler",
     "github_username": "javindo",
     "names": [
       "Steve Butler",
@@ -1416,8 +1132,6 @@
     "preferred_name": "Steve Butler"
   },
   {
-    "slack_id": "U2USYAC74",
-    "slack_name": "stevehutter",
     "names": [
       "Steve Hutter",
       "stevehutter"
@@ -1429,8 +1143,6 @@
     "preferred_name": "Steve Hutter"
   },
   {
-    "slack_id": "U0BLU4RDJ",
-    "slack_name": "susandarcy",
     "names": [
       "Susan D'Arcy",
       "susandarcy"
@@ -1442,8 +1154,6 @@
     "preferred_name": "Susan D'Arcy"
   },
   {
-    "slack_id": "U6L7RRGF9",
-    "slack_name": "sutha.kathir",
     "github_username": "suthagarht",
     "names": [
       "Suthagar Kathirkamathamby",
@@ -1456,8 +1166,6 @@
     "preferred_name": "Suthagar Kathirkamathamby"
   },
   {
-    "slack_id": "U1VU4G89L",
-    "slack_name": "temoormalik",
     "names": [
       "temoormalik"
     ],
@@ -1468,8 +1176,6 @@
     "preferred_name": "Temoormalik"
   },
   {
-    "slack_id": "U2JKHDX2S",
-    "slack_name": "thomas.hall",
     "names": [
       "thomas hall",
       "thomas.hall"
@@ -1481,8 +1187,6 @@
     "preferred_name": "Thomas Hall"
   },
   {
-    "slack_id": "UAC6GKGDT",
-    "slack_name": "thomas.lee",
     "github_username": "thomasalanlee",
     "names": [
       "Thomas Lee"
@@ -1497,8 +1201,6 @@
     "preferred_name": "Thomas Lee"
   },
   {
-    "slack_id": "U69GTC8LT",
-    "slack_name": "timwspence",
     "github_username": "TimWSpence",
     "names": [
       "Tim Spence",
@@ -1512,8 +1214,6 @@
     "preferred_name": "Timwspence"
   },
   {
-    "slack_id": "U6SLA7F0V",
-    "slack_name": "tlwr",
     "github_username": "tlwr",
     "names": [
       "Toby Lorne",
@@ -1527,8 +1227,6 @@
     "preferred_name": "Toby Lorne"
   },
   {
-    "slack_id": "U2XNLQ811",
-    "slack_name": "tom_bassett",
     "names": [
       "tom bassett",
       "tom_bassett"
@@ -1540,8 +1238,6 @@
     "preferred_name": "Tom Bassett"
   },
   {
-    "slack_id": "U5YQYB9AM",
-    "slack_name": "tomfarrar",
     "names": [
       "Tom Farrar",
       "tomfarrar"
@@ -1553,8 +1249,6 @@
     "preferred_name": "Tom Farrar"
   },
   {
-    "slack_id": "U7BSALX36",
-    "slack_name": "Tom Skelley",
     "github_username": "b0redom",
     "names": [
       "Tom Skelley"
@@ -1567,8 +1261,6 @@
     "preferred_name": "Tom Skelley"
   },
   {
-    "slack_id": "U7877T822",
-    "slack_name": "Dave Povey",
     "github_username": "DavePcoderepo",
     "names": [
       "Dave Povey"
@@ -1580,8 +1272,6 @@
     "preferred_name": "Dave Povey"
   },
   {
-    "slack_id": "U6746BGTY",
-    "slack_name": "vanessaformicola",
     "github_username": "VanessaFormicola",
     "names": [
       "Vanessa Formicola",
@@ -1595,8 +1285,6 @@
     "preferred_name": "Vanessa Formicola"
   },
   {
-    "slack_id": "U6MHUTQM6",
-    "slack_name": "willfox",
     "names": [
       "Will Fox",
       "willfox"
@@ -1608,8 +1296,6 @@
     "preferred_name": "Will Fox"
   },
   {
-    "slack_id": "UAC2EN5T4",
-    "slack_name": "william.palmer",
     "github_username": "willp-bl",
     "names": [
       "William Palmer"
@@ -1624,8 +1310,6 @@
     "preferred_name": "William Palmer"
   },
   {
-    "slack_id": "U02ALHJU4",
-    "slack_name": "willp",
     "github_username": "whpearson",
     "names": [
       "Will Pearson",
@@ -1638,8 +1322,6 @@
     "preferred_name": "Will Pearson"
   },
   {
-    "slack_id": "U4WTXEEUB",
-    "slack_name": "yanny",
     "github_username": "cobainc0",
     "names": [
       "Yanny"
@@ -1651,8 +1333,6 @@
     "preferred_name": "Yanny"
   },
   {
-    "slack_id": "UA56EDEP7",
-    "slack_name": "rylan",
     "github_username": "rylangooch",
     "names": [
       "Rylan Gooch",
