@@ -545,6 +545,22 @@
     }
   },
   {
+    "name": "verify-acceptance-tests",
+    "githubData": {
+      "description": "Verify acceptance tests written in Gherkin. Contains all eidas acceptance tests and some verify acceptance tests",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-acceptance-tests",
+      "sshUrl": "git@github.com:alphagov/verify-acceptance-tests.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+      "isVerifyCoreRepo": true
+    }
+  },
+  {
     "name": "verify-analytics-reports",
     "githubData": {
       "description": "A scratch repo to capture the terraform for a tactical piece of work where S3 buckets are used to get reports out.",
