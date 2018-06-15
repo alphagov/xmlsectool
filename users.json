@@ -194,16 +194,6 @@
   },
   {
     "names": [
-      "Chris Grimble"
-    ],
-    "emails": [
-      "chris.grimble@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "chris.grimble",
-    "preferred_name": "Chris Grimble"
-  },
-  {
-    "names": [
       "Ciara Green"
     ],
     "emails": [
@@ -493,18 +483,6 @@
   },
   {
     "names": [
-      "James Alderman",
-      "jamesa"
-    ],
-    "github_username": "jljalderman",
-    "emails": [
-      "james.alderman@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "james.alderman",
-    "preferred_name": "James Alderman"
-  },
-  {
-    "names": [
       "James Ashton",
       "jamesashton"
     ],
@@ -691,22 +669,6 @@
     "preferred_name": "Kirsty Armstrong"
   },
   {
-    "github_username": "kornysietsma",
-    "names": [
-      "Kornelis Sietsma",
-      "Korny Sietsma"
-    ],
-    "emails": [
-      "kornelis.sietsma@digital.cabinet-office.gov.uk",
-      "korny@sietsma.com"
-    ],
-    "roles": [
-      "dev-release-approver"
-    ],
-    "gds_name": "kornelis.sietsma",
-    "preferred_name": "Korny Sietsma"
-  },
-  {
     "names": [
       "Linda O",
       "lindaoh"
@@ -887,28 +849,6 @@
     "preferred_name": "Mohamed Hussein"
   },
   {
-    "github_username": "NasAshrafThoughtworks",
-    "names": [
-      "Nas"
-    ],
-    "emails": [
-      "naseer.ashraf@digital.cabinet-office.gov.uk",
-      "nashraf@thoughtworks.com"
-    ],
-    "gds_name": "naseer.ashraf",
-    "preferred_name": "Nas"
-  },
-  {
-    "names": [
-      "neilb"
-    ],
-    "emails": [
-      "neil.bookless@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "neil.bookless",
-    "preferred_name": "Neilb"
-  },
-  {
     "names": [
       "Nick Forrester",
       "nickforrester"
@@ -964,18 +904,6 @@
     "preferred_name": "Paula Valenca"
   },
   {
-    "github_username": "pgchamberlin",
-    "names": [
-      "Peter Chamberlin",
-      "pgchamberlin"
-    ],
-    "emails": [
-      "peter.chamberlin@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "peter.chamberlin",
-    "preferred_name": "Peter Chamberlin"
-  },
-  {
     "github_username": "rachelthecodesmith",
     "names": [
       "Rachel Smith"
@@ -1011,17 +939,6 @@
     ],
     "gds_name": "russell.howe",
     "preferred_name": "Russell Howe"
-  },
-  {
-    "github_username": "roryirvine",
-    "names": [
-      "Rory Irvine"
-    ],
-    "emails": [
-      "rory.irvine@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "rory.irvine",
-    "preferred_name": "Rory Irvine"
   },
   {
     "names": [
@@ -1203,19 +1120,6 @@
     "preferred_name": "Thomas Lee"
   },
   {
-    "github_username": "TimWSpence",
-    "names": [
-      "Tim Spence",
-      "timspence",
-      "timwspence"
-    ],
-    "emails": [
-      "timothy.spence@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "timothy.spence",
-    "preferred_name": "Timwspence"
-  },
-  {
     "github_username": "tlwr",
     "names": [
       "Toby Lorne",
@@ -1274,19 +1178,6 @@
     "preferred_name": "Dave Povey"
   },
   {
-    "github_username": "VanessaFormicola",
-    "names": [
-      "Vanessa Formicola",
-      "vanessaformicola"
-    ],
-    "emails": [
-      "vanessa.formicola@digital.cabinet-office.gov.uk",
-      "vanessa@Vanessas-MacBook-Pro.local"
-    ],
-    "gds_name": "vanessa.formicola",
-    "preferred_name": "Vanessa Formicola"
-  },
-  {
     "names": [
       "Will Fox",
       "willfox"
@@ -1333,17 +1224,5 @@
     ],
     "gds_name": "yancoba.thompson",
     "preferred_name": "Yanny"
-  },
-  {
-    "github_username": "rylangooch",
-    "names": [
-      "Rylan Gooch",
-      "rylan"
-    ],
-    "emails": [
-      "rylan.gooch@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "rylan.gooch",
-    "preferred_name": "Rylan Gooch"
   }
 ]
