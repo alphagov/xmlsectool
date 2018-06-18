@@ -14,30 +14,20 @@ data "github_user" "master_users" {
   username = "${element(var.master_users, count.index)}"
 }
 
-data "github_team" "push_teams" {
-  count = "${var.push_team_count}"
-  slug = "${element(var.push_teams, count.index)}"
-}
-
-data "github_team" "read_teams" {
-  count = "${var.read_team_count}"
-  slug = "${element(var.read_teams, count.index)}"
-}
-
 resource "github_team_repository" "repo_team_push" {
-  count = "${var.push_team_count}"
+  count = "${length(var.push_teams)}"
 
-  team_id = "${element(data.github_team.push_teams.*.id, count.index)}"
+  team_id = "${element(var.push_teams, count.index)}"
   repository = "${github_repository.repo.name}"
   permission = "push"
 }
 
 resource "github_team_repository" "repo_team_read" {
-  count = "${var.read_team_count}"
+  count = "${length(var.pull_teams)}"
 
-  team_id = "${element(data.github_team.read_teams.*.id, count.index)}"
+  team_id = "${element(var.pull_teams, count.index)}"
   repository = "${github_repository.repo.name}"
-  permission = "push"
+  permission = "pull"
 }
 
 resource "github_branch_protection" "repo_protect_master" {

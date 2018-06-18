@@ -18,14 +18,6 @@ variable "push_teams" {
   default = []
 }
 
-variable "read_teams" {
+variable "pull_teams" {
   default = []
-}
-
-variable "push_team_count" {
-  default = 0
-}
-
-variable "read_team_count" {
-  default = 0
 }
