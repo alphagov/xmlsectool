@@ -1,3 +1,8 @@
+data "github_team" "teams" {
+  count = "${length(var.push_teams)}"
+  slug = "${element(var.push_teams, count.index)}"
+}
+
 resource "github_repository" "repo" {
   name = "${var.name}"
   description = "${var.description}"
@@ -9,15 +14,16 @@ resource "github_repository" "repo" {
   allow_squash_merge = false
 }
 
-data "github_user" "master_users" {
-  count = "${length(var.master_users)}"
-  username = "${element(var.master_users, count.index)}"
+resource "null_resource" "provision" {
+  provisioner "local-exec" {
+    command = "./provision.rb ${github_repository.repo.full_name}"
+  }
 }
 
 resource "github_team_repository" "repo_team_push" {
   count = "${length(var.push_teams)}"
 
-  team_id = "${element(var.push_teams, count.index)}"
+  team_id = "${element(data.github_team.teams.*.id, count.index)}"
   repository = "${github_repository.repo.name}"
   permission = "push"
 }
@@ -35,13 +41,7 @@ resource "github_branch_protection" "repo_protect_master" {
   branch = "master"
   enforce_admins = false
 
-  restrictions {
-    users = "${var.master_users}"
-    teams = []
-  }
-
   required_pull_request_reviews {
     dismiss_stale_reviews = true
-    require_code_owner_reviews = true
   }
 }

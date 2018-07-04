@@ -10,10 +10,6 @@ variable "private" {
   default = false
 }
 
-variable "master_users" {
-  default = []
-}
-
 variable "push_teams" {
   default = []
 }
