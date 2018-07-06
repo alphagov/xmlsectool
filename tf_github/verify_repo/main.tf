@@ -10,6 +10,8 @@ resource "github_repository" "repo" {
   auto_init = true
   license_template = "mit"
 
+  has_wiki = true
+  has_issues = true
   allow_rebase_merge = false
   allow_squash_merge = false
 }
