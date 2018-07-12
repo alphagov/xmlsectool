@@ -60,7 +60,7 @@ module "user_<%= sanitise_login(login) %>" {
   org_role = "<%= role %>"
   teams = {
     <% teams.each do |team, team_role| %>
-    "<%= team %>" = "<%= team_role %>"
+    "verify-tech-team-<%= team %>" = "<%= team_role %>",
     <% end %>
   }
 }
@@ -95,9 +95,9 @@ EOS
 
 unless users_dir.nil?
   Dir.mkdir(users_dir) unless File.directory?(users_dir)
+  teams = YAML.load_file(repo_team_map_file).keys.map { |team| [team, 'member'] }.to_h
   get_team_users('identity').each do |login|
     role = CLIENT.organization_membership(GITHUB_ORG, user: login).role
-    teams = []
     write(File.join(users_dir, "#{sanitise_login(login)}.tf"), user_erb.result(binding))
     puts("user: #{login}")
   end
