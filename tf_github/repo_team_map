@@ -1,8 +1,66 @@
-core-hub	verify-hub	verify-saml-libs	ida-hub-support	verify-token-service	verify-test-rp	verify-stub-idp	verify-eidas-trust-anchor	verify-eidas-metadata-aggregator	verify-utils-libs	verify-hub-federation-config	verify-metadata	verify-config-app-config	verify-policy-app-config	verify-saml-engine-app-config	verify-event-sink-app-config	verify-audit-app-config	verify-billing-app-config	verify-token-service-app-config	verify-saml-proxy-app-config	verify-saml-soap-proxy-app-config
-dcs	doc-checking	dcs-client	dcs-performance-tests	dcs-client-acceptance-tests					verify-utils-libs											
-connecting	verify-matching-service-adapter	verify-service-provider	verify-support-form	verify-rp-environment-config-form	passport-verify	passport-verify-stub-relying-party	verify-local-matching-service-example			verify-hub-federation-config	verify-metadata									
-infrastructure	verify-puppet	verify-terraform	verify-fabric	verify-ansible	verify-boxes															
-eidas-notification	verify-eidas-notification																			
-eidas-middleware	verify-eidas-governikus-middleware	verify-eidas-middleware	verify-german-eidas-middleware																	
-frontend	verify-frontend	verify-frontend-app-config	verify-frontend-federation-config																	
-tools	verify-team-manual	verify-jenkins-job-builder	verify-tech-team	verify-release-automation																
+core-hub:
+  - verify-hub
+  - verify-saml-libs
+  - ida-hub-support
+  - verify-token-service
+  - verify-test-rp
+  - verify-stub-idp
+  - verify-eidas-trust-anchor
+  - verify-eidas-metadata-aggregator
+  - verify-utils-libs
+  - verify-hub-federation-config
+  - verify-metadata
+  - verify-config-app-config
+  - verify-policy-app-config
+  - verify-saml-engine-app-config
+  - verify-event-sink-app-config
+  - verify-audit-app-config
+  - verify-billing-app-config
+  - verify-token-service-app-config
+  - verify-saml-proxy-app-config
+  - verify-saml-soap-proxy-app-config
+
+dcs:
+  - doc-checking
+  - dcs-client
+  - dcs-performance-tests
+  - dcs-client-acceptance-tests
+  - verify-utils-libs
+
+connecting:
+  - verify-matching-service-adapter
+  - verify-service-provider
+  - verify-support-form
+  - verify-rp-environment-config-form
+  - passport-verify
+  - passport-verify-stub-relying-party
+  - verify-local-matching-service-example
+  - verify-hub-federation-config
+  - verify-metadata
+
+infrastructure:
+  - verify-puppet
+  - verify-terraform
+  - verify-fabric
+  - verify-ansible
+  - verify-boxes
+
+eidas-notification:
+  - verify-eidas-notification
+
+eidas-middleware:
+  - verify-eidas-governikus-middleware
+  - verify-eidas-middleware
+  - verify-german-eidas-middleware
+
+frontend:
+  - verify-frontend
+  - verify-frontend-app-config
+  - verify-frontend-federation-config
+
+tools:
+  - verify-team-manual
+  - verify-jenkins-job-builder
+  - verify-tech-team
+  - verify-release-automation
+

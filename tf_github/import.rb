@@ -3,6 +3,7 @@
 require 'erb'
 require 'octokit'
 require 'optparse'
+require 'yaml'
 
 CLIENT = Octokit::Client.new(access_token: ENV.fetch('TF_VAR_github_token'))
 CLIENT.auto_paginate = true
@@ -28,12 +29,8 @@ end
 
 def parse_repo_team_map(repo_team_map_file)
   repo_team_map = {}
-  File.open(repo_team_map_file).readlines.each do |line|
-    tok = line.split
-    team = tok[0]
-    tok[1 .. -1].each do |repo|
-      (repo_team_map[repo] ||= []).push(team)
-    end
+  YAML.load_file(repo_team_map_file).each do |team, repos|
+    repos.each { |repo| (repo_team_map[repo] ||= []).push(team) }
   end
   puts("Parsed #{repo_team_map_file} successfully.")
   repo_team_map
