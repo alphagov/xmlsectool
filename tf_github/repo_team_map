@@ -3,6 +3,7 @@ core-hub:
   - verify-saml-libs
   - ida-hub-support
   - verify-token-service
+  - verify-matching-service-adapter
   - verify-test-rp
   - verify-stub-idp
   - verify-eidas-trust-anchor

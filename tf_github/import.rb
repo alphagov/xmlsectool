@@ -59,16 +59,12 @@ module "user_<%= sanitise_login(login) %>" {
   username = "<%= login %>"
   realname = "<%= name %>"
   org_role = "<%= role %>"
-  teams = {
-    <% teams.each do |team, team_role| %>
-    "verify-tech-team-<%= team %>" = "<%= team_role %>",
-    <% end %>
-  }
+  teams = [ "${module.mission_x.teams}" ]
 }
 EOS
 
 teams_erb = ERB.new(<<-EOS, nil, '>')
-module "verify_teams" "tech" {
+module "teams" {
   source = "./verify_teams"
 
   teams = [
@@ -100,7 +96,7 @@ unless users_dir.nil?
   get_team_users('identity').each do |login|
     name = CLIENT.user(login).name
     role = CLIENT.organization_membership(GITHUB_ORG, user: login).role
-    write(File.join(users_dir, "#{sanitise_login(login)}.tf"), user_erb.result(binding))
+    write(File.join(users_dir, "user_#{sanitise_login(login)}.tf"), user_erb.result(binding))
     puts("user: #{login}")
   end
 end
@@ -118,20 +114,25 @@ unless repos_dir.nil?
   repo_team_map.each do |repo, teams|
     CLIENT.repository?("#{GITHUB_ORG}/#{repo}") || abort("No such repository: #{GITHUB_ORG}/#{repo}")
     gh_repo = CLIENT.repository("#{GITHUB_ORG}/#{repo}") 
-    write(File.join(repos_dir, "#{sanitise_repo(repo)}.tf"), repo_erb.result(binding))
+    write(File.join(repos_dir, "repo_#{sanitise_repo(repo)}.tf"), repo_erb.result(binding))
     puts("repo: #{repo}")
   end
 end
 
 if do_imports
-  `terraform init`
+  system('terraform init')
+  system('terraform init users/')
+  system('terraform init repos/')
 
   repo_team_map ||= parse_repo_team_map(repo_team_map_file)
   repo_team_map.each do |repo, _|
     `terraform import module.repo_#{sanitise_repo(repo)}.github_repository.repo #{repo}`
   end
 
-  get_team_users('identity').each do |login|
+  Dir.glob('users/*.tf').each do |file|
+    login_line = File.open(file).readlines.select { |l| l.include?('username') }
+    login = /username = "(.+)"/.match(login_line)[1]
+
     `terraform import module.user_#{sanitise_login(login)}.github_membership.org_membership #{GITHUB_ORG}:#{login}`
   end
 end
