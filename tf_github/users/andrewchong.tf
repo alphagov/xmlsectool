@@ -1,9 +1,9 @@
-module "user_vixus0" {
+module "user_andrewchong" {
   source = "./verify_user"
 
-  username = "vixus0"
-  realname = "Anshul Sirur"
-  org_role = "admin"
+  username = "andrewchong"
+  realname = "Andrew Chong"
+  org_role = "member"
   teams = {
         "verify-tech-team-core-hub" = "member",
         "verify-tech-team-dcs" = "member",
