@@ -1,3 +1,3 @@
 output "teams" {
-  value = "${var.teams}"
+  value = "${data.github_team.teams.*.id}"
 }
