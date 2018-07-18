@@ -2,21 +2,24 @@
 
 require 'optparse'
 
-CONFIGS = ['teams', 'users', 'repos']
-LOGFILE = "tf_apply_#{Time.now.strftime('%Y%m%d-%H%M')}.#{@apply ? 'apply' : 'plan'}.log"
-
-def run(cmd)
-  system(cmd, out: [LOGFILE, 'a'])
-end
-
-ENV['TF_VAR_github_token'] or abort('Need to set TF_VAR_github_token environment variable')
-ENV['TF_VAR_github_organization'] or abort('Need to set TF_VAR_github_organization environment variable')
-
 ARGV.options do |opts|
   opts.on('--apply', 'Run terraform apply') { @apply = true }
   opts.on_tail('-h', '--help') { abort(opts.to_s) }
   opts.parse!
 end
+
+CONFIGS = ['teams', 'users', 'repos']
+LOGFILE = "tf_apply_#{Time.now.strftime('%Y%m%d-%H%M')}.#{@apply ? 'apply' : 'plan'}.log"
+
+def run(cmd)
+  status = system(cmd, out: [LOGFILE, 'a'])
+  unless status
+    abort("ERROR: #{cmd}")
+  end
+end
+
+ENV['TF_VAR_github_token'] or abort('Need to set TF_VAR_github_token environment variable')
+ENV['TF_VAR_github_organization'] or abort('Need to set TF_VAR_github_organization environment variable')
 
 CONFIGS.each do |cfg|
   statefile = File.join(cfg, "#{cfg}.tfstate")
@@ -37,6 +40,8 @@ CONFIGS.each do |cfg|
 
   if @apply
     puts(" - **APPLYING** plan #{planfile} using state #{statefile}")
-    run("terraform apply -state=#{statefile} #{planfile}")
+    run("terraform apply -state-out=#{statefile} #{planfile}")
   end
+
+  puts(" - DONE\n\n")
 end
