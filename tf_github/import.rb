@@ -3,7 +3,9 @@
 require 'optparse'
 require 'hcl/checker'
 
-TF_CMD = 'terraform import -config=src/'
+def tf_import(config)
+  "terraform import -config=#{config}/"
+end
 
 @action = :puts
 
@@ -23,7 +25,7 @@ end
 if @repos
   Dir.glob('repos/repo_*.tf').each do |fn|
     module_name, repo_name = parse_hcl(fn, 'name')
-    send(@action, "#{TF_CMD} module.#{module_name}.github_repository.repo #{repo_name}")
+    send(@action, "#{tf_import('repos')} module.#{module_name}.github_repository.repo #{repo_name}")
   end
 end
 
@@ -32,6 +34,6 @@ if @users
   Dir.glob('users/user_*.tf').each do |fn|
     module_name, username = parse_hcl(fn, 'username')
     org = ENV.fetch('TF_VAR_github_organization')
-    send(@action, "#{TF_CMD} module.#{module_name}.github_membership.org_membership #{org}:#{username}")
+    send(@action, "#{tf_import('users')} module.#{module_name}.github_membership.org_membership #{org}:#{username}")
   end
 end

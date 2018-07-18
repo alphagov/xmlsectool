@@ -1,4 +1,4 @@
-module "verify_teams" {
+module "teams" {
   source = "./verify_teams"
 
   teams = [
