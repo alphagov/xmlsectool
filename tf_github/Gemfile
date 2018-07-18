@@ -4,3 +4,4 @@ ruby '2.4.2'
 
 gem 'netrc'
 gem 'octokit'
+gem 'hcl-checker'
