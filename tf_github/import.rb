@@ -27,6 +27,11 @@ def parse_hcl(fn, field)
   HCL::Checker.parse(File.open(fn).read)['module'].map { |k, v| [k, v[field]] }.first
 end
 
+def find_team_id(name)
+  @teams ||= CLIENT.org_teams(GITHUB_ORG)
+  @teams.select { |t| t.name == team }.first.id
+end
+
 # Import repositories
 if @repos
   Dir.glob('repos/repo_*.tf').each do |fn|
@@ -45,9 +50,10 @@ end
 
 # Import teams
 if @teams
+  send(@action, "#{tf_import('teams')} module.teams.github_team.parent_team #{find_team_id('verify-tech-team')}")
   _, teams = parse_hcl('teams/teams.tf', 'teams')
   teams.each_with_index do |team, idx|
-    team_id = CLIENT.org_teams(GITHUB_ORG).select { |t| t.name == team }.first.id
+    team_id = find_team_id(team)
     send(@action, "#{tf_import('teams')} module.teams.github_team.team[#{idx}] #{team_id}")
   end
 end
