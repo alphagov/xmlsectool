@@ -9,7 +9,7 @@ CLIENT.auto_paginate = true
 GITHUB_ORG = ENV.fetch('TF_VAR_github_organization')
 
 def tf_import(config)
-  "terraform import -config=#{config}/"
+  "terraform import -config=#{config}/ -state=#{config}/#{config}.tfstate"
 end
 
 @action = :puts
