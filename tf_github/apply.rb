@@ -12,9 +12,9 @@ CONFIGS = ['teams', 'users', 'repos']
 LOGFILE = "tf_apply_#{Time.now.strftime('%Y%m%d-%H%M')}.#{@apply ? 'apply' : 'plan'}.log"
 
 def run(cmd)
-  status = system(cmd, out: [LOGFILE, 'a'])
+  status = system(cmd, [:out, :err] => [LOGFILE, 'a'])
   unless status
-    abort("ERROR: #{cmd}")
+    abort("ERROR: #{cmd}\nSee logs: #{LOGFILE}")
   end
 end
 

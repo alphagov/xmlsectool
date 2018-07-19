@@ -28,8 +28,8 @@ def parse_hcl(fn, field)
 end
 
 def find_team_id(name)
-  @teams ||= CLIENT.org_teams(GITHUB_ORG)
-  @teams.select { |t| t.name == team }.first.id
+  @org_teams ||= CLIENT.org_teams(GITHUB_ORG)
+  @org_teams.select { |t| t.name == name }.first.id
 end
 
 # Import repositories

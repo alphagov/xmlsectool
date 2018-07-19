@@ -4,10 +4,11 @@ require 'erb'
 require 'octokit'
 
 if ARGV.size < 1
-  abort('Usage: ./provision.rb repo')
+  abort('Usage: ./provision.rb repo [review_count]')
 end
 
 repo = ARGV[0]
+review_count = Integer(ARGV[1] || 2)
 
 client = Octokit::Client.new(access_token: ENV.fetch('TF_VAR_github_token'))
 client.auto_paginate = true
@@ -20,7 +21,7 @@ client.protect_branch("#{repo}", 'master', {
   enforce_admins: nil,
   restrictions: nil,
   required_pull_request_reviews: {
-    required_approving_review_count: 2,
+    required_approving_review_count: review_count,
     dismiss_stale_reviews: true,
     require_code_owner_reviews: false
   }
