@@ -13,7 +13,3 @@ variable "private" {
 variable "push_teams" {
   default = []
 }
-
-variable "pull_teams" {
-  default = []
-}
