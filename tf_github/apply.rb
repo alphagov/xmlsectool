@@ -27,20 +27,20 @@ CONFIGS.each do |cfg|
 
   puts("#{cfg}:")
   
-  unless File.exist?(statefile)
-    puts(" - Initialising terraform in #{cfg}/")
-    run("terraform init #{cfg}")    
+  puts(" - Initialising terraform in #{cfg}/")
+  run("terraform init -no-color #{cfg}")
 
+  unless File.exist?(statefile)
     puts(" - Importing state to #{statefile}")
     run("./import.rb --#{cfg} --import")
   end
 
   puts(" - Writing plan to #{planfile} using state #{statefile}")
-  run("terraform plan -state=#{statefile} -out=#{planfile} #{cfg}")
+  run("terraform plan -no-color -state=#{statefile} -out=#{planfile} #{cfg}")
 
   if @apply
     puts(" - **APPLYING** plan #{planfile} using state #{statefile}")
-    run("terraform apply -state-out=#{statefile} #{planfile}")
+    run("terraform apply -no-color -state-out=#{statefile} #{planfile}")
   end
 
   puts(" - DONE\n\n")

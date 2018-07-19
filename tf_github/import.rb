@@ -9,7 +9,7 @@ CLIENT.auto_paginate = true
 GITHUB_ORG = ENV.fetch('TF_VAR_github_organization')
 
 def tf_import(config)
-  "terraform import -config=#{config}/ -state=#{config}/#{config}.tfstate"
+  "terraform import -no-color -config=#{config}/ -state=#{config}/#{config}.tfstate"
 end
 
 @action = :puts
@@ -37,6 +37,7 @@ if @repos
   Dir.glob('repos/repo_*.tf').each do |fn|
     module_name, repo_name = parse_hcl(fn, 'name')
     send(@action, "#{tf_import('repos')} module.#{module_name}.github_repository.repo #{repo_name}")
+    send(@action, "#{tf_import('repos')} module.#{module_name}.github_branch_protection.repo_protect_master #{repo_name}:master")
   end
 end
 
