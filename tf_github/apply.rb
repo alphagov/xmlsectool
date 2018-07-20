@@ -8,7 +8,7 @@ ARGV.options do |opts|
   opts.parse!
 end
 
-CONFIGS = ['teams', 'users', 'repos']
+CONFIGS = ARGV.empty? ? ['teams', 'users', 'repos'] : ARGV
 LOGFILE = "tf_apply_#{Time.now.strftime('%Y%m%d-%H%M')}.#{@apply ? 'apply' : 'plan'}.log"
 
 def run(cmd)

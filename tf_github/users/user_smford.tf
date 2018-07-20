@@ -1,8 +1,8 @@
-module "user_jstandring_gds" {
+module "user_smford" {
   source = "./verify_user"
 
-  username = "jstandring-gds"
-  realname = "Julian Standring"
+  username = "smford"
+  realname = "Stephen Ford"
   org_role = "member"
   teams = [ "${module.mission_re.teams}" ]
 }
