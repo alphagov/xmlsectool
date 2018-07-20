@@ -12,5 +12,5 @@ resource "github_team_membership" "team_membership" {
 
   team_id = "${element(var.teams, count.index)}"
   username = "${var.username}"
-  role = "member"
+  role = "${var.org_role == "admin" ? "maintainer" : "member"}"
 }
