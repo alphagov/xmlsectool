@@ -3,6 +3,6 @@ module "user_rhowe_gds" {
 
   username = "rhowe-gds"
   realname = "Russell Howe"
-  org_role = "member"
+  org_role = "admin"
   teams = [ "${module.mission_re.teams}" ]
 }

@@ -3,6 +3,6 @@ module "user_smford" {
 
   username = "smford"
   realname = "Stephen Ford"
-  org_role = "member"
+  org_role = "admin"
   teams = [ "${module.mission_re.teams}" ]
 }
