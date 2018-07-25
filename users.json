@@ -234,9 +234,6 @@
       "conor.glynn@digital.cabinet-office.gov.uk",
       "conorglynn@gmail.com"
     ],
-    "roles": [
-      "infrastructure-release-approver"
-    ],
     "gds_name": "conor.glynn",
     "preferred_name": "Conor Glynn"
   },
@@ -293,9 +290,6 @@
     "emails": [
       "ed.rowley@digital.cabinet-office.gov.uk",
       "ejrowley@gmail.com"
-    ],
-    "roles": [
-      "infrastructure-release-approver"
     ],
     "gds_name": "ed.rowley",
     "preferred_name": "Ed Rowley"
@@ -778,9 +772,6 @@
       "mark.hynes@digital.cabinet-office.gov.uk",
       "mark.hynes@gmail.com"
     ],
-    "roles": [
-      "infrastructure-release-approver"
-    ],
     "gds_name": "mark.hynes",
     "preferred_name": "Mark Hynes"
   },
@@ -1029,9 +1020,6 @@
     "emails": [
       "stephen.ford@digital.cabinet-office.gov.uk"
     ],
-    "roles": [
-      "infrastructure-release-approver"
-    ],
     "gds_name": "stephen.ford",
     "preferred_name": "Steve f"
   },
@@ -1043,9 +1031,6 @@
     "emails": [
       "stephen.grier@digital.cabinet-office.gov.uk",
       "git@grier.org.uk"
-    ],
-    "roles": [
-      "infrastructure-release-approver"
     ],
     "gds_name": "stephen.grier",
     "preferred_name": "Stephen Grier"
