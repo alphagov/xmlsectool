@@ -12,6 +12,10 @@ def tf_import(config)
   "terraform import -no-color -config=#{config}/ -state=#{config}/#{config}.tfstate"
 end
 
+def tf_state_list(config)
+  `terraform state list -state=#{config}/#{config}.tfstate`
+end
+
 @action = :puts
 
 ARGV.options do |opts|
@@ -34,8 +38,12 @@ end
 
 # Import repositories
 if @repos
-  Dir.glob('repos/repo_*.tf').each do |fn|
-    module_name, repo_name = parse_hcl(fn, 'name')
+  existing_repos = tf_state_list('repos')
+  repo_defs = Dir.glob('repos/repo_*.tf')
+    .map { |fn| parse_hcl(fn, 'name') }
+    .reject { |mod, _| existing_repos.include?("module.#{mod}.github_repository.repo") }
+
+  repo_defs.each do |module_name, repo_name|
     send(@action, "#{tf_import('repos')} module.#{module_name}.github_repository.repo #{repo_name}")
     send(@action, "#{tf_import('repos')} module.#{module_name}.github_branch_protection.repo_protect_master #{repo_name}:master")
   end
@@ -43,8 +51,12 @@ end
 
 # Import users
 if @users
-  Dir.glob('users/user_*.tf').each do |fn|
-    module_name, username = parse_hcl(fn, 'username')
+  existing_users = tf_state_list('users')
+  user_defs = Dir.glob('users/user_*.tf')
+    .map { |fn| parse_hcl(fn, 'username') }
+    .reject { |mod, _| existing_users.include?("module.#{mod}.github_membership.org_membership") }
+
+  user_defs.each do |module_name, username|
     send(@action, "#{tf_import('users')} module.#{module_name}.github_membership.org_membership #{GITHUB_ORG}:#{username}")
   end
 end
