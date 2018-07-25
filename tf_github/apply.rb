@@ -39,10 +39,9 @@ CONFIGS.each do |cfg|
   run("terraform plan -no-color -state=#{statefile} -out=#{planfile} #{cfg}")
   puts(`terraform plan #{planfile}`.split("\n").select { |l| l.include?('Plan:') })
 
-  if File.exist?('terraform.tfstate')
-    File.delete('terraform.tfstate')
-    File.delete('terraform.tfstate.backup')
-  end
+  
+  File.delete('terraform.tfstate') if File.exist?('terraform.tfstate')
+  File.delete('terraform.tfstate.backup') if File.exist?('terraform.tfstate.backup')
 
   if @apply
     puts(" - **APPLYING** plan #{planfile} using state #{statefile}")
