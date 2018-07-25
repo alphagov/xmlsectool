@@ -10,6 +10,10 @@ variable "private" {
   default = false
 }
 
+variable "archived" {
+  default = false
+}
+
 variable "push_teams" {
   default = []
 }
