@@ -60,14 +60,11 @@ approvals, add a section like:
 
 ```
 "roles": [
-  "infrastructure-release-approver"
+  "dev-release-approver"
 ]
 ```
 
-The roles are `infrastructure-release-approver` for people who can approve an
-infrastructure release, and `dev-release-approver` for people
-who can approve an app release. You can have both roles, or no `roles` section
-at all.
+`dev-release-approver` is the only role which is still valid.
 
 ### Adding a new user to the json
 
