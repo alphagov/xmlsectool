@@ -3,6 +3,7 @@ module "mission_re" {
   teams = [
     "verify-tech-team-connecting",
     "verify-tech-team-dcs",
+    "verify-tech-team-eidas-middleware",
     "verify-tech-team-infrastructure",
     "verify-tech-team-tools",
   ]
