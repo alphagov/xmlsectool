@@ -1,7 +1,11 @@
 # Verify Tech Team
 
 This repo exists to store user data for members of the Verify tech team and
-our various git repos
+our various git repos.
+
+If inducting a new GDS person to Verify, please add the appropriate files.
+
+If removing a previous GDS person, please remove the appropriate files.
 
 ## Rationale
 
