@@ -36,6 +36,8 @@ infrastructure:
   - verify-fabric
   - verify-ansible
   - verify-boxes
+  - verify-il3-laptop-bootstrap
+  - verify-packages
 
 eidas-notification:
   - verify-eidas-notification
