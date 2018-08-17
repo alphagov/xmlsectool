@@ -644,21 +644,6 @@
     }
   },
   {
-    "name": "verify-audit-app-config",
-    "githubData": {
-      "description": "Application config for Audit app",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-audit-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-audit-app-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
     "name": "verify-availability-report",
     "githubData": {
       "description": "Availability Report Generator for IDA smoke tests",
@@ -681,21 +666,6 @@
       "isPrivate": true,
       "url": "https://github.com/alphagov/verify-aviation-house-dr",
       "sshUrl": "git@github.com:alphagov/verify-aviation-house-dr.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-billing-app-config",
-    "githubData": {
-      "description": "Billing application config",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-billing-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-billing-app-config.git",
       "topics": [
         "verify"
       ]
@@ -879,21 +849,6 @@
       "isPrivate": false,
       "url": "https://github.com/alphagov/verify-compliance-tool-gui",
       "sshUrl": "git@github.com:alphagov/verify-compliance-tool-gui.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-config-app-config",
-    "githubData": {
-      "description": "Repo for Verify Config services application config",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-config-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-config-app-config.git",
       "topics": [
         "verify"
       ]
@@ -1290,21 +1245,6 @@
       "isPrivate": false,
       "url": "https://github.com/alphagov/verify-event-recorder-service",
       "sshUrl": "git@github.com:alphagov/verify-event-recorder-service.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-event-sink-app-config",
-    "githubData": {
-      "description": "App config for Event-Sink app",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-event-sink-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-event-sink-app-config.git",
       "topics": [
         "verify"
       ]
@@ -1935,21 +1875,6 @@
     }
   },
   {
-    "name": "verify-policy-app-config",
-    "githubData": {
-      "description": "Application config for Policy app",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-policy-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-policy-app-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
     "name": "verify-product-page",
     "githubData": {
       "description": "Product landing page for GOV.UK Verify",
@@ -2195,21 +2120,6 @@
     }
   },
   {
-    "name": "verify-saml-engine-app-config",
-    "githubData": {
-      "description": "Saml Engine's application config",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-saml-engine-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-saml-engine-app-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
     "name": "verify-saml-libs",
     "githubData": {
       "description": "Verify SAML Libraries 📚",
@@ -2224,36 +2134,6 @@
     },
     "flags": {
       "isVerifyCoreRepo": true
-    }
-  },
-  {
-    "name": "verify-saml-proxy-app-config",
-    "githubData": {
-      "description": "Configuration for Verify saml-proxy service",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-saml-proxy-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-saml-proxy-app-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-saml-soap-proxy-app-config",
-    "githubData": {
-      "description": "Configuration for Verify saml-soap-proxy service",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-saml-soap-proxy-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-saml-soap-proxy-app-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
     }
   },
   {
@@ -2533,21 +2413,6 @@
       "isPrivate": true,
       "url": "https://github.com/alphagov/verify-token-service",
       "sshUrl": "git@github.com:alphagov/verify-token-service.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
-    "name": "verify-token-service-app-config",
-    "githubData": {
-      "description": "Token Service app config",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-token-service-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-token-service-app-config.git",
       "topics": [
         "verify"
       ]

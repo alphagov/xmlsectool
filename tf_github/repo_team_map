@@ -11,15 +11,6 @@ core-hub:
   - verify-utils-libs
   - verify-hub-federation-config
   - verify-metadata
-  - verify-config-app-config
-  - verify-policy-app-config
-  - verify-saml-engine-app-config
-  - verify-event-sink-app-config
-  - verify-audit-app-config
-  - verify-billing-app-config
-  - verify-token-service-app-config
-  - verify-saml-proxy-app-config
-  - verify-saml-soap-proxy-app-config
 
 dcs:
   - doc-checking
@@ -64,4 +55,3 @@ tools:
   - verify-jenkins-job-builder
   - verify-tech-team
   - verify-release-automation
-
