@@ -4,6 +4,7 @@ module "repo_verify_saml_engine_app_config" {
   name = "verify-saml-engine-app-config"
   description = "Saml Engine's application config"
   private = "true"
+  archived = "true"
   push_teams = [
         "verify-tech-team-core-hub",
       ]

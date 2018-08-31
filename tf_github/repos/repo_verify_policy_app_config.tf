@@ -4,6 +4,7 @@ module "repo_verify_policy_app_config" {
   name = "verify-policy-app-config"
   description = "Application config for Policy app"
   private = "true"
+  archived = "true"
   push_teams = [
         "verify-tech-team-core-hub",
       ]

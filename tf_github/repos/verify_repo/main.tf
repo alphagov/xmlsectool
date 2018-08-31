@@ -8,6 +8,7 @@ resource "github_repository" "repo" {
   description = "${var.description}"
   private = "${var.private}"
   archived = "${var.archived}"
+  auto_init = "true"
 
   has_wiki = true
   has_issues = true
