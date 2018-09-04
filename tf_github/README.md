@@ -7,23 +7,22 @@ We use Terraform to define Verify's repositories, users and teams along with the
 Users are modified via the files in the `users/` directory. You can add a user by adding a file containing the following:
 
 ```terraform
-module "user_46bit" {
+module "user_<github login>" {
   source = "./verify_user"
 
-  username = "46bit"
+  username = "<github login>"
+  realname = "<real name>"
   org_role = "member"
-  teams = {
-  			"verify-tech-team-core-hub" = "member",
-      }
+  teams = [ "${module.mission_<mission>.teams}" ]
 }
 ```
 
-The filename should be `<github login>.tf`.
-The `teams` value is a map determining which teams the user is a part of. They can either be a `member` or a `maintainer`. Removing a user's file from `users/` will remove them from all teams and the organisation.
+The filename should be `user_<github login>.tf`.
+The `teams` value is defined by the mission the user is a part of. Missions, and the teams they have access to are defined in `users/mission_*.tf` files. Removing a user's file from `users/` will remove them from all teams and the organisation.
 
 ## Defining teams
 
-Teams are defined in the `teams` list within `teams.tf`. For convenience, it's best to stick with kebab-case (lowercase and hyphenated) for team names.
+Teams are defined in the `teams` list within `teams/teams.tf`. For convenience, it's best to stick with kebab-case (lowercase and hyphenated) for team names.
 
 ## Creating a new repository
 
