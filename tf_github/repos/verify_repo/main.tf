@@ -25,7 +25,7 @@ resource "github_team_repository" "repo_team_push" {
 
   team_id = "${element(data.github_team.teams.*.id, count.index)}"
   repository = "${github_repository.repo.name}"
-  permission = "push"
+  permission = "${var.archived == "true" ? "pull" : "push"}"
 }
 
 resource "github_branch_protection" "repo_protect_master" {
