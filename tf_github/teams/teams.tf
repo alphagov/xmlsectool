@@ -9,6 +9,8 @@ module "teams" {
         "verify-tech-team-eidas-notification",
         "verify-tech-team-eidas-middleware",
         "verify-tech-team-frontend",
+        "verify-tech-team-performance-pa",
+        "verify-tech-team-performance-dev",
         "verify-tech-team-tools",
       ]
 }

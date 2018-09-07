@@ -8,6 +8,8 @@ module "mission_all" {
     "verify-tech-team-eidas-middleware",
     "verify-tech-team-frontend",
     "verify-tech-team-infrastructure",
+    "verify-tech-team-performance-dev",
+    "verify-tech-team-performance-pa",
     "verify-tech-team-tools",
   ]
 }
