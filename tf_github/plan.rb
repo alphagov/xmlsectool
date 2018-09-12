@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'optparse'
+require 'octokit'
 
 ARGV.options do |opts|
   opts.on_tail('-h', '--help') { abort(opts.to_s) }
@@ -43,3 +44,10 @@ CONFIGS.each do |cfg|
 
   puts(" - DONE\n\n")
 end
+
+CLIENT = Octokit::Client.new(access_token: ENV.fetch('TF_VAR_github_token'))
+CLIENT.auto_paginate = true
+GITHUB_ORG = ENV.fetch('TF_VAR_github_organization')
+
+puts('Github rate limit:')
+CLIENT.rate_limit.tap { |r| puts("  #{r.remaining}/#{r.limit}, resets at #{r.resets_at}") }
