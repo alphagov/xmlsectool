@@ -4,5 +4,5 @@ module "user_zilnhoj" {
   username = "zilnhoj"
   realname = "John Byrne"
   org_role = "member"
-  teams = [ "verify-tech-team-performance-pa" ]
+  teams = [ "${module.mission_performance_pa.teams}" ]
 }
