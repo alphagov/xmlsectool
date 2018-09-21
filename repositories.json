@@ -1378,21 +1378,6 @@
     }
   },
   {
-    "name": "verify-frontend-api",
-    "githubData": {
-      "description": "Backend for verify-frontend (deprecating)",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-frontend-api",
-      "sshUrl": "git@github.com:alphagov/verify-frontend-api.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
     "name": "verify-frontend-api-config",
     "githubData": {
       "description": "Configuration for Verify Frontend API (to be deprecated)",
