@@ -283,18 +283,6 @@
     "preferred_name": "David King"
   },
   {
-    "github_username": "donnabelsey",
-    "names": [
-      "Donna Belsey",
-      "donnabelsey"
-    ],
-    "emails": [
-      "donna.belsey@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "donna.belsey",
-    "preferred_name": "Donna Belsey"
-  },
-  {
     "github_username": "ejrowley",
     "names": [
       "Ed Rowley"
@@ -316,19 +304,6 @@
     ],
     "gds_name": "egle.uzkuraityte",
     "preferred_name": "Egle Uzkuraityte"
-  },
-  {
-    "names": [
-      "Felix Millne",
-      "felix"
-    ],
-    "github_username": "FelixMarcusMillne",
-    "emails": [
-      "felix.millne@digital.cabinet-office.gov.uk",
-      "fmillne@thoughtworks.com"
-    ],
-    "gds_name": "felix.millne",
-    "preferred_name": "Felix Millne"
   },
   {
     "names": [
@@ -885,18 +860,6 @@
     ],
     "gds_name": "paula.valenca",
     "preferred_name": "Paula Valenca"
-  },
-  {
-    "github_username": "rachelthecodesmith",
-    "names": [
-      "Rachel Smith"
-    ],
-    "emails": [
-      "rachel.smith@digital.cabinet-office.gov.uk",
-      "rachelcodesmith@outlook.com"
-    ],
-    "gds_name": "rachel.smith",
-    "preferred_name": "Rachel Smith"
   },
   {
     "github_username": "robinmitra",
