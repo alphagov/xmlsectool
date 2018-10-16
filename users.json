@@ -303,6 +303,17 @@
     ],
     "gds_name": "david.king",
     "preferred_name": "David King"
+  }
+  {
+    "github_username": "dougneal",
+    "names": [
+      "Doug Neal"
+    ],
+    "emails": [
+      "doug.neal@digital.cabinet-office.gov.uk"
+    ],
+    "gds_name": "doug.neal",
+    "preferred_name": "Doug Neal"
   },
   {
     "github_username": "ejrowley",
