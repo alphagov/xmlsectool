@@ -152,7 +152,7 @@
       "Athanasios Voutsadakis"
     ],
     "emails": [
-      "athanasios.voutsadakis@digital.cabinet-office.gov.uk",
+      "athanasios.voutsadakis@digital.cabinet-office.gov.uk"
     ],
     "gds_name": "athanasios.voutsadakis",
     "preferred_name": "Athanasios Voutsadakis"
@@ -303,7 +303,7 @@
     ],
     "gds_name": "david.king",
     "preferred_name": "David King"
-  }
+  },
   {
     "github_username": "dougneal",
     "names": [
@@ -984,17 +984,6 @@
     ],
     "gds_name": "sarah.herman",
     "preferred_name": "Sarah Herman"
-  },
-  {
-    "names": [
-      "Simon Hudson",
-      "simonhudson"
-    ],
-    "emails": [
-      "simon.hudson@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "simon.hudson",
-    "preferred_name": "Simon Hudson"
   },
   {
     "github_username": "smford",
