@@ -4,5 +4,5 @@ module "user_kerrr" {
   username = "kerrr"
   realname = "Kerr Rainey"
   org_role = "member"
-  teams = [ "${module.mission_eidas.teams}" ]
+  teams = [ "${module.mission_optimising.teams}" ]
 }

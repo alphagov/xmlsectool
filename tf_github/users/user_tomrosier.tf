@@ -1,8 +1,8 @@
-module "user_minhngocd" {
+module "user_tomrosier" {
   source = "./verify_user"
 
-  username = "minhngocd"
-  realname = "Minno Dang"
+  username = "tomrosier"
+  realname = "Tom Rosier"
   org_role = "member"
   teams = [ "${module.mission_eidas.teams}" ]
 }

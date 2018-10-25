@@ -147,6 +147,17 @@
     "preferred_name": "Anshul Sirur"
   },
   {
+    "github_username": "sakisv",
+    "names": [
+      "Athanasios Voutsadakis"
+    ],
+    "emails": [
+      "athanasios.voutsadakis@digital.cabinet-office.gov.uk"
+    ],
+    "gds_name": "athanasios.voutsadakis",
+    "preferred_name": "Athanasios Voutsadakis"
+  },
+  {
     "names": [
       "ayodejiawoyele"
     ],
@@ -216,6 +227,17 @@
     "preferred_name": "Christopher Holmes"
   },
   {
+    "github_username": "Wynndow",
+    "names": [
+      "Chris Wynne"
+    ],
+    "emails": [
+      "christopher.wynne@digital.cabinet-office.gov.uk"
+    ],
+    "gds_name": "christopher.wynne",
+    "preferred_name": "Chris Wynne"
+  },
+  {
     "names": [
       "Ciara Green"
     ],
@@ -271,16 +293,15 @@
     "preferred_name": "Dan Harper"
   },
   {
-    "github_username": "donnabelsey",
+    "github_username": "dougneal",
     "names": [
-      "Donna Belsey",
-      "donnabelsey"
+      "Doug Neal"
     ],
     "emails": [
-      "donna.belsey@digital.cabinet-office.gov.uk"
+      "doug.neal@digital.cabinet-office.gov.uk"
     ],
-    "gds_name": "donna.belsey",
-    "preferred_name": "Donna Belsey"
+    "gds_name": "doug.neal",
+    "preferred_name": "Doug Neal"
   },
   {
     "github_username": "ejrowley",
@@ -304,19 +325,6 @@
     ],
     "gds_name": "egle.uzkuraityte",
     "preferred_name": "Egle Uzkuraityte"
-  },
-  {
-    "names": [
-      "Felix Millne",
-      "felix"
-    ],
-    "github_username": "FelixMarcusMillne",
-    "emails": [
-      "felix.millne@digital.cabinet-office.gov.uk",
-      "fmillne@thoughtworks.com"
-    ],
-    "gds_name": "felix.millne",
-    "preferred_name": "Felix Millne"
   },
   {
     "names": [
@@ -620,18 +628,6 @@
     "preferred_name": "Kay Dale"
   },
   {
-    "github_username": "kgarwood",
-    "names": [
-      "Kevin Garwood"
-    ],
-    "emails": [
-      "kevin.garwood@digital.cabinet-office.gov.uk",
-      "kevingarwood@gds0262.local"
-    ],
-    "gds_name": "kevin.garwood",
-    "preferred_name": "Kevin Garwood"
-  },
-  {
     "names": [
       "kirsty armstrong",
       "kirsty.armstrong"
@@ -797,18 +793,6 @@
     "preferred_name": "Michael Thomas"
   },
   {
-    "github_username": "minhngocd",
-    "names": [
-      "Minno Dang"
-    ],
-    "emails": [
-      "mndang247@gmail.com",
-      "minh.ngocdang@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "minh.ngocdang",
-    "preferred_name": "Minno Dang"
-  },
-  {
     "names": [
       "Mohamed Hussein",
       "mohamedhussein"
@@ -829,6 +813,17 @@
     ],
     "gds_name": "nick.forrester",
     "preferred_name": "Nick Forrester"
+  },
+  {
+    "names": [
+      "Olakunle Jegede"
+    ],
+    "emails": [
+      "olakunle.jegede@digital.cabinet-office.gov.uk"
+    ],
+    "gds_name": "olakunle.jegede",
+    "github_username": "jkunle",
+    "preferred_name": "Ola Jegede"
   },
   {
     "names": [
@@ -873,18 +868,6 @@
     ],
     "gds_name": "paula.valenca",
     "preferred_name": "Paula Valenca"
-  },
-  {
-    "github_username": "rachelthecodesmith",
-    "names": [
-      "Rachel Smith"
-    ],
-    "emails": [
-      "rachel.smith@digital.cabinet-office.gov.uk",
-      "rachelcodesmith@outlook.com"
-    ],
-    "gds_name": "rachel.smith",
-    "preferred_name": "Rachel Smith"
   },
   {
     "github_username": "robinmitra",
@@ -967,31 +950,6 @@
     "preferred_name": "Sarah Herman"
   },
   {
-    "github_username": "sgreensmith",
-    "names": [
-      "Simon Greensmith"
-    ],
-    "emails": [
-      "simon.greensmith@digital.cabinet-office.gov.uk"
-    ],
-    "roles": [
-      "dev-release-approver"
-    ],
-    "gds_name": "simon.greensmith",
-    "preferred_name": "Simon Greensmith"
-  },
-  {
-    "names": [
-      "Simon Hudson",
-      "simonhudson"
-    ],
-    "emails": [
-      "simon.hudson@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "simon.hudson",
-    "preferred_name": "Simon Hudson"
-  },
-  {
     "github_username": "smford",
     "names": [
       "stephen ford",
@@ -1014,18 +972,6 @@
     ],
     "gds_name": "stephen.grier",
     "preferred_name": "Stephen Grier"
-  },
-  {
-    "github_username": "javindo",
-    "names": [
-      "Steve Butler",
-      "stevebutler"
-    ],
-    "emails": [
-      "steve.butler@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "steve.butler",
-    "preferred_name": "Steve Butler"
   },
   {
     "names": [
@@ -1118,6 +1064,18 @@
     ],
     "gds_name": "tom.farrar",
     "preferred_name": "Tom Farrar"
+  },
+  {
+    "github_username": "tomrosier",
+    "names": [
+      "Tom Rosier",
+      "tomrosier"
+    ],
+    "emails": [
+      "tom.rosier@digital.cabinet-office.gov.uk"
+    ],
+    "gds_name": "tom.rosier",
+    "preferred_name": "Tom Rosier"
   },
   {
     "github_username": "DavePcoderepo",

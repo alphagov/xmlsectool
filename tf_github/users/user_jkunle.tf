@@ -1,8 +1,8 @@
-module "user_sgreensmith" {
+module "user_jkunle" {
   source = "./verify_user"
 
-  username = "sgreensmith"
-  realname = "Simon Greensmith"
+  username = "jkunle"
+  realname = "Olakunle Jegede"
   org_role = "member"
   teams = [ "${module.mission_connecting.teams}" ]
 }

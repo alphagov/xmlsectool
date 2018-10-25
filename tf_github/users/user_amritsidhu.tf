@@ -4,5 +4,5 @@ module "user_amritsidhu" {
   username = "AmritSidhu"
   realname = "Amrit Sidhu"
   org_role = "member"
-  teams = [ "${module.mission_billing.teams}" ]
+  teams = [ "${module.mission_connecting.teams}" ]
 }
