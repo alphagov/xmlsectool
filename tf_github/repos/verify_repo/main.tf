@@ -18,6 +18,10 @@ resource "github_repository" "repo" {
   provisioner "local-exec" {
     command = "./provision.rb ${github_repository.repo.full_name}"
   }
+
+  lifecycle {
+    ignore_changes = ["topics"]
+  }
 }
 
 resource "github_team_repository" "repo_team_push" {
