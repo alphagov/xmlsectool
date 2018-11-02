@@ -1333,21 +1333,6 @@
     }
   },
   {
-    "name": "verify-frontend-app-config",
-    "githubData": {
-      "description": "App config for the Verify Rails frontend",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-frontend-app-config",
-      "sshUrl": "git@github.com:alphagov/verify-frontend-app-config.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-    }
-  },
-  {
     "name": "verify-frontend-federation-config",
     "githubData": {
       "description": "Federation configuration for the Verify frontend",
