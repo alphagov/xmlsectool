@@ -49,7 +49,6 @@ eidas-middleware:
 
 frontend:
   - verify-frontend
-  - verify-frontend-app-config
   - verify-frontend-federation-config
 
 tools:
