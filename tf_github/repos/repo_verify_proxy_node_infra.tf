@@ -6,5 +6,6 @@ module "repo_verify_proxy_node_infra" {
   private = "true"
   push_teams = [
         "verify-tech-team-eidas-notification",
+        "verify-tech-team-infrastructure",
       ]
 }
