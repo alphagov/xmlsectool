@@ -962,42 +962,6 @@
     }
   },
   {
-    "name": "verify-eidas-bridge",
-    "githubData": {
-      "description": "Verify Eidas Bridge",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-eidas-bridge",
-      "sshUrl": "git@github.com:alphagov/verify-eidas-bridge.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-      "PREncourager": {
-        "slackRecipients": ["verify-eidas"]
-      }
-    }
-  },
-  {
-    "name": "verify-eidas-governikus-middleware",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-eidas-governikus-middleware",
-      "sshUrl": "git@github.com:alphagov/verify-eidas-governikus-middleware.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-      "PREncourager": {
-        "slackRecipients": ["verify-eidas"]
-      }
-    }
-  },
-  {
     "name": "verify-eidas-keystore",
     "githubData": {
       "description": "Verify eIDAS Keystore Repo",
@@ -1071,80 +1035,6 @@
     }
   },
   {
-    "name": "verify-eidas-notification",
-    "githubData": {
-      "description": "eIDAS Notification",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-eidas-notification",
-      "sshUrl": "git@github.com:alphagov/verify-eidas-notification.git",
-      "topics": [
-        "eidas",
-        "verify"
-      ]
-    },
-    "flags": {
-      "PREncourager": {
-        "slackRecipients": ["verify-eidas"]
-      }
-    }
-  },
-  {
-    "name": "verify-eidas-pki",
-    "githubData": {
-      "description": "Public Key Infrastructure for the eIDAS Alpha",
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-eidas-pki",
-      "sshUrl": "git@github.com:alphagov/verify-eidas-pki.git",
-      "topics": [
-        "eidas",
-        "verify"
-      ]
-    },
-    "flags": {
-      "PREncourager": {
-        "slackRecipients": ["verify-eidas"]
-      }
-    }
-  },
-  {
-    "name": "verify-eidas-proxy-node-infrastructure",
-    "githubData": {
-      "description": "Architectural Design Records and Configuration for the  Verify eIDAS Proxy Node Infrastructure",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-eidas-proxy-node-infrastructure",
-      "sshUrl": "git@github.com:alphagov/verify-eidas-proxy-node-infrastructure.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-      "PREncourager": {
-        "slackRecipients": ["verify-eidas"]
-      }
-    }
-  },
-  {
-    "name": "verify-eidas-reference",
-    "githubData": {
-      "description": "Code copied from each release of EIDAS source zips",
-      "isFork": true,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-eidas-reference",
-      "sshUrl": "git@github.com:alphagov/verify-eidas-reference.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-      "PREncourager": {
-        "slackRecipients": ["verify-eidas"]
-      }
-    }
-  },
-  {
     "name": "verify-eidas-reference-1.4",
     "githubData": {
       "description": null,
@@ -1158,24 +1048,6 @@
     },
     "flags": {
       "isVerifyCoreRepo": true,
-      "PREncourager": {
-        "slackRecipients": ["verify-eidas"]
-      }
-    }
-  },
-  {
-    "name": "verify-eidas-reference-acceptance-tests",
-    "githubData": {
-      "description": "Automated user-level tests for the eIDAS reference code",
-      "isFork": false,
-      "isPrivate": false,
-      "url": "https://github.com/alphagov/verify-eidas-reference-acceptance-tests",
-      "sshUrl": "git@github.com:alphagov/verify-eidas-reference-acceptance-tests.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
       "PREncourager": {
         "slackRecipients": ["verify-eidas"]
       }
@@ -1857,6 +1729,44 @@
       ]
     },
     "flags": {
+    }
+  },
+  {
+    "name": "verify-proxy-node",
+    "githubData": {
+      "description": "eIDAS Proxy Node",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-proxy-node",
+      "sshUrl": "git@github.com:alphagov/verify-proxy-node.git",
+      "topics": [
+        "eidas",
+        "verify"
+      ]
+    },
+    "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-eidas"]
+      }
+    }
+  },
+  {
+    "name": "verify-proxy-node-infra",
+    "githubData": {
+      "description": "eIDAS Proxy Node infrastructure",
+      "isFork": false,
+      "isPrivate": true,
+      "url": "https://github.com/alphagov/verify-proxy-node-infra",
+      "sshUrl": "git@github.com:alphagov/verify-proxy-node-infra.git",
+      "topics": [
+        "eidas",
+        "verify"
+      ]
+    },
+    "flags": {
+      "PREncourager": {
+        "slackRecipients": ["verify-eidas"]
+      }
     }
   },
   {
