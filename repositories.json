@@ -999,24 +999,6 @@
     }
   },
   {
-    "name": "verify-eidas-manifests-1.4",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-eidas-manifests-1.4",
-      "sshUrl": "git@github.com:alphagov/verify-eidas-manifests-1.4.git",
-      "topics": [
-
-      ]
-    },
-    "flags": {
-      "PREncourager": {
-        "slackRecipients": ["verify-eidas"]
-      }
-    }
-  },
-  {
     "name": "verify-eidas-metadata-aggregator",
     "githubData": {
       "description": "Script to aggregate metadata from EU countries",
@@ -1029,25 +1011,6 @@
       ]
     },
     "flags": {
-      "PREncourager": {
-        "slackRecipients": ["verify-eidas"]
-      }
-    }
-  },
-  {
-    "name": "verify-eidas-reference-1.4",
-    "githubData": {
-      "description": null,
-      "isFork": false,
-      "isPrivate": true,
-      "url": "https://github.com/alphagov/verify-eidas-reference-1.4",
-      "sshUrl": "git@github.com:alphagov/verify-eidas-reference-1.4.git",
-      "topics": [
-        "verify"
-      ]
-    },
-    "flags": {
-      "isVerifyCoreRepo": true,
       "PREncourager": {
         "slackRecipients": ["verify-eidas"]
       }
