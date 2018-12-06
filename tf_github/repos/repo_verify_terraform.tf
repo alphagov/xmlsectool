@@ -7,4 +7,7 @@ module "repo_verify_terraform" {
   push_teams = [
         "verify-tech-team-infrastructure",
       ]
+  read_teams = [
+        "team-cybersecurity",
+      ]
 }

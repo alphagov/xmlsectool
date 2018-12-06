@@ -17,3 +17,7 @@ variable "archived" {
 variable "push_teams" {
   default = []
 }
+
+variable "read_teams" {
+  default = []
+}
