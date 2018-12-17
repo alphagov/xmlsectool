@@ -917,6 +917,21 @@
     }
   },
   {
+    "name": "verify-datascience-sandbox",
+    "githubData": {
+      "description": "A repository for analysis of GOV.UK Verify data.",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-datascience-sandbox",
+      "sshUrl": "git@github.com:alphagov/verify-datascience-sandbox.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
+    }
+  },
+  {
     "name": "verify-dev-pki",
     "githubData": {
       "description": "Contains PKI for use in Verify Hub integration tests",
@@ -1486,6 +1501,21 @@
       "PREncourager": {
         "minimumDays": 7
       }
+    }
+  },
+  {
+    "name": "verify-idp-predictor",
+    "githubData": {
+      "description": "The IDP Predictor for GOV.UK Verify.",
+      "isFork": false,
+      "isPrivate": false,
+      "url": "https://github.com/alphagov/verify-idp-predictor",
+      "sshUrl": "git@github.com:alphagov/verify-idp-predictor.git",
+      "topics": [
+        "verify"
+      ]
+    },
+    "flags": {
     }
   },
   {
