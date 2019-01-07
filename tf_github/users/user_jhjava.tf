@@ -3,6 +3,6 @@ module "user_jhjava" {
 
   username = "JHjava"
   realname = "James Howes"
-  org_role = "member"
+  org_role = "admin"
   teams = [ "${module.mission_eidas.teams}" ]
 }
