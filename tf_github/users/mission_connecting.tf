@@ -1,11 +1,11 @@
 module "mission_connecting" {
   source = "./verify_mission"
   teams = [
-    "verify-tech-team-core-hub",
-    "verify-tech-team-connecting",
-    "verify-tech-team-dcs",
-    "verify-tech-team-frontend",
-    "verify-tech-team-infrastructure",
-    "verify-tech-team-tools",
+    "${data.github_team.core_hub.id}",
+    "${data.github_team.connecting.id}",
+    "${data.github_team.dcs.id}",
+    "${data.github_team.frontend.id}",
+    "${data.github_team.infrastructure.id}",
+    "${data.github_team.tools.id}",
   ]
 }

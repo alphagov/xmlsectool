@@ -1,12 +1,12 @@
 module "mission_eidas" {
   source = "./verify_mission"
   teams = [
-    "verify-tech-team-core-hub",
-    "verify-tech-team-eidas-notification",
-    "verify-tech-team-eidas-middleware",
-    "verify-tech-team-dcs",
-    "verify-tech-team-frontend",
-    "verify-tech-team-infrastructure",
-    "verify-tech-team-tools",
+    "${data.github_team.core_hub.id}",
+    "${data.github_team.eidas_notification.id}",
+    "${data.github_team.eidas_middleware.id}",
+    "${data.github_team.dcs.id}",
+    "${data.github_team.frontend.id}",
+    "${data.github_team.infrastructure.id}",
+    "${data.github_team.tools.id}",
   ]
 }
