@@ -29,19 +29,3 @@ client.protect_branch("#{repo}", 'master', {
 
 # Remove any unmanaged collaborators
 client.collaborators(repo).each { |user| client.remove_collaborator(repo, user) }
-
-# Remove old teams
-old_teams = [
-  'verify-tech-team-core-hub', 
-  'verify-tech-team-dcs', 
-  'verify-tech-team-connecting',
-  'verify-tech-team-eidas-notification',
-  'verify-tech-team-eidas-middleware',
-  'verify-tech-team-frontend',
-  'verify-tech-team-performance-pa',
-  'verify-tech-team-performance-dev',
-  'verify-tech-team-tools',
-]
-client.org_teams('alphagov').select { |team| old_teams.include?(team.slug) }.map(&:id).each do |id|
-  client.remove_team_repo(id, repo)
-end
