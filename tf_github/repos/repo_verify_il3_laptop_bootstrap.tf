@@ -5,6 +5,7 @@ module "repo_verify_il3_laptop_bootstrap" {
   description = "A simple set of shell scripts to set up a secure build laptop for Verify"
   private = "true"
   push_teams = [
+        "verify-tech-team-core",
         "verify-tech-team-infrastructure",
   ]
 }

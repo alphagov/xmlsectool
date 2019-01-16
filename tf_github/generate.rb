@@ -56,7 +56,7 @@ module "user_<%= sanitise_login(login) %>" {
   username = "<%= login %>"
   realname = "<%= name %>"
   org_role = "<%= role %>"
-  teams = [ "${module.mission_x.teams}" ]
+  teams = [ "${data.github_team.x.id}" ]
 }
 EOS
 

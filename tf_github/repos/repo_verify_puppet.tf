@@ -5,6 +5,7 @@ module "repo_verify_puppet" {
   description = "Puppet code for GOV.UK Verify"
   private = "true"
   push_teams = [
+        "verify-tech-team-core",
         "verify-tech-team-infrastructure",
       ]
 }

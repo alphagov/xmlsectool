@@ -5,6 +5,7 @@ module "repo_verify_jenkins_job_builder" {
   description = "Verify Jenkins Job Builder configuration"
   private = "true"
   push_teams = [
-        "verify-tech-team-tools",
+        "verify-tech-team-core",
+        "verify-tech-team-infrastructure",
       ]
 }

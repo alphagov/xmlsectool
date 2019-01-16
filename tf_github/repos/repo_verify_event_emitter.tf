@@ -5,6 +5,6 @@ module "repo_verify_event_emitter" {
   description = "Send events"
   private = "false"
   push_teams = [
-        "verify-tech-team-core-hub",
+        "verify-tech-team-core",
       ]
 }

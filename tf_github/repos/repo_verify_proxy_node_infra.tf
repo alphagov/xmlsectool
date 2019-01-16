@@ -5,7 +5,7 @@ module "repo_verify_proxy_node_infra" {
   description = "Verify eIDAS Proxy Node infrastructure"
   private = "true"
   push_teams = [
-        "verify-tech-team-eidas-notification",
+        "verify-tech-team-eidas",
         "verify-tech-team-infrastructure",
       ]
 }

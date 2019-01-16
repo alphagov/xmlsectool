@@ -5,7 +5,6 @@ module "repo_verify_data_pipeline_config" {
   description = "Holds configuration data to help verify data pipeline run in production"
   private = "true"
   push_teams = [
-        "verify-tech-team-performance-pa",
-        "verify-tech-team-performance-dev",
+        "verify-tech-team-core",
       ]
 }

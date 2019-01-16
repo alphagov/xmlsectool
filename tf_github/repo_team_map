@@ -1,4 +1,4 @@
-core-hub:
+core:
   - verify-hub
   - verify-saml-libs
   - ida-hub-support
@@ -6,20 +6,14 @@ core-hub:
   - verify-matching-service-adapter
   - verify-test-rp
   - verify-stub-idp
-  - verify-eidas-trust-anchor
-  - verify-eidas-metadata-aggregator
   - verify-utils-libs
   - verify-hub-federation-config
   - verify-metadata
-
-dcs:
   - doc-checking
   - dcs-client
   - dcs-performance-tests
   - dcs-client-acceptance-tests
   - verify-utils-libs
-
-connecting:
   - verify-matching-service-adapter
   - verify-service-provider
   - verify-support-form
@@ -29,6 +23,19 @@ connecting:
   - verify-local-matching-service-example
   - verify-hub-federation-config
   - verify-metadata
+  - verify-frontend
+  - verify-frontend-federation-config
+  - verify-team-manual
+  - verify-jenkins-job-builder
+  - verify-tech-team
+  - verify-release-automation
+  - verify-puppet
+  - verify-terraform
+  - verify-fabric
+  - verify-ansible
+  - verify-boxes
+  - verify-il3-laptop-bootstrap
+  - verify-packages
 
 infrastructure:
   - verify-puppet
@@ -39,20 +46,10 @@ infrastructure:
   - verify-il3-laptop-bootstrap
   - verify-packages
 
-eidas-notification:
+eidas:
   - verify-eidas-notification
-
-eidas-middleware:
   - verify-eidas-governikus-middleware
   - verify-eidas-middleware
   - verify-german-eidas-middleware
-
-frontend:
-  - verify-frontend
-  - verify-frontend-federation-config
-
-tools:
-  - verify-team-manual
-  - verify-jenkins-job-builder
-  - verify-tech-team
-  - verify-release-automation
+  - verify-eidas-trust-anchor
+  - verify-eidas-metadata-aggregator

@@ -5,6 +5,7 @@ module "repo_verify_fabric" {
   description = " Fabric for Verify "
   private = "true"
   push_teams = [
+        "verify-tech-team-core",
         "verify-tech-team-infrastructure",
       ]
 }

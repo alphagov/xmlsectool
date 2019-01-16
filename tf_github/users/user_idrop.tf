@@ -4,5 +4,8 @@ module "user_idrop" {
   username = "idrop"
   realname = "Phillip Miller"
   org_role = "member"
-  teams = [ "${module.mission_eidas.teams}" ]
+  teams = [ 
+            "${data.github_team.core.id}",
+            "${data.github_team.eidas.id}", 
+          ]
 }

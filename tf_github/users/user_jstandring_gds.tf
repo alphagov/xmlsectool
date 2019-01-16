@@ -4,5 +4,5 @@ module "user_jstandring_gds" {
   username = "jstandring-gds"
   realname = "Julian Standring"
   org_role = "member"
-  teams = [ "${module.mission_re.teams}" ]
+  teams = [ "${data.github_team.infrastructure.id}" ]
 }

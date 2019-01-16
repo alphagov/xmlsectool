@@ -4,5 +4,5 @@ module "user_adityapahuja" {
   username = "adityapahuja"
   realname = "Aditya Pahuja"
   org_role = "member"
-  teams = [ "${module.mission_re.teams}" ]
+  teams = [ "${data.github_team.infrastructure.id}" ]
 }

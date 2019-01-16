@@ -5,6 +5,6 @@ module "repo_dcs_performance_tests" {
   description = "Verify DCS Performance Tests"
   private = "true"
   push_teams = [
-        "verify-tech-team-dcs",
+        "verify-tech-team-core",
       ]
 }

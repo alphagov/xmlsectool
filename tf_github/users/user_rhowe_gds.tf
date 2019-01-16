@@ -4,5 +4,8 @@ module "user_rhowe_gds" {
   username = "rhowe-gds"
   realname = "Russell Howe"
   org_role = "admin"
-  teams = [ "${module.mission_re.teams}" ]
+  teams = [ 
+            "${data.github_team.core.id}",
+            "${data.github_team.infrastructure.id}", 
+          ]
 }

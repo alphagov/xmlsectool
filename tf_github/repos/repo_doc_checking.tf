@@ -5,6 +5,6 @@ module "repo_doc_checking" {
   description = "Verify Document Checking Service"
   private = "true"
   push_teams = [
-        "verify-tech-team-dcs",
+        "verify-tech-team-core",
       ]
 }

@@ -4,5 +4,9 @@ module "user_thomasalanlee" {
   username = "thomasalanlee"
   realname = "Thomas Lee"
   org_role = "admin"
-  teams = [ "${module.mission_all.teams}" ]
+  teams = [ 
+            "${data.github_team.core.id}",
+            "${data.github_team.eidas.id}", 
+            "${data.github_team.infrastructure.id}", 
+          ]
 }
