@@ -25,7 +25,7 @@ resource "github_repository" "repo" {
   }
 
   lifecycle {
-    ignore_changes = ["topics"]
+    ignore_changes = ["topics", "auto_init"]
   }
 }
 
