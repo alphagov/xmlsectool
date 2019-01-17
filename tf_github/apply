@@ -38,16 +38,16 @@ auth_resp=$(curl "https://api.github.com/authorizations" \
   -H "Content-Type: application/json"
 )
 
-export TF_VAR_github_token="$(jq -r '.token' <<<$auth_resp)"
+export GITHUB_TOKEN="$(jq -r '.token' <<<$auth_resp)"
 
-${TF_VAR_github_token:?Problem getting token}
+${GITHUB_TOKEN:?Problem getting token}
 
 function cleanup {
   local id="$(jq -r '.id' <<<$auth_resp)"
   echo "Done. Removing temporary token with ID: $id"
   curl "https://api.github.com/authorizations/$id" \
     -X DELETE \
-    -u "$gh_user:$TF_VAR_github_token"
+    -u "$gh_user:$GITHUB_TOKEN"
 }
 
 trap cleanup EXIT

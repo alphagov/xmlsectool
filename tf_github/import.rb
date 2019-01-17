@@ -4,7 +4,7 @@ require 'optparse'
 require 'hcl/checker'
 require 'octokit'
 
-CLIENT = Octokit::Client.new(access_token: ENV.fetch('TF_VAR_github_token'))
+CLIENT = Octokit::Client.new(access_token: ENV.fetch('GITHUB_TOKEN'))
 CLIENT.auto_paginate = true
 GITHUB_ORG = ENV.fetch('TF_VAR_github_organization')
 
