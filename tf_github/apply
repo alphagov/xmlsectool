@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+
+set -eu
+
+test "$#" -gt 0 || {
+  echo "Usage: apply <teams/users/repos>"
+  exit 1
+}
+
+TF_BIN="${TF_BIN:-$(command -v tf10 || :)}"
+TF_BIN="${TF_BIN:?Please install terraform or point to it with export TF_BIN=/path/to/terraform}"
+
+echo "Using terraform: $TF_BIN"
+
+target="$1"
+
+command -v jq >/dev/null || brew install jq
+
+fingerprint="$(head -c 16 /dev/urandom | base64)"
+req=$(cat <<EOF
+{
+  "scopes": ["admin:org", "delete_repo", "repo"],
+  "note": "verify-terraform-github-admin",
+  "fingerprint": "$fingerprint"
+}
+EOF
+)
+
+echo "Need to fetch a temporary GitHub token with scopes $(jq '.scopes | join(", ")' <<<$req):"
+read -p "username: " gh_user
+read -p "password: " -s gh_pass && echo
+read -p "2fa: " gh_otp
+
+auth_resp=$(curl "https://api.github.com/authorizations" \
+  -X POST \
+  -u "$gh_user:$gh_pass" \
+  -H "X-GitHub-OTP: $gh_otp" \
+  -H "Content-Type: application/json"
+)
+
+export TF_VAR_github_token="$(jq -r '.token' <<<$auth_resp)"
+
+${TF_VAR_github_token:?Problem getting token}
+
+function cleanup {
+  local id="$(jq -r '.id' <<<$auth_resp)"
+  echo "Done. Removing temporary token with ID: $id"
+  curl "https://api.github.com/authorizations/$id" \
+    -X DELETE \
+    -u "$gh_user:$TF_VAR_github_token"
+}
+
+trap cleanup EXIT
+
+pushd "$target"/
+  echo "Terraforming $target ..."
+  $TF_BIN init
+  $TF_BIN apply
+popd
