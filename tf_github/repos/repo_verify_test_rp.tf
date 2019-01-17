@@ -5,6 +5,6 @@ module "repo_verify_test_rp" {
   description = "Verify Test Relying Party"
   private = "false"
   push_teams = [
-        "verify-tech-team-core-hub",
+        "verify-tech-team-core",
       ]
 }

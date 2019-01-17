@@ -5,6 +5,6 @@ module "repo_dcs_client_acceptance_tests" {
   description = "Acceptance tests for the DCS client - https://github.com/alphagov/dcs-client"
   private = "true"
   push_teams = [
-        "verify-tech-team-dcs",
+        "verify-tech-team-core",
       ]
 }

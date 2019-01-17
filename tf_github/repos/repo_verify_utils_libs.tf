@@ -5,7 +5,6 @@ module "repo_verify_utils_libs" {
   description = "Libraries used across multiple Verify projects"
   private = "false"
   push_teams = [
-        "verify-tech-team-core-hub",
-        "verify-tech-team-dcs",
+        "verify-tech-team-core",
       ]
 }

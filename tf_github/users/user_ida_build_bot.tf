@@ -3,5 +3,5 @@ module "user_ida_build_bot" {
 
   username = "ida-build-bot"
   org_role = "member"
-  teams = [ "${module.mission_all.teams}" ]
+  teams = [ "${data.github_team.core.id}" ]
 }

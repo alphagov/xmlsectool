@@ -1,8 +1,8 @@
-module "user_parthagds" {
+module "user_alexandergeegds" {
   source = "./verify_user"
 
-  username = "parthagds"
-  realname = "Partha Mondal"
+  username = "alexandergeegds"
+  realname = "Alex Gee"
   org_role = "member"
   teams = [ "${data.github_team.core.id}" ]
 }

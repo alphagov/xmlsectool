@@ -4,5 +4,5 @@ module "user_phantas" {
   username = "phantas"
   realname = "Paula Valenca"
   org_role = "member"
-  teams = [ "${module.mission_optimising.teams}" ]
+  teams = [ "${data.github_team.core.id}" ]
 }

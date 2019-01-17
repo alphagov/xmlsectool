@@ -5,6 +5,6 @@ module "repo_verify_support_form" {
   description = "Verify support form"
   private = "false"
   push_teams = [
-        "verify-tech-team-connecting",
+        "verify-tech-team-core",
       ]
 }

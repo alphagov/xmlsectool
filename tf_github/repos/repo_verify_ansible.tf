@@ -5,6 +5,7 @@ module "repo_verify_ansible" {
   description = " Ansible for Verify ops "
   private = "true"
   push_teams = [
+        "verify-tech-team-core",
         "verify-tech-team-infrastructure",
       ]
 }

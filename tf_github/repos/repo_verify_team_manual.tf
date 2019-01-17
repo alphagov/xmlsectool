@@ -5,6 +5,6 @@ module "repo_verify_team_manual" {
   description = ""
   private = "true"
   push_teams = [
-        "verify-tech-team-tools",
+        "verify-tech-team-core",
       ]
 }

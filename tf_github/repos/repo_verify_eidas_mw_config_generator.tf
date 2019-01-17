@@ -5,6 +5,6 @@ module "repo_verify_eidas_mw_config_generator" {
   description = "eIDAS Middleware Configuration Generator"
   private = "false"
   push_teams = [
-        "verify-tech-team-eidas-middleware",
+        "verify-tech-team-eidas",
       ]
 }

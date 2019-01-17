@@ -5,7 +5,6 @@ module "repo_verify_data_schemas" {
   description = "YAML specifications for Verify data"
   private = "false"
   push_teams = [
-        "verify-tech-team-performance-pa",
-        "verify-tech-team-performance-dev",
+        "verify-tech-team-core",
       ]
 }

@@ -5,6 +5,6 @@ module "repo_verify_token_service" {
   description = "Verify Token Service"
   private = "true"
   push_teams = [
-        "verify-tech-team-core-hub",
+        "verify-tech-team-core",
       ]
 }

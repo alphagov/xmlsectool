@@ -5,7 +5,6 @@ module "repo_verify_matching_service_adapter" {
   description = "Verify Matching Service Adapter"
   private = "false"
   push_teams = [
-        "verify-tech-team-core-hub",
-        "verify-tech-team-connecting",
+        "verify-tech-team-core",
       ]
 }

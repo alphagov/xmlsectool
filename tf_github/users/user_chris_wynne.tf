@@ -4,5 +4,8 @@ module "user_chris_wynne" {
   username = "Wynndow"
   realname = "Chris Wynne"
   org_role = "member"
-  teams = [ "${module.mission_eidas.teams}" ]
+  teams = [ 
+            "${data.github_team.core.id}",
+            "${data.github_team.eidas.id}", 
+          ]
 }

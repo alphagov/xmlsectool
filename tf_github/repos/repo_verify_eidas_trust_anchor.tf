@@ -5,6 +5,6 @@ module "repo_verify_eidas_trust_anchor" {
   description = "Generates trust anchors as JSON Web Keys that allow MSAs and Hubs to validate European metadata."
   private = "false"
   push_teams = [
-        "verify-tech-team-core-hub",
+        "verify-tech-team-eidas",
       ]
 }

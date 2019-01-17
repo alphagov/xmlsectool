@@ -5,6 +5,6 @@ module "repo_verify_release_automation" {
   description = "🚂 The Verify Release Train"
   private = "true"
   push_teams = [
-        "verify-tech-team-tools",
+        "verify-tech-team-core",
       ]
 }

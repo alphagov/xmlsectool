@@ -4,5 +4,5 @@ module "user_mhussein_gds" {
   username = "mhussein-gds"
   realname = "Muhammed Hussein"
   org_role = "member"
-  teams = [ "${module.mission_secops.teams}" ]
+  teams = [ "${data.github_team.core.id}" ]
 }

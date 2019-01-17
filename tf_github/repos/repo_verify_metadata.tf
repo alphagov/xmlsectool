@@ -5,7 +5,7 @@ module "repo_verify_metadata" {
   description = "Verify SAML metadata sources"
   private = "true"
   push_teams = [
-        "verify-tech-team-core-hub",
+        "verify-tech-team-core",
         "verify-tech-team-connecting",
       ]
 }
