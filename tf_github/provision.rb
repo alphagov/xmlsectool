@@ -10,7 +10,7 @@ end
 repo = ARGV[0]
 review_count = Integer(ARGV[1] || 2)
 
-client = Octokit::Client.new(access_token: ENV.fetch('TF_VAR_github_token'))
+client = Octokit::Client.new(access_token: ENV.fetch('GITHUB_TOKEN'))
 client.auto_paginate = true
 
 # Until the TF Github provider supports required_approving_review_count

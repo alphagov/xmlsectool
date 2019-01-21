@@ -2,6 +2,15 @@
 
 We use Terraform to define Verify's repositories, users and teams along with the relevant access controls. Creating a new repository and adding/removing users from teams or the organisation should be done by modifying the Terraform resources defined in this directory.
 
+## Applying changes
+
+You'll need to be a Github admin to do anything useful. Use the `apply` script in this directory:
+
+    apply <teams/users/repos>
+
+The script prompts you for your Github username, password and 2FA code and use that to request a temporary token with the `admin:org`, `delete_repo` and `repo` scopes.
+The script then runs `terraform apply` in the respective directory -- don't worry, you'll be shown a plan first and then get asked if you want to apply the changes.
+
 ## Adding or removing users
 
 Users are modified via the files in the `users/` directory. You can add a user by adding a file containing the following:
@@ -49,6 +58,3 @@ module "repo_new_repo" {
 The filename should be something like `new_repo.tf`.
 The `push_teams` value determines which teams' members can create branches and raise PRs against the repository. When the Terraform is applied (via our CI pipeline), the repository will be created with the necessary permisssions.
 
-## Applying changes
-
-Pushing to the master branch triggers the [github-terraform-apply-job](link) which will provision resources on Github. The Terraform state file is checked into this repository.
