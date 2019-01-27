@@ -33,6 +33,7 @@ read -p "2fa: " gh_otp
 
 auth_resp=$(curl "https://api.github.com/authorizations" \
   -X POST \
+  --data "$req" \
   -u "$gh_user:$gh_pass" \
   -H "X-GitHub-OTP: $gh_otp" \
   -H "Content-Type: application/json"
@@ -40,14 +41,14 @@ auth_resp=$(curl "https://api.github.com/authorizations" \
 
 export GITHUB_TOKEN="$(jq -r '.token' <<<$auth_resp)"
 
-${GITHUB_TOKEN:?Problem getting token}
+: ${GITHUB_TOKEN:?Problem getting token}
 
 function cleanup {
   local id="$(jq -r '.id' <<<$auth_resp)"
   echo "Done. Removing temporary token with ID: $id"
   curl "https://api.github.com/authorizations/$id" \
     -X DELETE \
-    -u "$gh_user:$GITHUB_TOKEN"
+    -u "$gh_user:$gh_pass"
 }
 
 trap cleanup EXIT
