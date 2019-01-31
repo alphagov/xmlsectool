@@ -3,7 +3,7 @@ module "repo_metadata_checker" {
 
   name        = "metadata-checker"
   description = "Tools for parsing and monitoring SAML metadata"
-  private     = "true"
+  private     = "false"
 
   push_teams = [
     "verify-tech-team-core",
