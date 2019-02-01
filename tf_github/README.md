@@ -4,7 +4,7 @@ We use Terraform to define Verify's repositories, users and teams along with the
 
 ## Applying changes
 
-You'll need to be a Github admin to do anything useful. Use the `apply` script in this directory:
+You'll need to be a Github admin or a "maintainer" of verify-tech-team to do anything useful. Use the `apply` script in this directory:
 
     apply <teams/users/repos>
 
@@ -19,9 +19,11 @@ Users are modified via the files in the `users/` directory. You can add a user b
 module "user_<github login>" {
   source = "./verify_user"
 
-  username = "<github login>"
-  realname = "<real name>"
-  org_role = "member"
+  username     = "<github login>"
+  realname     = "<real name>"
+  can_merge    = "<true/false if you are allowed to merge (see team manual for eligibility)>"
+  verify_admin = "<true/false if you are a tech lead>"
+
   teams = [ "${data.github_team.<team>.id}" ]
 }
 ```
@@ -33,10 +35,11 @@ The `teams` value defines the list of teams the user is member of. Each repo has
 
 Teams are defined in the `teams` list within `teams/teams.tf`. For convenience, it's best to stick with kebab-case (lowercase and hyphenated) for team names.
 
-To keep the maintenance simple, we have 3 teams:
+To keep the maintenance simple, we have 4 teams:
 - `core` - with access to all the Verify repos
 - `eidas` - with access to the sensitive eIDAS repos
 - `infrastructure` - with access to Verify infrastructure repos
+- `approvers` - everyone with SC is in this team and we use [CODEOWNERS](https://help.github.com/articles/about-code-owners/) to ensure only permitted people can approve + merge PRs
 
 ## Creating a new repository
 
