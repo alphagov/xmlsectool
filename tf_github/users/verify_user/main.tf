@@ -17,3 +17,15 @@ resource "github_team_membership" "tech_team_maintainer" {
   username = "${var.username}"
   role     = "maintainer"
 }
+
+data "github_team" "approvers_team" {
+  slug = "verify-tech-team-approvers"
+}
+
+resource "github_team_membership" "tech_team_approver" {
+  count = "${var.can_merge == "true" ? 1 : 0}"
+
+  team_id  = "${data.github_team.approvers_team.id}"
+  username = "${var.username}"
+  role     = "member"
+}

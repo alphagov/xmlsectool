@@ -3,6 +3,7 @@ module "user_jhjava" {
 
   username     = "JHjava"
   realname     = "James Howes"
+  can_merge    = "true"
   verify_admin = "true"
 
   teams = [

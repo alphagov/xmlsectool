@@ -3,6 +3,7 @@ module "user_vixus0" {
 
   username     = "vixus0"
   realname     = "Anshul Sirur"
+  can_merge    = "true"
   verify_admin = "true"
 
   teams = [

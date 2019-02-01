@@ -1,8 +1,9 @@
 module "user_chris_wynne" {
   source = "./verify_user"
 
-  username = "Wynndow"
-  realname = "Chris Wynne"
+  username  = "Wynndow"
+  realname  = "Chris Wynne"
+  can_merge = "true"
 
   teams = [
     "${data.github_team.core.id}",

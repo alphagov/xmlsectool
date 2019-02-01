@@ -3,6 +3,7 @@ module "user_chrisholmes" {
 
   username     = "chrisholmes"
   realname     = "Christopher Holmes"
+  can_merge    = "true"
   verify_admin = "true"
 
   teams = [

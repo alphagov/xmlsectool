@@ -11,6 +11,10 @@ variable "verify_admin" {
   default = "false"
 }
 
+variable "can_merge" {
+  default = "false"
+}
+
 variable "teams" {
   type    = "list"
   default = []

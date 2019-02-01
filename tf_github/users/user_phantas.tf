@@ -3,6 +3,7 @@ module "user_phantas" {
 
   username     = "phantas"
   realname     = "Paula Valenca"
+  can_merge    = "true"
   verify_admin = "true"
 
   teams = ["${data.github_team.core.id}"]

@@ -1,8 +1,9 @@
 module "user_charlesic" {
   source = "./verify_user"
 
-  username = "CharlesIC"
-  realname = "Charles Karol Gancarz"
+  username  = "CharlesIC"
+  realname  = "Charles Karol Gancarz"
+  can_merge = "true"
 
   teams = [
     "${data.github_team.core.id}",
