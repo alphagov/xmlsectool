@@ -2,9 +2,10 @@ module "user_ida_build_bot" {
   source = "./verify_user"
 
   username = "ida-build-bot"
-  org_role = "member"
+  realname = "BEEP BOOP I'm a robot"
+
   teams = [
-            "${data.github_team.core.id}",
-            "${data.github_team.eidas.id}", 
-          ]
+    "${data.github_team.core.id}",
+    "${data.github_team.eidas.id}",
+  ]
 }

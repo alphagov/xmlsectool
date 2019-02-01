@@ -3,9 +3,9 @@ module "user_dbes_gds" {
 
   username = "dbes-gds"
   realname = "Daniel Besbrode"
-  org_role = "member"
-  teams = [ 
-            "${data.github_team.core.id}",
-            "${data.github_team.eidas.id}", 
-          ]
+
+  teams = [
+    "${data.github_team.core.id}",
+    "${data.github_team.eidas.id}",
+  ]
 }

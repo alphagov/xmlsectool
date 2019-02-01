@@ -3,6 +3,6 @@ module "user_ronocg" {
 
   username = "ronocg"
   realname = "Conor Glynn"
-  org_role = "member"
-  teams = [ "${data.github_team.infrastructure.id}" ]
+
+  teams = ["${data.github_team.infrastructure.id}"]
 }

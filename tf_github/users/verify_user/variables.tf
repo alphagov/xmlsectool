@@ -3,16 +3,15 @@ variable "username" {
 }
 
 variable "realname" {
-  type = "string"
-  default = ""
+  type        = "string"
+  description = "Not used for any configuration, just useful for working out who people are"
 }
 
-variable "org_role" {
-  type = "string"
-  default = "member"
+variable "verify_admin" {
+  default = "false"
 }
 
 variable "teams" {
-  type = "list"
+  type    = "list"
   default = []
 }

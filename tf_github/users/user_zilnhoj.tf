@@ -3,6 +3,6 @@ module "user_zilnhoj" {
 
   username = "zilnhoj"
   realname = "John Byrne"
-  org_role = "member"
-  teams = [ "${data.github_team.core.id}" ]
+
+  teams = ["${data.github_team.core.id}"]
 }

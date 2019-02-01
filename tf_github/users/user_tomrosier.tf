@@ -3,9 +3,9 @@ module "user_tomrosier" {
 
   username = "tomrosier"
   realname = "Tom Rosier"
-  org_role = "member"
-  teams = [ 
-            "${data.github_team.core.id}",
-            "${data.github_team.eidas.id}", 
-          ]
+
+  teams = [
+    "${data.github_team.core.id}",
+    "${data.github_team.eidas.id}",
+  ]
 }

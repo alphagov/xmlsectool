@@ -3,6 +3,6 @@ module "user_sakisv" {
 
   username = "sakisv"
   realname = "Athanasios Voutsadakis"
-  org_role = "member"
-  teams = [ "${data.github_team.infrastructure.id}" ]
+
+  teams = ["${data.github_team.infrastructure.id}"]
 }
