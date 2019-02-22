@@ -1,11 +1,12 @@
 module "user_dbes_gds" {
   source = "./verify_user"
 
-  username = "dbes-gds"
-  realname = "Daniel Besbrode"
-  org_role = "member"
-  teams = [ 
-            "${data.github_team.core.id}",
-            "${data.github_team.eidas.id}", 
-          ]
+  username  = "dbes-gds"
+  realname  = "Daniel Besbrode"
+  can_merge = "true"
+
+  teams = [
+    "${data.github_team.core.id}",
+    "${data.github_team.eidas.id}",
+  ]
 }

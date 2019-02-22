@@ -1,8 +1,9 @@
 module "user_sakisv" {
   source = "./verify_user"
 
-  username = "sakisv"
-  realname = "Athanasios Voutsadakis"
-  org_role = "member"
-  teams = [ "${data.github_team.infrastructure.id}" ]
+  username  = "sakisv"
+  realname  = "Athanasios Voutsadakis"
+  can_merge = "true"
+
+  teams = ["${data.github_team.infrastructure.id}"]
 }
