@@ -21,7 +21,7 @@ resource "github_repository" "repo" {
   allow_squash_merge = false
 
   provisioner "local-exec" {
-    command = "./provision.rb ${github_repository.repo.full_name} ${var.allow_push_to_master === "true" ? true : ""}"
+    command = "./provision.rb ${github_repository.repo.full_name} ${var.allow_push_to_master == "true" ? true : ""}"
   }
 
   lifecycle {
