@@ -6,7 +6,7 @@ module "repo_verify_infrastructure_config" {
   private     = "true"
 
   push_teams = [
-    "verify-tech-team-core",
-    "verify-tech-team-infrastructure",
+    "${data.github_team.core.id}",
+    "${data.github_team.infrastructure.id}",
   ]
 }

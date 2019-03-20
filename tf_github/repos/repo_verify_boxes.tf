@@ -5,7 +5,7 @@ module "repo_verify_boxes" {
   description = "Verify specific configuration for vcloud-launch "
   private = "true"
   push_teams = [
-        "verify-tech-team-core",
-        "verify-tech-team-infrastructure",
+        "${data.github_team.core.id}",
+        "${data.github_team.infrastructure.id}",
       ]
 }

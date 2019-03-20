@@ -5,6 +5,6 @@ module "repo_verify_local_matching_service_example" {
   description = ""
   private = "false"
   push_teams = [
-        "verify-tech-team-core",
+        "${data.github_team.core.id}",
       ]
 }

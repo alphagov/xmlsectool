@@ -5,6 +5,6 @@ module "repo_passport_verify_stub_relying_party" {
   description = "Stub Relying party that integrates with Verify using the passport-verify library"
   private = "false"
   push_teams = [
-        "verify-tech-team-core",
+        "${data.github_team.core.id}",
       ]
 }

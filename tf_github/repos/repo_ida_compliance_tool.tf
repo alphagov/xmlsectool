@@ -5,6 +5,6 @@ module "repo_ida_compliance_tool" {
   description = "Verify Compliance Tool (temporary)"
   private = "true"
   push_teams = [
-        "verify-tech-team-core",
+        "${data.github_team.core.id}",
       ]
 }

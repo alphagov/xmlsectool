@@ -5,6 +5,6 @@ module "repo_verify_datascience_sandbox" {
   description = "A repository for analysis of GOV.UK Verify data."
   private = "true"
   push_teams = [
-        "verify-tech-team-core",
+        "${data.github_team.core.id}",
       ]
 }

@@ -5,6 +5,6 @@ module "repo_verify_saml_libs" {
   description = "Verify SAML Libraries 📚"
   private = "false"
   push_teams = [
-        "verify-tech-team-core",
+        "${data.github_team.core.id}",
       ]
 }

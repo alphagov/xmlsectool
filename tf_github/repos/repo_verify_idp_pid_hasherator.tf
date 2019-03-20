@@ -5,6 +5,6 @@ module "repo_verify_idp_pid_hasherator" {
   description = "Hash event PIDs from IDP reports for reconciliation"
   private = "false"
   push_teams = [
-    "verify-tech-team-core",
+    "${data.github_team.core.id}",
   ]
 }

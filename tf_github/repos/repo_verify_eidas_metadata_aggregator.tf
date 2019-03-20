@@ -5,6 +5,6 @@ module "repo_verify_eidas_metadata_aggregator" {
   description = "Script to aggregate SAML metadata from EU countries"
   private = "false"
   push_teams = [
-        "verify-tech-team-eidas",
+        "${data.github_team.eidas.id}",
       ]
 }

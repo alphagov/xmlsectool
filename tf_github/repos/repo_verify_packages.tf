@@ -5,7 +5,7 @@ module "repo_verify_packages" {
   description = "Builds custom ubuntu packages used for Verify systems"
   private = "true"
   push_teams = [
-        "verify-tech-team-core",
-        "verify-tech-team-infrastructure",
+        "${data.github_team.core.id}",
+        "${data.github_team.infrastructure.id}",
   ]
 }

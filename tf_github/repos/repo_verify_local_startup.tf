@@ -5,6 +5,6 @@ module "repo_verify_local_startup" {
   description = "Utilities to run the Verify Hub and stubs locally"
   private = "false"
   push_teams = [
-        "verify-tech-team-core",
+        "${data.github_team.core.id}",
       ]
 }
