@@ -1,4 +1,4 @@
-module "verify_self_service_infrastructure" {
+module "repo_verify_self_service_infrastructure" {
   source = "./verify_repo"
 
   name = "verify-self-service-infrastructure"
