@@ -1,9 +1,9 @@
-module "repo_verify_self_service" {
+module "verify-self-service-infrastructure" {
   source = "./verify_repo"
 
-  name = "verify-self-service"
-  description = "Verify self-service platform"
-  private = "false"
+  name = "verify-self-service-infrastructure"
+  description = "Infrastructure and terraform files for Verify Self Service"
+  private = "true"
   push_teams = [
         "${data.github_team.core.id}",
       ]
