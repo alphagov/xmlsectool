@@ -3,6 +3,7 @@ module "repo_verify_data_schemas" {
 
   name = "verify-data-schemas"
   description = "YAML specifications for Verify data"
+  archived = "true"
   private = "false"
   push_teams = [
         "${data.github_team.core.id}",
