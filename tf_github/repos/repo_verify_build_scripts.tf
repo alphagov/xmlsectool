@@ -5,7 +5,7 @@ module "repo_verify_build_scripts" {
   description = "Useful scripts and tools for Verify tech"
   private = "true"
   push_teams = [
-        "verify-tech-team-core",
+        "${data.github_team.core.id}",
       ]
 }
 

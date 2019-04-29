@@ -5,6 +5,6 @@ module "repo_verify_tech_team" {
   description = "Data about Verify team members"
   private = "true"
   push_teams = [
-        "verify-tech-team-core",
+        "${data.github_team.core.id}",
       ]
 }

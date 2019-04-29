@@ -3,7 +3,7 @@ module "user_bjgill" {
 
   username  = "bjgill"
   realname  = "Benjamin Gill"
-  can_merge = "false"
+  can_merge = "true"
 
   teams = ["${data.github_team.core.id}"]
 }

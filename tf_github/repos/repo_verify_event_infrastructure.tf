@@ -5,7 +5,7 @@ module "repo_verify_event_infrastructure" {
   description = "Infrastructure used to process Audit & Billing events for Verify"
   private = "true"
   push_teams = [
-        "verify-tech-team-core",
-        "verify-tech-team-infrastructure",
+        "${data.github_team.core.id}",
+        "${data.github_team.infrastructure.id}",
       ]
 }

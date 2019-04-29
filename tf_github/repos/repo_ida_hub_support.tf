@@ -3,8 +3,9 @@ module "repo_ida_hub_support" {
 
   name = "ida-hub-support"
   description = "Verify Hub Support services (temporary)"
+  archived = "true"
   private = "true"
   push_teams = [
-        "verify-tech-team-core",
+        "${data.github_team.core.id}",
       ]
 }

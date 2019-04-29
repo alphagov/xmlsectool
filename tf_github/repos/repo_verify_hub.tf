@@ -5,6 +5,6 @@ module "repo_verify_hub" {
   description = "Verify Hub Microservices"
   private = "false"
   push_teams = [
-        "verify-tech-team-core",
+        "${data.github_team.core.id}",
       ]
 }

@@ -5,6 +5,6 @@ module "repo_verify_german_eidas_middleware" {
   description = ""
   private = "false"
   push_teams = [
-        "verify-tech-team-eidas",
+        "${data.github_team.eidas.id}",
       ]
 }

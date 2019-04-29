@@ -5,6 +5,6 @@ module "repo_verify_proxy_node" {
   description = "eIDAS Proxy Node"
   private = "false"
   push_teams = [
-        "verify-tech-team-eidas",
+        "${data.github_team.eidas.id}",
       ]
 }

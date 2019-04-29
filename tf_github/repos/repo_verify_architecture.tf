@@ -5,6 +5,6 @@ module "repo_verify_architecture" {
   description = "Contains architectural documentation"
   private = "true"
   push_teams = [
-        "verify-tech-team-core",
+        "${data.github_team.core.id}",
       ]
 }

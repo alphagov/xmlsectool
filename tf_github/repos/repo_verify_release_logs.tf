@@ -6,6 +6,6 @@ module "repo_verify_release_logs" {
   private = "true"
   allow_push_to_master = "true"
   push_teams = [
-        "verify-tech-team-core",
+        "${data.github_team.core.id}",
       ]
 }

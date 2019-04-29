@@ -26,6 +26,7 @@ client.protect_branch("#{repo}", 'master', {
     dismiss_stale_reviews: true,
     require_code_owner_reviews: false
   }
+
 }) unless allow_push_to_master
 
 # Remove any unmanaged collaborators

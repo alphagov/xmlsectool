@@ -235,17 +235,6 @@
   },
   {
     "names": [
-      "Callum Knights"
-    ],
-    "github_username": "callumknights",
-    "emails": [
-      "callum.knights@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "callum.knights",
-    "preferred_name": "Callum Knights"
-  },
-  {
-    "names": [
       "Chris Clayson"
     ],
     "github_username": "chrisclayson",
@@ -566,6 +555,17 @@
     ],
     "gds_name": "jessica.mcevoy",
     "preferred_name": "Jess McEvoy"
+  },
+  {
+    "github_username": "todai88",
+    "names": [
+      "Joakim Bajoul Kakaei"
+    ],
+    "emails": [
+      "joakim.kakaei@digital.cabinet-office.gov.uk"
+    ],
+    "gds_name": "joakim.kakaei",
+    "preferred_name": "Joakim Bajoul Kakaei"
   },
   {
     "github_username": "joelanman",
@@ -920,18 +920,6 @@
     ],
     "gds_name": "paul.barnes",
     "preferred_name": "Paul Barnes"
-  },
-  {
-    "github_username": "phantas",
-    "names": [
-      "Paula Valenca",
-      "paulavalenca"
-    ],
-    "emails": [
-      "paula.valenca@digital.cabinet-office.gov.uk"
-    ],
-    "gds_name": "paula.valenca",
-    "preferred_name": "Paula Valenca"
   },
   {
     "github_username": "idrop",

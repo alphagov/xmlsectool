@@ -5,6 +5,6 @@ module "repo_verify_acceptance_tests" {
   description = "End-to-end tests for the Verify Hub"
   private = "false"
   push_teams = [
-        "verify-tech-team-core",
+        "${data.github_team.core.id}",
       ]
 }

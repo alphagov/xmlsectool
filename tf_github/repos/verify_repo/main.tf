@@ -1,13 +1,3 @@
-data "github_team" "push_teams" {
-  count = "${length(var.push_teams)}"
-  slug = "${element(var.push_teams, count.index)}"
-}
-
-data "github_team" "read_teams" {
-  count = "${length(var.read_teams)}"
-  slug = "${element(var.read_teams, count.index)}"
-}
-
 resource "github_repository" "repo" {
   name = "${var.name}"
   description = "${var.description}"
@@ -32,7 +22,7 @@ resource "github_repository" "repo" {
 resource "github_team_repository" "repo_team_push" {
   count = "${length(var.push_teams)}"
 
-  team_id = "${element(data.github_team.push_teams.*.id, count.index)}"
+  team_id = "${element(var.push_teams, count.index)}"
   repository = "${github_repository.repo.name}"
   permission = "${var.archived == "true" ? "pull" : "push"}"
 }
@@ -40,7 +30,7 @@ resource "github_team_repository" "repo_team_push" {
 resource "github_team_repository" "repo_team_pull" {
   count = "${length(var.read_teams)}"
 
-  team_id = "${element(data.github_team.read_teams.*.id, count.index)}"
+  team_id = "${element(var.read_teams, count.index)}"
   repository = "${github_repository.repo.name}"
   permission = "pull"
 }

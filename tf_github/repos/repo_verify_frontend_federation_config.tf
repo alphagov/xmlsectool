@@ -5,6 +5,6 @@ module "repo_verify_frontend_federation_config" {
   description = "Federation configuration for the Verify frontend"
   private = "true"
   push_teams = [
-        "verify-tech-team-core",
+        "${data.github_team.core.id}",
       ]
 }

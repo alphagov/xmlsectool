@@ -5,6 +5,6 @@ module "repo_verify_self_service" {
   description = "Verify self-service platform"
   private = "false"
   push_teams = [
-        "verify-tech-team-core",
+        "${data.github_team.core.id}",
       ]
 }
