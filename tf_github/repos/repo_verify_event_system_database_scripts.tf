@@ -5,6 +5,6 @@ module "repo_verify_event_system_database_scripts" {
   description = "SQL scripts and schemas for the Event System database"
   private = "false"
   push_teams = [
-        "verify-tech-team-core-hub",
+        "${data.github_team.core.id}",
       ]
 }
