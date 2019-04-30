@@ -52,7 +52,7 @@ module "repo_new_repo" {
   name = "new-repo"
   description = "My new repository"
   private = "false"
-  allow_push_to_master  = "(optional) <true/false if direct pushes to master are required (i.e. non-prod binary repos"
+  allow_push_to_master  = "(optional) <true/false if direct pushes to master are required (i.e. non-prod or binary repos)"
   push_teams = [
         "verify-tech-team-core",
       ]
