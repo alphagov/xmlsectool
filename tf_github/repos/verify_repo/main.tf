@@ -11,7 +11,7 @@ resource "github_repository" "repo" {
   allow_squash_merge = false
 
   provisioner "local-exec" {
-    command = "./provision.rb ${github_repository.repo.full_name}"
+    command = "./provision.rb ${github_repository.repo.full_name} 2 ${var.allow_push_to_master == "true" ? true : false}"
   }
 
   lifecycle {
@@ -36,6 +36,8 @@ resource "github_team_repository" "repo_team_pull" {
 }
 
 resource "github_branch_protection" "repo_protect_master" {
+  count = "${var.allow_push_to_master ? 0 : 1}"
+
   repository = "${github_repository.repo.name}"
   branch = "master"
   enforce_admins = false

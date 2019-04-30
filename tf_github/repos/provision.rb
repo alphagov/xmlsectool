@@ -4,11 +4,12 @@ require 'erb'
 require 'octokit'
 
 if ARGV.size < 1
-  abort('Usage: ./provision.rb repo [review_count]')
+  abort('Usage: ./provision.rb repo [review_count] [allow_push_to_master]')
 end
 
 repo = ARGV[0]
 review_count = Integer(ARGV[1] || 2)
+allow_push_to_master = ARGV[2] === "true"
 
 client = Octokit::Client.new(access_token: ENV.fetch('GITHUB_TOKEN'))
 client.auto_paginate = true
@@ -25,7 +26,8 @@ client.protect_branch("#{repo}", 'master', {
     dismiss_stale_reviews: true,
     require_code_owner_reviews: false
   }
-})
+
+}) unless allow_push_to_master
 
 # Remove any unmanaged collaborators
 client.collaborators(repo).each { |user| client.remove_collaborator(repo, user) }

@@ -21,3 +21,7 @@ variable "push_teams" {
 variable "read_teams" {
   default = []
 }
+
+variable "allow_push_to_master" {
+  default = "false"
+}
