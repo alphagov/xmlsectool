@@ -4,6 +4,7 @@ module "user_charlesic" {
   username  = "CharlesIC"
   realname  = "Charles Karol Gancarz"
   can_merge = "true"
+  verify_admin = "true"
 
   teams = [
     "${data.github_team.core.id}",
