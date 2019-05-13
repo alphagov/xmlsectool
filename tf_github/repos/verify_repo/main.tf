@@ -44,5 +44,7 @@ resource "github_branch_protection" "repo_protect_master" {
 
   required_pull_request_reviews {
     dismiss_stale_reviews = true
+    required_approving_review_count = 2
+    require_code_owner_reviews = false
   }
 }
