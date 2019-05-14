@@ -10,10 +10,6 @@ resource "github_repository" "repo" {
   allow_rebase_merge = false
   allow_squash_merge = false
 
-  provisioner "local-exec" {
-    command = "./provision.rb ${github_repository.repo.full_name} 2 ${var.allow_push_to_master == "true" ? true : false}"
-  }
-
   lifecycle {
     ignore_changes = ["topics", "auto_init"]
   }
