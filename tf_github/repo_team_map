@@ -36,6 +36,7 @@ core:
   - verify-boxes
   - verify-il3-laptop-bootstrap
   - verify-packages
+  - splunk-library-javalogging
 
 infrastructure:
   - verify-puppet
