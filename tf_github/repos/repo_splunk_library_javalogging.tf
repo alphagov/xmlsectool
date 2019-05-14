@@ -1,4 +1,4 @@
-module "repo_repo_splunk_library_javalogging" {
+module "repo_splunk_library_javalogging" {
   source = "./verify_repo"
 
   name = "splunk-library-javalogging"
