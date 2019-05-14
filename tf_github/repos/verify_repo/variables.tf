@@ -25,3 +25,9 @@ variable "read_teams" {
 variable "allow_push_to_master" {
   default = "false"
 }
+
+variable "read_collaborators" {
+  type        = "list"
+  default     = []
+  description = "Users who need read-only access, and aren't part of alphagov or a relevant team."
+}
