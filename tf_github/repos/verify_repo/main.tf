@@ -44,3 +44,11 @@ resource "github_branch_protection" "repo_protect_master" {
     require_code_owner_reviews = false
   }
 }
+
+resource "github_repository_collaborator" "repo_collaborator_pull" {
+  count      = "${length(var.read_collaborators)}"
+
+  username   = "${element(var.read_collaborators, count.index)}"
+  repository = "${github_repository.repo.name}"
+  permission = "pull"
+}
