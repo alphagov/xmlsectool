@@ -48,7 +48,8 @@ function cleanup {
   echo "Done. Removing temporary token with ID: $id"
   curl "https://api.github.com/authorizations/$id" \
     -X DELETE \
-    -u "$gh_user:$gh_pass"
+    -u "$gh_user:$gh_pass" \
+    -H "X-GitHub-OTP: $gh_otp"
 }
 
 trap cleanup EXIT
