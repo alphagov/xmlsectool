@@ -26,6 +26,11 @@ variable "allow_push_to_master" {
   default = "false"
 }
 
+variable "strict_status_check" {
+  default     = false
+  description = "Whether to require branches to be up-to-date before merging."
+}
+
 variable "read_collaborators" {
   type        = "list"
   default     = []
