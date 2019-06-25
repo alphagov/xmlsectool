@@ -5,5 +5,8 @@ module "user_szd55gds" {
   realname  = "David Pye"
   can_merge = "true"
 
-  teams = ["${data.github_team.infrastructure.id}"]
+  teams = [
+    "${data.github_team.core.id}",
+    "${data.github_team.infrastructure.id}",
+  ]
 }
