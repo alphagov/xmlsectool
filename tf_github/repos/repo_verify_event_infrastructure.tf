@@ -13,4 +13,5 @@ module "repo_verify_event_infrastructure" {
   ]
 
   read_collaborators = ["verify-cd-read-only"]
+  admin_collaborators = ["ida-build-bot"]
 }

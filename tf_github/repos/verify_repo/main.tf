@@ -56,3 +56,11 @@ resource "github_repository_collaborator" "repo_collaborator_pull" {
   repository = "${github_repository.repo.name}"
   permission = "pull"
 }
+
+resource "github_repository_collaborator" "repo_collaborator_admin" {
+  count      = "${length(var.admin_collaborators)}"
+
+  username   = "${element(var.admin_collaborators, count.index)}"
+  repository = "${github_repository.repo.name}"
+  permission = "admin"
+}
