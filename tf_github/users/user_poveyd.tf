@@ -5,6 +5,9 @@ module "user_poveyd" {
   realname  = "David Povey"
   can_merge = "true"
 
-  teams = ["${data.github_team.infrastructure.id}"]
+  teams = [
+    "${data.github_team.core.id}",
+    "${data.github_team.infrastructure.id}"
+  ]
 }
 
