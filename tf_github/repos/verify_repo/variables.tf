@@ -36,3 +36,9 @@ variable "read_collaborators" {
   default     = []
   description = "Users who need read-only access, and aren't part of alphagov or a relevant team."
 }
+
+variable "admin_collaborators" {
+  type        = "list"
+  default     = []
+  description = "Users who need admin access, and aren't part of alphagov or a relevant team."
+}
