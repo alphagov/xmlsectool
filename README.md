@@ -18,6 +18,10 @@ all of these!
 Github repositories have very basic 'topic' flags, but no other simple way to
 say "when you clone the Verify repos you should get these ones".
 
+## Terraform
+
+See the [separate readme for the terraform code](tf_github/README.md).
+
 ## Team user data
 
 This is in the `users.json` file.
@@ -77,7 +81,7 @@ approvals, add a section like:
 You can find this on the slack GUI under "member id".
 - Search for the person, select their profile
 - Click the chevron next to their name for "more actions"
-- Click copy id, it should be a string of 9 alphanumeric characters.  
+- Click copy id, it should be a string of 9 alphanumeric characters.
 
 ### Testing
 

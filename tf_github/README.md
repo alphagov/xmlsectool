@@ -60,5 +60,6 @@ module "repo_new_repo" {
 ```
 
 The filename should be something like `new_repo.tf`.
-The `push_teams` value determines which teams' members can create branches and raise PRs against the repository. When the Terraform is applied (via our CI pipeline), the repository will be created with the necessary permisssions.
+The `push_teams` value determines which teams' members can create branches and raise PRs against the repository. When the Terraform is applied (via our CI pipeline), the repository will be created with the necessary permissions.
 
+If the repository you're adding already exists, you'll need to import it into the statefile before running the `apply` script.
