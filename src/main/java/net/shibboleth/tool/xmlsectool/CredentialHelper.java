@@ -152,24 +152,15 @@ public final class CredentialHelper {
             if (keystoreProvider != null) {
                 LOG.debug("Creating PKCS11 keystore with provider {} and configuration file {}", keystoreProvider,
                         pkcs11Config);
-                final Class<Provider> providerClass =
-                        (Class<Provider>) CredentialHelper.class.getClassLoader().loadClass(keystoreProvider);
-                final Constructor<Provider> providerConstructor = providerClass.getConstructor(String.class);
-                final Provider pkcs11Provider = providerConstructor.newInstance(pkcs11Config);
-                pkcs11Provider.load(new FileInputStream(pkcs11Config));
+
+                Provider pkcs11Provider = Security.getProvider(keystoreProvider).configure(pkcs11Config);
+
                 Security.addProvider(pkcs11Provider);
                 keystore = KeyStore.getInstance("PKCS11", pkcs11Provider);
             } else {
                 LOG.debug("Creating PKCS11 keystore with system wide provider and configuration file");
                 keystore = KeyStore.getInstance("PKCS11");
             }
-        } catch (final ClassNotFoundException e) {
-            LOG.error((new StringBuilder("Unable to load keystore provider class: ")).append(keystoreProvider)
-                    .toString());
-            throw new Terminator(ReturnCode.RC_INIT);
-        } catch (final NoSuchMethodException e) {
-            LOG.error("Keystore provider class does not provide a String-argument constructor");
-            throw new Terminator(ReturnCode.RC_INIT);
         } catch (final Exception e) {
             LOG.error("Unable to read PKCS11 keystore", e);
             throw new IOException("Unable to read PKCS11 keystore", e);
