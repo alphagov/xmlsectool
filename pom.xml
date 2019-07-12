@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>net.shibboleth</groupId>
+        <artifactId>parent</artifactId>
+        <version>11.0.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>net.shibboleth.tool</groupId>
+    <artifactId>xmlsectool</artifactId>
+    <version>3.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>XMLSecTool</name>
+    <description>
+        A command line tool for checking an XML file for well-formedness and validity as well as
+        signing and checking signatures.
+    </description>
+    <inceptionYear>2011</inceptionYear>
+
+    <properties>
+        <opensaml.groupId>org.opensaml</opensaml.groupId>
+        <opensaml.version>4.0.0-SNAPSHOT</opensaml.version>
+        <java-support.version>8.0.0-SNAPSHOT</java-support.version>
+        <xmlsec.version>2.0.6</xmlsec.version>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>shib-release</id>
+            <url>https://build.shibboleth.net/nexus/content/groups/public</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>shib-snapshot</id>
+            <url>https://build.shibboleth.net/nexus/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <!-- Compile dependencies -->
+        <dependency>
+            <groupId>net.shibboleth.utilities</groupId>
+            <artifactId>java-support</artifactId>
+            <version>${java-support.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${opensaml.groupId}</groupId>
+            <artifactId>opensaml-core</artifactId>
+            <version>${opensaml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${opensaml.groupId}</groupId>
+            <artifactId>opensaml-security-api</artifactId>
+            <version>${opensaml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${opensaml.groupId}</groupId>
+            <artifactId>opensaml-xmlsec-api</artifactId>
+            <version>${opensaml.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.santuario</groupId>
+            <artifactId>xmlsec</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15on</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.beust</groupId>
+            <artifactId>jcommander</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>${httpclient.groupId}</groupId>
+            <artifactId>httpclient</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>${httpclient.groupId}</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.3.3</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+        </dependency>
+
+        <!-- Runtime dependencies -->
+        <dependency>
+            <groupId>${opensaml.groupId}</groupId>
+            <artifactId>opensaml-xmlsec-impl</artifactId>
+            <version>${opensaml.version}</version>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>${slf4j.groupId}</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- Test Dependencies -->
+        <dependency>
+            <groupId>net.shibboleth.utilities</groupId>
+            <artifactId>java-support</artifactId>
+            <version>${java-support.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.xmlunit</groupId>
+            <artifactId>xmlunit-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>${opensaml.groupId}</groupId>
+            <artifactId>opensaml-security-api</artifactId>
+            <version>${opensaml.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-assembly-plugin</artifactId>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>src/main/assembly/bin.xml</descriptor>
+                            </descriptors>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <scm>
+        <connection>${shibboleth.scm.connection}${project.artifactId}</connection>
+        <developerConnection>${shibboleth.scm.developerConnection}${project.artifactId}</developerConnection>
+        <url>${shibboleth.scm.url}${project.artifactId}.git</url>
+    </scm>
+
+    <distributionManagement>
+        <site>
+            <id>site</id>
+            <url>dav:${shibboleth.site.url}${project.artifactId}/${project.version}/</url>
+        </site>
+    </distributionManagement>
+
+    <issueManagement>
+        <system>JIRA</system>
+        <url>https://issues.shibboleth.net/jira/projects/XSTJ</url>
+    </issueManagement>
+
+</project>
